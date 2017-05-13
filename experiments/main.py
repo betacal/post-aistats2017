@@ -17,7 +17,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 
-from scipy.stats import friedmanchisquare
 # Parallelization
 import itertools
 from scoop import futures
@@ -27,6 +26,7 @@ from calib.utils.calibration import cv_calibration
 from calib.utils.dataframe import MyDataFrame
 from calib.utils.functions import get_sets
 from calib.utils.functions import table_to_latex
+from calib.utils.functions import p_value
 
 # Our datasets module
 from data_wrappers.datasets import Data
@@ -35,12 +35,13 @@ from data_wrappers.datasets import datasets_hempstalk2008
 from data_wrappers.datasets import datasets_others
 
 methods = [None, 'sigmoid', 'isotonic', 'beta', 'beta_am', 'beta_ab']
+
 classifiers = {
                   'nbayes': GaussianNB(),
                   'logistic': LogisticRegression(),
                   'adao': our.AdaBoostClassifier(n_estimators=200),
                   'adas': their.AdaBoostClassifier(n_estimators=200),
-                  'forest': RandomForestClassifier(n_estimators=100),
+                  'forest': RandomForestClassifier(n_estimators=200),
                   'mlp': MLPClassifier(),
                   'svm': SVC()
 }
@@ -53,6 +54,7 @@ score_types = {
                   'mlp': 'predict_proba',
                   'svm': 'sigmoid'
 }
+
 seed_num = 42
 mc_iterations = 10
 n_folds = 5
@@ -87,7 +89,8 @@ def compute_all(args):
                                                                x_train, y_train,
                                                                x_test, y_test,
                                                                cv=3,
-                                                               score_type=score_type)
+                                                               score_type=score_type,
+                                                               model_type='full-stack')
 
         for method in methods:
             m_text = 'None' if method is None else method
@@ -126,7 +129,7 @@ if __name__ == '__main__':
             'time', 'c_probas'], index=['method'], aggfunc=[np.mean, np.std])
 
         print(table)
-        print("-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-")
+        print('-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-')
         df_all = df_all.append(df)
     table = df_all.pivot_table(values=['acc', 'loss'], index=['dataset', 'method'],
                            aggfunc=[np.mean, np.std])
@@ -145,28 +148,31 @@ if __name__ == '__main__':
         df_rem = df_all[np.logical_not(np.in1d(df_all.method, rem))]
         methods_rem = [method for method in methods if method not in rem]
         print methods_rem
-        print("-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-")
+        print('-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-')
         table = df_rem.pivot_table(index=['dataset'], columns=['method'],
                                    values=['acc'], aggfunc=[np.mean, np.std])
         table_to_latex(dataset_names, methods_rem, table, max_is_better=True)
         accs = table.as_matrix()[:, :len(methods_rem)]
-        print friedmanchisquare(*[accs[:, x] for x in np.arange(accs.shape[1])])
+        # print friedmanchisquare(*[accs[:, x] for x in np.arange(accs.shape[1])])
+        print p_value(accs)
         table.to_csv(os.path.join(results_path, 'main_acc' + str(methods_rem) + '.csv'))
 
-        print("-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-")
+        print('-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-')
         table = df_rem.pivot_table(index=['dataset'], columns=['method'],
                                    values=['loss'], aggfunc=[np.mean, np.std])
         table_to_latex(dataset_names, methods_rem, table, max_is_better=False)
         losses = table.as_matrix()[:, :len(methods_rem)]
-        print friedmanchisquare(*[losses[:, x] for x in np.arange(losses.shape[1])])
+        # print friedmanchisquare(*[losses[:, x] for x in np.arange(losses.shape[1])])
+        print p_value(losses)
         table.to_csv(os.path.join(results_path, 'main_loss' + str(methods_rem) + '.csv'))
 
-        print("-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-")
+        print('-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-')
         table = df_rem.pivot_table(index=['dataset'], columns=['method'],
                                    values=['brier'], aggfunc=[np.mean, np.std])
         table_to_latex(dataset_names, methods_rem, table, max_is_better=False)
         briers = table.as_matrix()[:, :len(methods_rem)]
-        print friedmanchisquare(*[briers[:, x] for x in np.arange(briers.shape[1])])
+        # print friedmanchisquare(*[briers[:, x] for x in np.arange(briers.shape[1])])
+        print p_value(briers)
         table.to_csv(os.path.join(results_path, 'main_brier' + str(methods_rem) + '.csv'))
 
-        print("-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-")
+        print('-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-')

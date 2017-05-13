@@ -1,6 +1,6 @@
 from __future__ import division
 import numpy as np
-from calib.models.calibration import CalibratedClassifierCV
+from calib.models.calibration import CalibratedModel
 from sklearn.cross_validation import StratifiedKFold
 from sklearn.base import clone
 from functions import cross_entropy
@@ -19,17 +19,21 @@ def get_calibrated_scores(classifiers, methods, scores):
 
 
 def calibrate(classifier, x_cali, y_cali, method=None, score_type=None):
-    ccv = CalibratedClassifierCV(base_estimator=classifier, method=method,
-                                 cv='prefit', score_type=score_type)
+    ccv = CalibratedModel(base_estimator=classifier, method=method,
+                          score_type=score_type)
     ccv.fit(x_cali, y_cali)
     return ccv
 
 
-def cv_calibration(base_classifier, methods, x_train, y_train, x_test, y_test,
-                   cv=3, score_type=None, verbose=False):
+def cv_calibration(base_classifier, methods, x_train, y_train, x_test,
+                   y_test, cv=3, score_type=None,
+                   model_type='map-only', verbose=False):
     folds = StratifiedKFold(y_train, n_folds=cv, shuffle=True)
     mean_probas = {method: np.zeros(np.alen(y_test)) for method in methods}
     classifiers = {method: [] for method in methods}
+    main_classifier = clone(base_classifier)
+    if model_type == 'map-only':
+        main_classifier.fit(x_train, y_train)
     for i, (train, cali) in enumerate(folds):
         if i < cv:
             x_t = x_train[train]
@@ -44,6 +48,9 @@ def cv_calibration(base_classifier, methods, x_train, y_train, x_test, y_test,
                           method)
                 ccv = calibrate(classifier, x_c, y_c, method=method,
                                 score_type=score_type)
+                if model_type == 'map-only':
+                    ccv.set_base_estimator(main_classifier,
+                                           score_type=score_type)
                 mean_probas[method] += ccv.predict_proba(x_test)[:, 1] / cv
                 classifiers[method].append(ccv)
     losses = {method: cross_entropy(mean_probas[method], y_test) for method

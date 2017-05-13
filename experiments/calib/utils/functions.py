@@ -1,5 +1,7 @@
 import numpy as np
 from scipy.stats import rankdata
+from scipy.stats import friedmanchisquare
+from scipy.stats import wilcoxon
 
 
 def cross_entropy(y_hat, y):
@@ -155,3 +157,17 @@ def to_latex(datasets, table, max_is_better=True, scale=1, precision=3,
     return str_table
 
 
+def p_value(values):
+    if values.shape[1] > 2:
+        return friedmanchisquare(*[values[:, x] for x in np.arange(
+                                                      values.shape[1])])
+    else:
+        return wilcoxon(values[:, 0], values[:, 1])
+
+
+# def fit_beta_moments(scores):
+#     mean = np.mean(scores)
+#     variance = np.var(scores, ddof=1)
+#     if variance < (mean * (1.0 - mean)):
+#     else:
+#         raise ValueError('Variance')

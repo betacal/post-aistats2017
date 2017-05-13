@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def reliability_diagram(prob, Y, marker='--', label='', alpha=1, linewidth=1,
                         ax_reliability=None, clip=True):
     '''
@@ -132,48 +133,84 @@ def plot_niculescu_mizil_map(scores_set, prob, legend_set, alpha=1, **kwargs):
     return fig_reliability_map
 
 
-def sigmoid(x):
-    return np.exp(x) / (1 + np.exp(x))
+def plot_score_distribution(scores, labels, **kwargs):
+    fig_dis = plt.figure('score_distribution')
+    fig_dis.clf()
+    ax_score = plt.subplot(111)
+    ax = ax_score
+    # ax.set_title('Reliability diagram')
+    ax.set_ylim([0, 1])
+    ax.set_xlim([0, 1])
+    n_lines = len(legend_set)
+    if original_first:
+        bins = np.linspace(0, 1, 11)
+        hist_tot = np.histogram(scores_set[0], bins=bins)
+        hist_pos = np.histogram(scores_set[0][labels == 1], bins=bins)
+        edges = np.insert(bins, np.arange(len(bins)), bins)
+        empirical_p = np.true_divide(hist_pos[0]+alpha, hist_tot[0]+2*alpha)
+        empirical_p = np.insert(empirical_p, np.arange(len(empirical_p)),
+                                empirical_p)
+        ax.plot(edges[1:-1], empirical_p, label='empirical')
+
+    skip = original_first
+    for (scores, legend) in zip(scores_set, legend_set):
+        if skip and original_first:
+            skip = False
+        else:
+            reliability_diagram(scores, labels, marker='x-',
+                    label=legend, linewidth=n_lines, alpha=alpha, **kwargs)
+            n_lines -= 1
+    if original_first:
+        ax.plot(scores_set[0], labels, 'kx', label=legend_set[0],
+                markersize=9, markeredgewidth=1)
+    ax.plot([0, 1], [0, 1], 'r--')
+    ax.legend(loc='upper left')
+    ax.grid(True)
+    return fig_reliability
 
 
-if __name__ == '__main__':
-    from sklearn.linear_model import LogisticRegression
-    np.random.seed(42)
-    # Random scores
-    n = np.random.normal(loc=-4, scale=2, size=100)
-    p = np.random.normal(loc=4, scale=2, size=100)
-    s = np.append(n, p)
-    plt.hist(s)
-    plt.show()
-    s.sort()
-    s1 = s.reshape(-1, 1)
-
-    # Obtaining probabilities from the scores
-    s1 = sigmoid(s1)
-    # Obtaining the two features for beta-calibration with 3 parameters
-    s1 = np.log(np.hstack((s1, 1.0 - s1)))
-    # s1[:, 1] *= -1
-
-    # Generating random labels
-    y = np.append(np.random.binomial(1, 0.1, 40), np.random.binomial(1, 0.3,
-                                                                     40))
-    y = np.append(y, np.random.binomial(1, 0.4, 40))
-    y = np.append(y, np.random.binomial(1, 0.4, 40))
-    y = np.append(y, np.ones(40))
-
-    # Fitting Logistic Regression without regularization
-    lr = LogisticRegression(C=99999999999)
-    lr.fit(s1, y)
-
-    linspace = np.linspace(-10, 10, 100)
-    l = sigmoid(linspace).reshape(-1, 1)
-    l1 = np.log(np.hstack((l, 1.0 - l)))
-    # l1[:, 1] *= -1
-
-    probas = lr.predict_proba(l1)[:, 1]
-    s_exp = sigmoid(s)
-    fig_map = plot_niculescu_mizil_map([probas], [s_exp, y, l],
-                                       ['beta'], alpha=1)
-
-    plt.show()
+# def sigmoid(x):
+#     return np.exp(x) / (1 + np.exp(x))
+#
+#
+# if __name__ == '__main__':
+#     from sklearn.linear_model import LogisticRegression
+#     np.random.seed(42)
+#     # Random scores
+#     n = np.random.normal(loc=-4, scale=2, size=100)
+#     p = np.random.normal(loc=4, scale=2, size=100)
+#     s = np.append(n, p)
+#     plt.hist(s)
+#     plt.show()
+#     s.sort()
+#     s1 = s.reshape(-1, 1)
+#
+#     # Obtaining probabilities from the scores
+#     s1 = sigmoid(s1)
+#     # Obtaining the two features for beta-calibration with 3 parameters
+#     s1 = np.log(np.hstack((s1, 1.0 - s1)))
+#     # s1[:, 1] *= -1
+#
+#     # Generating random labels
+#     y = np.append(np.random.binomial(1, 0.1, 40), np.random.binomial(1, 0.3,
+#                                                                      40))
+#     y = np.append(y, np.random.binomial(1, 0.4, 40))
+#     y = np.append(y, np.random.binomial(1, 0.4, 40))
+#     y = np.append(y, np.ones(40))
+#
+#     # Fitting Logistic Regression without regularization
+#     lr = LogisticRegression(C=99999999999)
+#     lr.fit(s1, y)
+#
+#     linspace = np.linspace(-10, 10, 100)
+#     l = sigmoid(linspace).reshape(-1, 1)
+#     l1 = np.log(np.hstack((l, 1.0 - l)))
+#     # l1[:, 1] *= -1
+#
+#     probas = lr.predict_proba(l1)[:, 1]
+#     s_exp = sigmoid(s)
+#     fig_map = plot_niculescu_mizil_map([probas], [s_exp, y, l],
+#                                        ['beta'], alpha=1)
+#
+#     plt.show()
 

@@ -1,0 +1,2777 @@
+C:\Users\tmfilho\Anaconda2\python.exe -m scoop -n 8 C:/Users/tmfilho/Dropbox/Doutorado/Bristol/2017/betacal_org/post-aistats2017/experiments/main.py
+[2017-05-10 23:50:33,443] launcher  INFO    SCOOP 0.7 1.1 on win32 using Python 2.7.13 |Anaconda custom (64-bit)| (default, Dec 19 2016, 13:29:36) [MSC v.1500 64 bit (AMD64)], API: 1013
+[2017-05-10 23:50:33,443] launcher  INFO    Deploying 8 worker(s) over 1 host(s).
+[2017-05-10 23:50:33,443] launcher  INFO    Worker distribution: 
+[2017-05-10 23:50:33,443] launcher  INFO       127.0.0.1:	7 + origin
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+Name = optdigits
+Data shape = (5620L, 64L)
+Target shape = (5620L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Target labels = [0 1 2 3 4 5 6 7 8 9]
+              mean                            std                    
+               acc     brier       loss       acc     brier      loss
+method                                                               
+None      0.547715  0.448875  13.906056  0.023637  0.023150  0.924018
+beta      0.898221  0.077695   0.245753  0.000211  0.001700  0.009512
+beta_ab   0.884963  0.101557   0.321929  0.003825  0.001600  0.006404
+beta_am   0.898221  0.078215   0.250740  0.000211  0.001649  0.009772
+isotonic  0.898221  0.077233   0.243496  0.000211  0.001792  0.012745
+sigmoid   0.898221  0.083344   0.271934  0.000211  0.000842  0.006017
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = vowel
+Data shape = (990L, 10L)
+Target shape = (990L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Target labels = [array([u'hAd'], 
+      dtype='<U3') array([u'hEd'], 
+      dtype='<U3')
+ array([u'hId'], 
+      dtype='<U3') array([u'hOd'], 
+      dtype='<U3')
+ array([u'hUd'], 
+      dtype='<U3') array([u'hYd'], 
+      dtype='<U3')
+ array([u'had'], 
+      dtype='<U3') array([u'hed'], 
+      dtype='<U3')
+ array([u'hid'], 
+      dtype='<U3') array([u'hod'], 
+      dtype='<U3')
+ array([u'hud'], 
+      dtype='<U3')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.949798  0.035129  0.112795  0.012923  0.007690  0.023893
+beta      0.953232  0.034271  0.112416  0.013871  0.007609  0.023066
+beta_ab   0.949798  0.035268  0.114299  0.012923  0.007608  0.023017
+beta_am   0.953131  0.034245  0.111686  0.014066  0.007394  0.022219
+isotonic  0.954040  0.034646  0.166266  0.013037  0.008024  0.145331
+sigmoid   0.953030  0.035375  0.128346  0.014000  0.008856  0.029685
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = libras-movement
+Data shape = (360L, 90L)
+Target shape = (360L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+Target labels = [  1.   2.   3.   4.   5.   6.   7.   8.   9.  10.  11.  12.  13.  14.  15.]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.948267  0.046642  0.542463  0.031191  0.028378  0.514305
+beta      0.962733  0.030420  0.130124  0.024741  0.016501  0.073290
+beta_ab   0.948267  0.039311  0.157889  0.031191  0.018179  0.073457
+beta_am   0.960867  0.031949  0.137598  0.019793  0.014393  0.064776
+isotonic  0.960200  0.031249  0.233730  0.026007  0.017335  0.331500
+sigmoid   0.951800  0.035402  0.139480  0.028810  0.016696  0.061392
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = pendigits
+Data shape = (10992L, 16L)
+Target shape = (10992L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Target labels = [0 1 2 3 4 5 6 7 8 9]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.972307  0.026668  0.335325  0.002300  0.002187  0.037421
+beta      0.971871  0.022357  0.076363  0.002489  0.001689  0.005605
+beta_ab   0.972307  0.022442  0.076741  0.002300  0.001602  0.005516
+beta_am   0.971680  0.022511  0.076648  0.002796  0.001780  0.005632
+isotonic  0.972162  0.021913  0.079237  0.002471  0.001589  0.013341
+sigmoid   0.972289  0.023126  0.086402  0.002458  0.001732  0.006182
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = german
+Data shape = (1000L, 20L)
+Target shape = (1000L,)
+Target classes = [0, 1]
+Target labels = [-1.  1.]
+            mean                           std                    
+             acc     brier      loss       acc     brier      loss
+method                                                            
+None      0.7333  0.195260  0.907399  0.023918  0.018644  0.239195
+beta      0.7211  0.179316  0.541229  0.018191  0.007249  0.025900
+beta_ab   0.7334  0.184620  0.568247  0.024253  0.010564  0.048659
+beta_am   0.7106  0.186585  0.563661  0.013157  0.006543  0.024525
+isotonic  0.7346  0.176135  0.535573  0.022854  0.011475  0.044498
+sigmoid   0.7412  0.173825  0.523484  0.021631  0.010005  0.025505
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = dermatology
+Data shape = (358L, 34L)
+Target shape = (358L,)
+Target classes = [0, 1, 2, 3, 4, 5]
+Target labels = [1 2 3 4 5 6]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.987154  0.012846  0.463544  0.013117  0.013117  0.475634
+beta      0.987154  0.012693  0.076184  0.013117  0.012594  0.063888
+beta_ab   0.987154  0.012697  0.075271  0.013117  0.012595  0.062798
+beta_am   0.987154  0.012623  0.072562  0.013117  0.012532  0.059171
+isotonic  0.987154  0.012746  0.112381  0.013117  0.012657  0.151120
+sigmoid   0.987154  0.012757  0.077738  0.013117  0.012645  0.065605
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = lung-cancer
+Data shape = (96L, 7129L)
+Target shape = (96L,)
+Target classes = [0, 1]
+Target labels = [array([u'Normal'], 
+      dtype='<U6')
+ array([u'Tumor'], 
+      dtype='<U5')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.989526  0.010474  0.384770  0.021163  0.021163  0.777462
+beta      0.989526  0.015470  0.100340  0.021163  0.018304  0.060638
+beta_ab   0.989526  0.016175  0.101816  0.021163  0.018502  0.061111
+beta_am   0.989526  0.013038  0.090144  0.021163  0.018581  0.060217
+isotonic  0.977105  0.021020  0.113652  0.036574  0.019996  0.064783
+sigmoid   0.981211  0.019370  0.110110  0.032894  0.019025  0.063133
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = cleveland
+Data shape = (297L, 13L)
+Target shape = (297L,)
+Target classes = [0, 1, 2, 3, 4]
+Target labels = [0 1 2 3 4]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.836751  0.139835  0.677200  0.045889  0.038151  0.239839
+beta      0.834751  0.129086  0.414234  0.044929  0.026754  0.071170
+beta_ab   0.836751  0.128165  0.411692  0.045889  0.026668  0.070445
+beta_am   0.836745  0.128481  0.414061  0.044339  0.026109  0.069772
+isotonic  0.829688  0.130395  0.583217  0.045060  0.028477  0.375084
+sigmoid   0.835395  0.129908  0.425492  0.044771  0.030015  0.076237
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = ionosphere
+Data shape = (351L, 34L)
+Target shape = (351L,)
+Target classes = [0, 1]
+Target labels = [-1  1]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.885730  0.103534  1.165607  0.034090  0.030928  0.406315
+beta      0.892032  0.087610  0.293868  0.035150  0.021431  0.061146
+beta_ab   0.885730  0.088501  0.295301  0.034090  0.020866  0.058973
+beta_am   0.896869  0.087609  0.292639  0.036746  0.020509  0.059422
+isotonic  0.895171  0.085837  0.387422  0.036376  0.022303  0.362619
+sigmoid   0.888016  0.092221  0.325220  0.032781  0.025272  0.070437
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = wdbc
+Data shape = (569L, 30L)
+Target shape = (569L,)
+Target classes = [0, 1]
+Target labels = ['B' 'M']
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.932686  0.062616  0.636188  0.022001  0.019541  0.292138
+beta      0.931795  0.044980  0.149731  0.019915  0.012962  0.041036
+beta_ab   0.932686  0.044690  0.149314  0.022001  0.012856  0.040580
+beta_am   0.934804  0.044201  0.147028  0.020617  0.012679  0.039665
+isotonic  0.931090  0.044624  0.220323  0.020762  0.012849  0.174155
+sigmoid   0.932860  0.060190  0.235259  0.021947  0.017665  0.054839
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = horse
+Data shape = (300L, 27L)
+Target shape = (300L,)
+Target classes = [0, 1]
+Target labels = [ 1.  2.]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.478890  0.493267  5.096443  0.115823  0.118842  2.453611
+beta      0.776633  0.165523  0.514207  0.049062  0.020530  0.053599
+beta_ab   0.481890  0.244288  0.682017  0.117672  0.026041  0.057941
+beta_am   0.779972  0.171502  0.543295  0.049906  0.017424  0.052764
+isotonic  0.792562  0.164052  0.712926  0.041231  0.021818  0.408872
+sigmoid   0.649049  0.220006  0.630896  0.058694  0.021423  0.048234
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = landsat-satellite
+Data shape = (6435L, 36L)
+Target shape = (6435L,)
+Target classes = [0, 1, 2, 3, 4, 5]
+Target labels = [ 1.  2.  3.  4.  5.  7.]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.935215  0.059880  0.650374  0.006714  0.006228  0.096884
+beta      0.938136  0.049976  0.180614  0.006594  0.004866  0.015851
+beta_ab   0.935215  0.050933  0.184081  0.006714  0.004709  0.015741
+beta_am   0.937390  0.050197  0.182992  0.006403  0.004717  0.015901
+isotonic  0.937950  0.049850  0.190657  0.006442  0.004843  0.025093
+sigmoid   0.935914  0.057037  0.222845  0.006898  0.005599  0.017478
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = yeast
+Data shape = (1484L, 8L)
+Target shape = (1484L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Target labels = ['CYT' 'ERL' 'EXC' 'ME1' 'ME2' 'ME3' 'MIT' 'NUC' 'POX' 'VAC']
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.553372  0.346177  1.900007  0.116203  0.161850  2.065726
+beta      0.685376  0.199027  0.582453  0.005232  0.009237  0.027611
+beta_ab   0.625061  0.221958  0.634342  0.040392  0.008305  0.019418
+beta_am   0.685033  0.199473  0.591543  0.004909  0.007122  0.029856
+isotonic  0.685971  0.194358  0.589095  0.013446  0.009884  0.047213
+sigmoid   0.686049  0.191424  0.561799  0.005089  0.011305  0.029882
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = hepatitis
+Data shape = (155L, 19L)
+Target shape = (155L,)
+Target classes = [0, 1]
+Target labels = [array([u'DIE'], 
+      dtype='<U3') array([u'LIVE'], 
+      dtype='<U4')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.601274  0.356940  3.898734  0.101475  0.107974  2.154326
+beta      0.844698  0.117097  0.401195  0.053175  0.028371  0.161653
+beta_ab   0.592370  0.194221  0.567897  0.095217  0.027861  0.087136
+beta_am   0.840344  0.117037  0.388381  0.050377  0.024282  0.092069
+isotonic  0.842220  0.117854  0.517441  0.048314  0.033105  0.438127
+sigmoid   0.793707  0.137262  0.436403  0.015303  0.021703  0.098631
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = zoo
+Data shape = (101L, 16L)
+Target shape = (101L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6]
+Target labels = [array([u'amphibian'], 
+      dtype='<U9')
+ array([u'bird'], 
+      dtype='<U4') array([u'fish'], 
+      dtype='<U4')
+ array([u'insect'], 
+      dtype='<U6')
+ array([u'invertebrate'], 
+      dtype='<U12')
+ array([u'mammal'], 
+      dtype='<U6')
+ array([u'reptile'], 
+      dtype='<U7')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.982582  0.017418  0.641715  0.030244  0.030244  1.114236
+beta      0.982582  0.017618  0.133571  0.030244  0.028835  0.200039
+beta_ab   0.982582  0.017618  0.133573  0.030244  0.028835  0.200038
+beta_am   0.982582  0.017615  0.133718  0.030244  0.028841  0.200286
+isotonic  0.982582  0.017618  0.312307  0.030244  0.028836  0.629596
+sigmoid   0.982582  0.017618  0.133569  0.030244  0.028835  0.200039
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = wpbc
+Data shape = (194L, 33L)
+Target shape = (194L,)
+Target classes = [0, 1]
+Target labels = ['N' 'R']
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.670466  0.281272  1.740414  0.062101  0.057785  0.719998
+beta      0.756204  0.174718  0.533222  0.034477  0.018011  0.048243
+beta_ab   0.681963  0.203015  0.600849  0.062529  0.019541  0.070191
+beta_am   0.757798  0.174199  0.532782  0.020664  0.014041  0.043139
+isotonic  0.760833  0.178702  0.681861  0.045732  0.027150  0.505646
+sigmoid   0.762955  0.175771  0.534336  0.007095  0.011585  0.029749
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = spambase
+Data shape = (4601L, 57L)
+Target shape = (4601L,)
+Target classes = [0, 1]
+Target labels = [ 0.  1.]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.816693  0.181815  5.368952  0.012415  0.012330  0.508420
+beta      0.844511  0.110067  0.359034  0.011999  0.009410  0.024447
+beta_ab   0.816693  0.125716  0.393240  0.012415  0.006926  0.018141
+beta_am   0.835818  0.115658  0.371424  0.011604  0.007762  0.021059
+isotonic  0.888069  0.092255  0.314956  0.022124  0.014000  0.038372
+sigmoid   0.818432  0.131163  0.406853  0.012462  0.006073  0.015604
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = vehicle
+Data shape = (846L, 18L)
+Target shape = (846L,)
+Target classes = [0, 1, 2, 3]
+Target labels = [1 2 3 4]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.801894  0.142551  0.588114  0.033777  0.024473  0.191254
+beta      0.811226  0.131747  0.409774  0.027988  0.015462  0.040474
+beta_ab   0.802014  0.133981  0.415868  0.033941  0.016467  0.042720
+beta_am   0.813031  0.136383  0.445925  0.026231  0.013862  0.050992
+isotonic  0.808291  0.130966  0.414340  0.025045  0.014646  0.061620
+sigmoid   0.810160  0.136150  0.428627  0.030486  0.017478  0.044746
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = shuttle
+Data shape = (101500L, 9L)
+Target shape = (101500L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6]
+Target labels = [1 2 3 4 5 6 7]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.894606  0.098237  0.686726  0.001848  0.001447  0.024296
+beta      0.894884  0.083382  0.277164  0.001471  0.000997  0.002943
+beta_ab   0.894606  0.082907  0.277623  0.001848  0.000988  0.002993
+beta_am   0.897067  0.082693  0.286113  0.001696  0.001015  0.003283
+isotonic  0.898513  0.072094  0.218020  0.001711  0.001612  0.006100
+sigmoid   0.895162  0.090163  0.322670  0.002018  0.001182  0.003184
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = heart-statlog
+Data shape = (270L, 13L)
+Target shape = (270L,)
+Target classes = [0, 1]
+Target labels = [array([u'absent'], 
+      dtype='<U6')
+ array([u'present'], 
+      dtype='<U7')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.842222  0.131743  0.606325  0.051058  0.039831  0.227101
+beta      0.847037  0.122249  0.398125  0.047444  0.027977  0.077834
+beta_ab   0.842222  0.122168  0.396530  0.051058  0.027898  0.076537
+beta_am   0.847778  0.122226  0.396883  0.045251  0.026972  0.075523
+isotonic  0.846667  0.122147  0.518809  0.047182  0.030325  0.504489
+sigmoid   0.843704  0.123382  0.408934  0.048516  0.032003  0.083119
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = mfeat-morphological
+Data shape = (2000L, 6L)
+Target shape = (2000L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Target labels = [ 1  2  3  4  5  6  7  8  9 10]
+            mean                           std                    
+             acc     brier      loss       acc     brier      loss
+method                                                            
+None      0.9985  0.001500  0.055262  0.001956  0.001956  0.072067
+beta      0.9985  0.001500  0.012821  0.001956  0.001952  0.017316
+beta_ab   0.9985  0.001500  0.012823  0.001956  0.001952  0.017321
+beta_am   0.9985  0.001500  0.012868  0.001956  0.001953  0.017035
+isotonic  0.9985  0.001502  0.015892  0.001956  0.001949  0.039389
+sigmoid   0.9985  0.001500  0.012710  0.001956  0.001952  0.016947
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = waveform-5000
+Data shape = (5000L, 40L)
+Target shape = (5000L,)
+Target classes = [0, 1, 2]
+Target labels = [0 1 2]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.855799  0.109123  0.363811  0.011797  0.008617  0.030903
+beta      0.863719  0.093959  0.291409  0.011796  0.005832  0.016042
+beta_ab   0.855799  0.099027  0.303284  0.011797  0.006235  0.016413
+beta_am   0.863539  0.093967  0.291981  0.011043  0.005907  0.016167
+isotonic  0.862499  0.094256  0.308403  0.011157  0.005987  0.031230
+sigmoid   0.863018  0.096807  0.307522  0.011474  0.006550  0.017064
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = mushroom
+Data shape = (8124L, 22L)
+Target shape = (8124L,)
+Target classes = [0, 1]
+Target labels = ['e' 'p']
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.912728  0.076370  0.625923  0.007258  0.005680  0.089435
+beta      0.901946  0.074151  0.258969  0.007144  0.004799  0.015354
+beta_ab   0.912728  0.095563  0.316368  0.007258  0.004592  0.015841
+beta_am   0.912741  0.079665  0.309800  0.007250  0.004383  0.023420
+isotonic  0.926219  0.062989  0.226649  0.005156  0.004342  0.014246
+sigmoid   0.917504  0.069856  0.267121  0.005889  0.004800  0.016549
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = scene-classification
+Data shape = (2407L, 294L)
+Target shape = (2407L,)
+Target classes = [0, 1]
+Target labels = [ 0.  1.]
+              mean                            std                    
+               acc     brier       loss       acc     brier      loss
+method                                                               
+None      0.603267  0.393905  12.422599  0.022148  0.022073  0.748267
+beta      0.778563  0.147760   0.452064  0.000702  0.004504  0.015286
+beta_ab   0.769549  0.161425   0.482749  0.005147  0.004543  0.015062
+beta_am   0.778563  0.148383   0.453564  0.000702  0.004313  0.015300
+isotonic  0.760518  0.150637   0.460000  0.040041  0.008095  0.023824
+sigmoid   0.778563  0.152768   0.465250  0.000702  0.003822  0.013602
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = ecoli
+Data shape = (336L, 7L)
+Target shape = (336L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7]
+Target labels = [array([u'cp'], 
+      dtype='<U2') array([u'im'], 
+      dtype='<U2')
+ array([u'imL'], 
+      dtype='<U3') array([u'imS'], 
+      dtype='<U3')
+ array([u'imU'], 
+      dtype='<U3') array([u'om'], 
+      dtype='<U2')
+ array([u'omL'], 
+      dtype='<U3') array([u'pp'], 
+      dtype='<U2')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.616883  0.360998  3.676956  0.094186  0.096032  1.366535
+beta      0.951877  0.047386  0.181640  0.028661  0.018614  0.079949
+beta_ab   0.617489  0.201436  0.562782  0.094411  0.045254  0.114821
+beta_am   0.951868  0.047223  0.181360  0.028680  0.018728  0.080160
+isotonic  0.950683  0.049441  0.408303  0.030373  0.020009  0.444209
+sigmoid   0.806557  0.131976  0.392502  0.079085  0.047134  0.115927
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = page-blocks
+Data shape = (5473L, 10L)
+Target shape = (5473L,)
+Target classes = [0, 1, 2, 3, 4]
+Target labels = [ 1.  2.  3.  4.  5.]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.899619  0.092515  1.062016  0.010167  0.009501  0.149609
+beta      0.909009  0.063155  0.211630  0.010208  0.004017  0.011944
+beta_ab   0.899619  0.063657  0.211801  0.010167  0.004124  0.012155
+beta_am   0.921050  0.064473  0.227949  0.005072  0.003998  0.011564
+isotonic  0.921360  0.056579  0.189096  0.004978  0.003372  0.015845
+sigmoid   0.910727  0.072597  0.264776  0.009323  0.003950  0.011409
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = glass
+Data shape = (214L, 9L)
+Target shape = (214L,)
+Target classes = [0, 1, 2, 3, 4, 5]
+Target labels = [1 2 3 5 6 7]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.587047  0.303997  1.230963  0.057025  0.073677  0.804986
+beta      0.642083  0.205429  0.594089  0.042917  0.017590  0.055372
+beta_ab   0.586357  0.216508  0.621815  0.057429  0.015192  0.048067
+beta_am   0.647316  0.204723  0.595300  0.039614  0.014352  0.050577
+isotonic  0.637458  0.209074  0.787914  0.048738  0.021456  0.472273
+sigmoid   0.626422  0.207717  0.598287  0.045400  0.017566  0.046942
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = abalone
+Data shape = (4177L, 8L)
+Target shape = (4177L,)
+Target classes = [0, 1, 2]
+Target labels = [array([u'F'], 
+      dtype='<U1') array([u'I'], 
+      dtype='<U1')
+ array([u'M'], 
+      dtype='<U1')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.618482  0.302705  1.181367  0.014171  0.012171  0.075864
+beta      0.633211  0.216206  0.621390  0.009370  0.003187  0.007683
+beta_ab   0.613430  0.220185  0.631437  0.014150  0.002986  0.008050
+beta_am   0.633834  0.216490  0.621737  0.009476  0.003309  0.007677
+isotonic  0.633018  0.215932  0.625971  0.009927  0.003799  0.023759
+sigmoid   0.630027  0.216946  0.622931  0.013741  0.003806  0.008426
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = letter
+Data shape = (35000L, 16L)
+Target shape = (35000L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+Target labels = [ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+ 26]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.972626  0.020734  0.087858  0.001078  0.000794  0.006437
+beta      0.972006  0.020842  0.080827  0.002112  0.000802  0.003394
+beta_ab   0.972626  0.021186  0.084090  0.001078  0.000861  0.004426
+beta_am   0.970520  0.020634  0.082943  0.001881  0.000671  0.004292
+isotonic  0.972863  0.020040  0.078604  0.001195  0.000718  0.004584
+sigmoid   0.971080  0.021524  0.085832  0.001810  0.000960  0.003248
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = segment
+Data shape = (2310L, 19L)
+Target shape = (2310L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6]
+Target labels = [array([u'brickface'], 
+      dtype='<U9')
+ array([u'cement'], 
+      dtype='<U6')
+ array([u'foliage'], 
+      dtype='<U7')
+ array([u'grass'], 
+      dtype='<U5') array([u'path'], 
+      dtype='<U4')
+ array([u'sky'], 
+      dtype='<U3') array([u'window'], 
+      dtype='<U6')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.836450  0.151188  1.315657  0.015042  0.013495  0.130888
+beta      0.959957  0.030381  0.109073  0.008825  0.005526  0.021675
+beta_ab   0.836450  0.083437  0.240784  0.015042  0.005178  0.014313
+beta_am   0.960087  0.030715  0.111387  0.008780  0.005325  0.021622
+isotonic  0.963896  0.028652  0.132092  0.007567  0.005817  0.081645
+sigmoid   0.898095  0.066181  0.196827  0.015460  0.004557  0.021525
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = diabetes
+Data shape = (768L, 8L)
+Target shape = (768L,)
+Target classes = [0, 1]
+Target labels = [-1  1]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.753632  0.179697  0.628130  0.035454  0.022103  0.122066
+beta      0.747128  0.167508  0.503207  0.034347  0.013688  0.032085
+beta_ab   0.753632  0.167418  0.503412  0.035454  0.013228  0.031367
+beta_am   0.747131  0.170677  0.527564  0.029040  0.012404  0.042130
+isotonic  0.752984  0.168800  0.558785  0.034036  0.014436  0.142358
+sigmoid   0.754288  0.171156  0.517681  0.032786  0.015025  0.034420
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = iris
+Data shape = (150L, 4L)
+Target shape = (150L,)
+Target classes = [0, 1, 2]
+Target labels = [1 2 3]
+         mean                              std                            
+          acc         brier          loss  acc         brier          loss
+method                                                                    
+None      1.0  4.893963e-10  8.921097e-07  0.0  3.326799e-09  4.170641e-06
+beta      1.0  8.192595e-08  3.430659e-05  0.0  4.440685e-07  5.432484e-05
+beta_ab   1.0  1.085654e-07  3.668223e-05  0.0  6.027512e-07  6.273003e-05
+beta_am   1.0  1.925622e-07  4.427128e-05  0.0  9.829511e-07  8.378547e-05
+isotonic  1.0  4.762428e-10  7.946254e-07  0.0  3.300323e-09  4.120464e-06
+sigmoid   1.0  1.850178e-10  1.359366e-05  0.0  4.056341e-12  1.908484e-07
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = autos
+Data shape = (159L, 25L)
+Target shape = (159L,)
+Target classes = [0, 1, 2, 3, 4, 5]
+Target labels = [-2 -1  0  1  2  3]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.674834  0.254144  1.148696  0.076673  0.059740  0.414742
+beta      0.693592  0.185604  0.547017  0.056417  0.019361  0.046853
+beta_ab   0.674432  0.188336  0.553916  0.069551  0.021066  0.050642
+beta_am   0.701046  0.187496  0.552785  0.045863  0.016760  0.040212
+isotonic  0.700666  0.189297  0.581634  0.053643  0.027155  0.154520
+sigmoid   0.692537  0.191510  0.564911  0.051591  0.019768  0.046623
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = car
+Data shape = (1728L, 6L)
+Target shape = (1728L,)
+Target classes = [0, 1, 2, 3]
+Target labels = [array([u'acc'], 
+      dtype='<U3') array([u'good'], 
+      dtype='<U4')
+ array([u'unacc'], 
+      dtype='<U5')
+ array([u'vgood'], 
+      dtype='<U5')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.787448  0.134412  0.395690  0.022097  0.006442  0.014713
+beta      0.783219  0.132121  0.383024  0.022411  0.009386  0.022215
+beta_ab   0.787448  0.133937  0.389413  0.022097  0.008199  0.019214
+beta_am   0.784956  0.131982  0.382935  0.023044  0.009507  0.022490
+isotonic  0.783279  0.129893  0.381198  0.021064  0.008675  0.057774
+sigmoid   0.785826  0.134635  0.397370  0.022524  0.010927  0.026457
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = balance-scale
+Data shape = (625L, 4L)
+Target shape = (625L,)
+Target classes = [0, 1, 2]
+Target labels = [array([u'B'], 
+      dtype='<U1') array([u'L'], 
+      dtype='<U1')
+ array([u'R'], 
+      dtype='<U1')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.953616  0.076727  0.283482  0.017267  0.005495  0.012603
+beta      0.957612  0.032816  0.113610  0.020779  0.011919  0.034960
+beta_ab   0.953616  0.034019  0.118133  0.017267  0.012097  0.035804
+beta_am   0.958416  0.033163  0.115040  0.020668  0.011838  0.034809
+isotonic  0.957153  0.033771  0.181914  0.020219  0.012617  0.188519
+sigmoid   0.958570  0.032889  0.114378  0.020472  0.011969  0.035088
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = tic-tac
+Data shape = (958L, 9L)
+Target shape = (958L,)
+Target classes = [0, 1]
+Target labels = [array([u'negative'], 
+      dtype='<U8')
+ array([u'positive'], 
+      dtype='<U8')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.713349  0.201074  0.588782  0.018212  0.007048  0.016224
+beta      0.714711  0.196928  0.579832  0.027462  0.010036  0.022774
+beta_ab   0.713349  0.199825  0.586955  0.018212  0.007294  0.016733
+beta_am   0.713772  0.198851  0.583881  0.029071  0.009595  0.022317
+isotonic  0.716062  0.194920  0.591206  0.020514  0.011208  0.067210
+sigmoid   0.712416  0.198002  0.582324  0.029977  0.009937  0.022736
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = mfeat-karhunen
+Data shape = (2000L, 64L)
+Target shape = (2000L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Target labels = [ 1  2  3  4  5  6  7  8  9 10]
+             mean                           std                    
+              acc     brier      loss       acc     brier      loss
+method                                                             
+None      0.98395  0.013406  0.132663  0.006063  0.005002  0.083074
+beta      0.98395  0.012811  0.055788  0.006126  0.004226  0.018987
+beta_ab   0.98395  0.012897  0.057142  0.006063  0.004205  0.019051
+beta_am   0.98390  0.013049  0.060668  0.006085  0.003784  0.021479
+isotonic  0.98385  0.012919  0.095944  0.006313  0.004512  0.082607
+sigmoid   0.98385  0.014404  0.067844  0.006252  0.005298  0.021340
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = mfeat-zernike
+Data shape = (2000L, 47L)
+Target shape = (2000L,)
+Target classes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Target labels = [ 1  2  3  4  5  6  7  8  9 10]
+             mean                           std                    
+              acc     brier      loss       acc     brier      loss
+method                                                             
+None      0.92580  0.072385  1.269419  0.008999  0.008670  0.189555
+beta      0.96975  0.023869  0.092474  0.007990  0.005378  0.021520
+beta_ab   0.92580  0.042482  0.136350  0.008999  0.004149  0.015788
+beta_am   0.96750  0.025334  0.096699  0.008018  0.004829  0.020933
+isotonic  0.97225  0.021930  0.102790  0.007861  0.005650  0.056980
+sigmoid   0.93015  0.043756  0.139382  0.008681  0.003676  0.016596
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = credit-approval
+Data shape = (653L, 15L)
+Target shape = (653L,)
+Target classes = [0, 1]
+Target labels = [array([u'+'], 
+      dtype='<U1') array([u'-'], 
+      dtype='<U1')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.802314  0.168126  1.186306  0.036173  0.031369  0.386993
+beta      0.843962  0.117982  0.391325  0.028312  0.017406  0.048815
+beta_ab   0.802314  0.132026  0.419775  0.036173  0.017958  0.049858
+beta_am   0.830201  0.124401  0.413008  0.029714  0.017366  0.059528
+isotonic  0.843362  0.118646  0.474794  0.028220  0.019687  0.161164
+sigmoid   0.811668  0.143887  0.458789  0.031936  0.021889  0.057184
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = flare
+Data shape = (1389L, 10L)
+Target shape = (1389L,)
+Target classes = [0, 1, 2, 3, 4, 5]
+Target labels = [array([u'B'], 
+      dtype='<U1') array([u'C'], 
+      dtype='<U1')
+ array([u'D'], 
+      dtype='<U1') array([u'E'], 
+      dtype='<U1')
+ array([u'F'], 
+      dtype='<U1') array([u'H'], 
+      dtype='<U1')]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.514011  0.454100  2.010025  0.025426  0.030503  0.824023
+beta      0.822891  0.136307  0.427249  0.011332  0.008788  0.027531
+beta_ab   0.518576  0.205343  0.585347  0.027347  0.008160  0.022848
+beta_am   0.822891  0.137213  0.441713  0.011332  0.008153  0.031184
+isotonic  0.822304  0.136008  0.430701  0.010691  0.008154  0.042859
+sigmoid   0.714892  0.185861  0.548756  0.001401  0.005483  0.018422
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+Name = sonar
+Data shape = (208L, 60L)
+Target shape = (208L,)
+Target classes = [0, 1]
+Target labels = [-1  1]
+              mean                           std                    
+               acc     brier      loss       acc     brier      loss
+method                                                              
+None      0.676961  0.289087  2.503689  0.068084  0.066490  1.021136
+beta      0.704139  0.184969  0.544564  0.072952  0.031667  0.073768
+beta_ab   0.676961  0.194887  0.571364  0.068084  0.030119  0.070937
+beta_am   0.696665  0.189283  0.566505  0.078484  0.028570  0.072348
+isotonic  0.706931  0.180189  0.610087  0.071539  0.030578  0.377512
+sigmoid   0.683733  0.207399  0.602990  0.075391  0.029985  0.066520
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+[None, 'sigmoid', 'isotonic', 'beta', 'beta_am', 'beta_ab']
+-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $61.848_{5}$ & $63.321_{2}$ & $61.343_{6}$ & $\textbf{63.383}_1$ & $63.302_{3}$ & $63.003_{4}$\\
+ & (1.417) & (0.937) & (1.415) & (\textbf{0.948}) & (0.993) & (1.374)\\
+autos & $67.483_{5}$ & $69.359_{3}$ & $67.443_{6}$ & $\textbf{70.105}_1$ & $70.067_{2}$ & $69.254_{4}$\\
+ & (7.667) & (5.642) & (6.955) & (\textbf{4.586}) & (5.364) & (5.159)\\
+balance & $95.362_{5.5}$ & $95.761_{3}$ & $95.362_{5.5}$ & $95.842_{2}$ & $95.715_{4}$ & $\textbf{95.857}_1$\\
+ & (1.727) & (2.078) & (1.727) & (2.067) & (2.022) & (\textbf{2.047})\\
+car & $78.745_{1.5}$ & $78.322_{6}$ & $78.745_{1.5}$ & $78.496_{4}$ & $78.328_{5}$ & $78.583_{3}$\\
+ & (2.210) & (2.241) & (2.210) & (2.304) & (2.106) & (2.252)\\
+clevela & $83.675_{1.5}$ & $83.475_{5}$ & $83.675_{1.5}$ & $83.675_{3}$ & $82.969_{6}$ & $83.539_{4}$\\
+ & (4.589) & (4.493) & (4.589) & (4.434) & (4.506) & (4.477)\\
+credit- & $80.231_{5.5}$ & $\textbf{84.396}_1$ & $80.231_{5.5}$ & $83.020_{3}$ & $84.336_{2}$ & $81.167_{4}$\\
+ & (3.617) & (\textbf{2.831}) & (3.617) & (2.971) & (2.822) & (3.194)\\
+dermato & $98.715_{3.5}$ & $98.715_{3.5}$ & $98.715_{3.5}$ & $98.715_{3.5}$ & $98.715_{3.5}$ & $98.715_{3.5}$\\
+ & (1.312) & (1.312) & (1.312) & (1.312) & (1.312) & (1.312)\\
+diabete & $75.363_{2.5}$ & $74.713_{6}$ & $75.363_{2.5}$ & $74.713_{5}$ & $75.298_{4}$ & $\textbf{75.429}_1$\\
+ & (3.545) & (3.435) & (3.545) & (2.904) & (3.404) & (\textbf{3.279})\\
+ecoli & $61.688_{6}$ & $\textbf{95.188}_1$ & $61.749_{5}$ & $95.187_{2}$ & $95.068_{3}$ & $80.656_{4}$\\
+ & (9.419) & (\textbf{2.866}) & (9.441) & (2.868) & (3.037) & (7.908)\\
+flare & $51.401_{6}$ & $82.289_{1.5}$ & $51.858_{5}$ & $82.289_{1.5}$ & $82.230_{3}$ & $71.489_{4}$\\
+ & (2.543) & (1.133) & (2.735) & (1.133) & (1.069) & (0.140)\\
+german & $73.330_{4}$ & $72.110_{5}$ & $73.340_{3}$ & $71.060_{6}$ & $73.460_{2}$ & $\textbf{74.120}_1$\\
+ & (2.392) & (1.819) & (2.425) & (1.316) & (2.285) & (\textbf{2.163})\\
+glass & $58.705_{5}$ & $64.208_{2}$ & $58.636_{6}$ & $\textbf{64.732}_1$ & $63.746_{3}$ & $62.642_{4}$\\
+ & (5.702) & (4.292) & (5.743) & (\textbf{3.961}) & (4.874) & (4.540)\\
+heart-s & $84.222_{5.5}$ & $84.704_{2}$ & $84.222_{5.5}$ & $\textbf{84.778}_1$ & $84.667_{3}$ & $84.370_{4}$\\
+ & (5.106) & (4.744) & (5.106) & (\textbf{4.525}) & (4.718) & (4.852)\\
+hepatit & $60.127_{5}$ & $\textbf{84.470}_1$ & $59.237_{6}$ & $84.034_{3}$ & $84.222_{2}$ & $79.371_{4}$\\
+ & (10.148) & (\textbf{5.317}) & (9.522) & (5.038) & (4.831) & (1.530)\\
+horse & $47.889_{6}$ & $77.663_{3}$ & $48.189_{5}$ & $77.997_{2}$ & $\textbf{79.256}_1$ & $64.905_{4}$\\
+ & (11.582) & (4.906) & (11.767) & (4.991) & (\textbf{4.123}) & (5.869)\\
+ionosph & $88.573_{5.5}$ & $89.203_{3}$ & $88.573_{5.5}$ & $\textbf{89.687}_1$ & $89.517_{2}$ & $88.802_{4}$\\
+ & (3.409) & (3.515) & (3.409) & (\textbf{3.675}) & (3.638) & (3.278)\\
+iris & $100.000_{3.5}$ & $100.000_{3.5}$ & $100.000_{3.5}$ & $100.000_{3.5}$ & $100.000_{3.5}$ & $100.000_{3.5}$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (0.000) & (0.000)\\
+landsat & $93.521_{5.5}$ & $\textbf{93.814}_1$ & $93.521_{5.5}$ & $93.739_{3}$ & $93.795_{2}$ & $93.591_{4}$\\
+ & (0.671) & (\textbf{0.659}) & (0.671) & (0.640) & (0.644) & (0.690)\\
+letter & $97.263_{2.5}$ & $97.201_{4}$ & $97.263_{2.5}$ & $97.052_{6}$ & $\textbf{97.286}_1$ & $97.108_{5}$\\
+ & (0.108) & (0.211) & (0.108) & (0.188) & (\textbf{0.119}) & (0.181)\\
+libras- & $94.827_{5.5}$ & $\textbf{96.273}_1$ & $94.827_{5.5}$ & $96.087_{2}$ & $96.020_{3}$ & $95.180_{4}$\\
+ & (3.119) & (\textbf{2.474}) & (3.119) & (1.979) & (2.601) & (2.881)\\
+lung-ca & $98.953_{2.5}$ & $98.953_{2.5}$ & $98.953_{2.5}$ & $98.953_{2.5}$ & $97.711_{6}$ & $98.121_{5}$\\
+ & (2.116) & (2.116) & (2.116) & (2.116) & (3.657) & (3.289)\\
+mfeat-k & $98.395_{2}$ & $98.395_{2}$ & $98.395_{2}$ & $98.390_{4}$ & $98.385_{5.5}$ & $98.385_{5.5}$\\
+ & (0.606) & (0.613) & (0.606) & (0.609) & (0.631) & (0.625)\\
+mfeat-m & $99.850_{3.5}$ & $99.850_{3.5}$ & $99.850_{3.5}$ & $99.850_{3.5}$ & $99.850_{3.5}$ & $99.850_{3.5}$\\
+ & (0.196) & (0.196) & (0.196) & (0.196) & (0.196) & (0.196)\\
+mfeat-z & $92.580_{5.5}$ & $96.975_{2}$ & $92.580_{5.5}$ & $96.750_{3}$ & $\textbf{97.225}_1$ & $93.015_{4}$\\
+ & (0.900) & (0.799) & (0.900) & (0.802) & (\textbf{0.786}) & (0.868)\\
+mushroo & $91.273_{4.5}$ & $90.195_{6}$ & $91.273_{4.5}$ & $91.274_{3}$ & $\textbf{92.622}_1$ & $91.750_{2}$\\
+ & (0.726) & (0.714) & (0.726) & (0.725) & (\textbf{0.516}) & (0.589)\\
+optdigi & $54.772_{6}$ & $89.822_{2.5}$ & $88.496_{5}$ & $89.822_{2.5}$ & $89.822_{2.5}$ & $89.822_{2.5}$\\
+ & (2.364) & (0.021) & (0.382) & (0.021) & (0.021) & (0.021)\\
+page-bl & $89.962_{5.5}$ & $90.901_{4}$ & $89.962_{5.5}$ & $92.105_{2}$ & $\textbf{92.136}_1$ & $91.073_{3}$\\
+ & (1.017) & (1.021) & (1.017) & (0.507) & (\textbf{0.498}) & (0.932)\\
+pendigi & $97.231_{1.5}$ & $97.187_{5}$ & $97.231_{1.5}$ & $97.168_{6}$ & $97.216_{4}$ & $97.229_{3}$\\
+ & (0.230) & (0.249) & (0.230) & (0.280) & (0.247) & (0.246)\\
+scene-c & $60.327_{6}$ & $77.856_{2}$ & $76.955_{4}$ & $77.856_{2}$ & $76.052_{5}$ & $77.856_{2}$\\
+ & (2.215) & (0.070) & (0.515) & (0.070) & (4.004) & (0.070)\\
+segment & $83.645_{5.5}$ & $95.996_{3}$ & $83.645_{5.5}$ & $96.009_{2}$ & $\textbf{96.390}_1$ & $89.810_{4}$\\
+ & (1.504) & (0.882) & (1.504) & (0.878) & (\textbf{0.757}) & (1.546)\\
+shuttle & $89.461_{5.5}$ & $89.488_{4}$ & $89.461_{5.5}$ & $89.707_{2}$ & $\textbf{89.851}_1$ & $89.516_{3}$\\
+ & (0.185) & (0.147) & (0.185) & (0.170) & (\textbf{0.171}) & (0.202)\\
+sonar & $67.696_{5.5}$ & $70.414_{2}$ & $67.696_{5.5}$ & $69.667_{3}$ & $\textbf{70.693}_1$ & $68.373_{4}$\\
+ & (6.808) & (7.295) & (6.808) & (7.848) & (\textbf{7.154}) & (7.539)\\
+spambas & $81.669_{5.5}$ & $84.451_{2}$ & $81.669_{5.5}$ & $83.582_{3}$ & $\textbf{88.807}_1$ & $81.843_{4}$\\
+ & (1.242) & (1.200) & (1.242) & (1.160) & (\textbf{2.212}) & (1.246)\\
+tic-tac & $71.335_{4.5}$ & $71.471_{2}$ & $71.335_{4.5}$ & $71.377_{3}$ & $\textbf{71.606}_1$ & $71.242_{6}$\\
+ & (1.821) & (2.746) & (1.821) & (2.907) & (\textbf{2.051}) & (2.998)\\
+vehicle & $80.189_{6}$ & $81.123_{2}$ & $80.201_{5}$ & $\textbf{81.303}_1$ & $80.829_{4}$ & $81.016_{3}$\\
+ & (3.378) & (2.799) & (3.394) & (\textbf{2.623}) & (2.504) & (3.049)\\
+vowel & $94.980_{5.5}$ & $95.323_{2}$ & $94.980_{5.5}$ & $95.313_{3}$ & $\textbf{95.404}_1$ & $95.303_{4}$\\
+ & (1.292) & (1.387) & (1.292) & (1.407) & (\textbf{1.304}) & (1.400)\\
+wavefor & $85.580_{5.5}$ & $\textbf{86.372}_1$ & $85.580_{5.5}$ & $86.354_{2}$ & $86.250_{4}$ & $86.302_{3}$\\
+ & (1.180) & (\textbf{1.180}) & (1.180) & (1.104) & (1.116) & (1.147)\\
+wdbc & $93.269_{3.5}$ & $93.180_{5}$ & $93.269_{3.5}$ & $\textbf{93.480}_1$ & $93.109_{6}$ & $93.286_{2}$\\
+ & (2.200) & (1.991) & (2.200) & (\textbf{2.062}) & (2.076) & (2.195)\\
+wpbc & $67.047_{6}$ & $75.620_{4}$ & $68.196_{5}$ & $75.780_{3}$ & $76.083_{2}$ & $\textbf{76.296}_1$\\
+ & (6.210) & (3.448) & (6.253) & (2.066) & (4.573) & (\textbf{0.710})\\
+yeast & $55.337_{6}$ & $68.538_{3}$ & $62.506_{5}$ & $68.503_{4}$ & $68.597_{2}$ & $\textbf{68.605}_1$\\
+ & (11.620) & (0.523) & (4.039) & (0.491) & (1.345) & (\textbf{0.509})\\
+zoo & $98.258_{3.5}$ & $98.258_{3.5}$ & $98.258_{3.5}$ & $98.258_{3.5}$ & $98.258_{3.5}$ & $98.258_{3.5}$\\
+ & (3.024) & (3.024) & (3.024) & (3.024) & (3.024) & (3.024)\\
+\midrule
+rank & 4.62 & 2.94 & 4.48 & 2.77 & 2.80 & 3.39\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=48.089300080450478, pvalue=3.4059145626583909e-09)
+-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $1.181_{6}$ & $\textbf{0.621}_1$ & $0.631_{5}$ & $0.622_{2}$ & $0.626_{4}$ & $0.623_{3}$\\
+ & (0.076) & (\textbf{0.008}) & (0.008) & (0.008) & (0.024) & (0.008)\\
+autos & $1.149_{6}$ & $\textbf{0.547}_1$ & $0.554_{3}$ & $0.553_{2}$ & $0.582_{5}$ & $0.565_{4}$\\
+ & (0.415) & (\textbf{0.047}) & (0.051) & (0.040) & (0.155) & (0.047)\\
+balance & $0.283_{6}$ & $\textbf{0.114}_1$ & $0.118_{4}$ & $0.115_{3}$ & $0.182_{5}$ & $0.114_{2}$\\
+ & (0.013) & (\textbf{0.035}) & (0.036) & (0.035) & (0.189) & (0.035)\\
+car & $0.396_{5}$ & $0.383_{3}$ & $0.389_{4}$ & $0.383_{2}$ & $\textbf{0.381}_1$ & $0.397_{6}$\\
+ & (0.015) & (0.022) & (0.019) & (0.022) & (\textbf{0.058}) & (0.026)\\
+clevela & $0.677_{6}$ & $0.414_{3}$ & $\textbf{0.412}_1$ & $0.414_{2}$ & $0.583_{5}$ & $0.425_{4}$\\
+ & (0.240) & (0.071) & (\textbf{0.070}) & (0.070) & (0.375) & (0.076)\\
+credit- & $1.186_{6}$ & $\textbf{0.391}_1$ & $0.420_{3}$ & $0.413_{2}$ & $0.475_{5}$ & $0.459_{4}$\\
+ & (0.387) & (\textbf{0.049}) & (0.050) & (0.060) & (0.161) & (0.057)\\
+dermato & $0.464_{6}$ & $0.076_{3}$ & $0.075_{2}$ & $\textbf{0.073}_1$ & $0.112_{5}$ & $0.078_{4}$\\
+ & (0.476) & (0.064) & (0.063) & (\textbf{0.059}) & (0.151) & (0.066)\\
+diabete & $0.628_{6}$ & $\textbf{0.503}_1$ & $0.503_{2}$ & $0.528_{4}$ & $0.559_{5}$ & $0.518_{3}$\\
+ & (0.122) & (\textbf{0.032}) & (0.031) & (0.042) & (0.142) & (0.034)\\
+ecoli & $3.677_{6}$ & $0.182_{2}$ & $0.563_{5}$ & $\textbf{0.181}_1$ & $0.408_{4}$ & $0.393_{3}$\\
+ & (1.367) & (0.080) & (0.115) & (\textbf{0.080}) & (0.444) & (0.116)\\
+flare & $2.010_{6}$ & $\textbf{0.427}_1$ & $0.585_{5}$ & $0.442_{3}$ & $0.431_{2}$ & $0.549_{4}$\\
+ & (0.824) & (\textbf{0.028}) & (0.023) & (0.031) & (0.043) & (0.018)\\
+german & $0.907_{6}$ & $0.541_{3}$ & $0.568_{5}$ & $0.564_{4}$ & $0.536_{2}$ & $\textbf{0.523}_1$\\
+ & (0.239) & (0.026) & (0.049) & (0.025) & (0.044) & (\textbf{0.026})\\
+glass & $1.231_{6}$ & $\textbf{0.594}_1$ & $0.622_{4}$ & $0.595_{2}$ & $0.788_{5}$ & $0.598_{3}$\\
+ & (0.805) & (\textbf{0.055}) & (0.048) & (0.051) & (0.472) & (0.047)\\
+heart-s & $0.606_{6}$ & $0.398_{3}$ & $\textbf{0.397}_1$ & $0.397_{2}$ & $0.519_{5}$ & $0.409_{4}$\\
+ & (0.227) & (0.078) & (\textbf{0.077}) & (0.076) & (0.504) & (0.083)\\
+hepatit & $3.899_{6}$ & $0.401_{2}$ & $0.568_{5}$ & $\textbf{0.388}_1$ & $0.517_{4}$ & $0.436_{3}$\\
+ & (2.154) & (0.162) & (0.087) & (\textbf{0.092}) & (0.438) & (0.099)\\
+horse & $5.096_{6}$ & $\textbf{0.514}_1$ & $0.682_{4}$ & $0.543_{2}$ & $0.713_{5}$ & $0.631_{3}$\\
+ & (2.454) & (\textbf{0.054}) & (0.058) & (0.053) & (0.409) & (0.048)\\
+ionosph & $1.166_{6}$ & $0.294_{2}$ & $0.295_{3}$ & $\textbf{0.293}_1$ & $0.387_{5}$ & $0.325_{4}$\\
+ & (0.406) & (0.061) & (0.059) & (\textbf{0.059}) & (0.363) & (0.070)\\
+iris & $0.000_{2}$ & $0.000_{4}$ & $0.000_{5}$ & $0.000_{6}$ & $\textbf{0.000}_1$ & $0.000_{3}$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (\textbf{0.000}) & (0.000)\\
+landsat & $0.650_{6}$ & $\textbf{0.181}_1$ & $0.184_{3}$ & $0.183_{2}$ & $0.191_{4}$ & $0.223_{5}$\\
+ & (0.097) & (\textbf{0.016}) & (0.016) & (0.016) & (0.025) & (0.017)\\
+letter & $0.088_{6}$ & $0.081_{2}$ & $0.084_{4}$ & $0.083_{3}$ & $\textbf{0.079}_1$ & $0.086_{5}$\\
+ & (0.006) & (0.003) & (0.004) & (0.004) & (\textbf{0.005}) & (0.003)\\
+libras- & $0.542_{6}$ & $\textbf{0.130}_1$ & $0.158_{4}$ & $0.138_{2}$ & $0.234_{5}$ & $0.139_{3}$\\
+ & (0.514) & (\textbf{0.073}) & (0.073) & (0.065) & (0.331) & (0.061)\\
+lung-ca & $0.385_{6}$ & $0.100_{2}$ & $0.102_{3}$ & $\textbf{0.090}_1$ & $0.114_{5}$ & $0.110_{4}$\\
+ & (0.777) & (0.061) & (0.061) & (\textbf{0.060}) & (0.065) & (0.063)\\
+mfeat-k & $0.133_{6}$ & $\textbf{0.056}_1$ & $0.057_{2}$ & $0.061_{3}$ & $0.096_{5}$ & $0.068_{4}$\\
+ & (0.083) & (\textbf{0.019}) & (0.019) & (0.021) & (0.083) & (0.021)\\
+mfeat-m & $0.055_{6}$ & $0.013_{2}$ & $0.013_{3}$ & $0.013_{4}$ & $0.016_{5}$ & $\textbf{0.013}_1$\\
+ & (0.072) & (0.017) & (0.017) & (0.017) & (0.039) & (\textbf{0.017})\\
+mfeat-z & $1.269_{6}$ & $\textbf{0.092}_1$ & $0.136_{4}$ & $0.097_{2}$ & $0.103_{3}$ & $0.139_{5}$\\
+ & (0.190) & (\textbf{0.022}) & (0.016) & (0.021) & (0.057) & (0.017)\\
+mushroo & $0.626_{6}$ & $0.259_{2}$ & $0.316_{5}$ & $0.310_{4}$ & $\textbf{0.227}_1$ & $0.267_{3}$\\
+ & (0.089) & (0.015) & (0.016) & (0.023) & (\textbf{0.014}) & (0.017)\\
+optdigi & $13.906_{6}$ & $0.246_{2}$ & $0.322_{5}$ & $0.251_{3}$ & $\textbf{0.243}_1$ & $0.272_{4}$\\
+ & (0.924) & (0.010) & (0.006) & (0.010) & (\textbf{0.013}) & (0.006)\\
+page-bl & $1.062_{6}$ & $0.212_{2}$ & $0.212_{3}$ & $0.228_{4}$ & $\textbf{0.189}_1$ & $0.265_{5}$\\
+ & (0.150) & (0.012) & (0.012) & (0.012) & (\textbf{0.016}) & (0.011)\\
+pendigi & $0.335_{6}$ & $\textbf{0.076}_1$ & $0.077_{3}$ & $0.077_{2}$ & $0.079_{4}$ & $0.086_{5}$\\
+ & (0.037) & (\textbf{0.006}) & (0.006) & (0.006) & (0.013) & (0.006)\\
+scene-c & $12.423_{6}$ & $\textbf{0.452}_1$ & $0.483_{5}$ & $0.454_{2}$ & $0.460_{3}$ & $0.465_{4}$\\
+ & (0.748) & (\textbf{0.015}) & (0.015) & (0.015) & (0.024) & (0.014)\\
+segment & $1.316_{6}$ & $\textbf{0.109}_1$ & $0.241_{5}$ & $0.111_{2}$ & $0.132_{3}$ & $0.197_{4}$\\
+ & (0.131) & (\textbf{0.022}) & (0.014) & (0.022) & (0.082) & (0.022)\\
+shuttle & $0.687_{6}$ & $0.277_{2}$ & $0.278_{3}$ & $0.286_{4}$ & $\textbf{0.218}_1$ & $0.323_{5}$\\
+ & (0.024) & (0.003) & (0.003) & (0.003) & (\textbf{0.006}) & (0.003)\\
+sonar & $2.504_{6}$ & $\textbf{0.545}_1$ & $0.571_{3}$ & $0.567_{2}$ & $0.610_{5}$ & $0.603_{4}$\\
+ & (1.021) & (\textbf{0.074}) & (0.071) & (0.072) & (0.378) & (0.067)\\
+spambas & $5.369_{6}$ & $0.359_{2}$ & $0.393_{4}$ & $0.371_{3}$ & $\textbf{0.315}_1$ & $0.407_{5}$\\
+ & (0.508) & (0.024) & (0.018) & (0.021) & (\textbf{0.038}) & (0.016)\\
+tic-tac & $0.589_{5}$ & $\textbf{0.580}_1$ & $0.587_{4}$ & $0.584_{3}$ & $0.591_{6}$ & $0.582_{2}$\\
+ & (0.016) & (\textbf{0.023}) & (0.017) & (0.022) & (0.067) & (0.023)\\
+vehicle & $0.588_{6}$ & $\textbf{0.410}_1$ & $0.416_{3}$ & $0.446_{5}$ & $0.414_{2}$ & $0.429_{4}$\\
+ & (0.191) & (\textbf{0.040}) & (0.043) & (0.051) & (0.062) & (0.045)\\
+vowel & $0.113_{3}$ & $0.112_{2}$ & $0.114_{4}$ & $\textbf{0.112}_1$ & $0.166_{6}$ & $0.128_{5}$\\
+ & (0.024) & (0.023) & (0.023) & (\textbf{0.022}) & (0.145) & (0.030)\\
+wavefor & $0.364_{6}$ & $\textbf{0.291}_1$ & $0.303_{3}$ & $0.292_{2}$ & $0.308_{5}$ & $0.308_{4}$\\
+ & (0.031) & (\textbf{0.016}) & (0.016) & (0.016) & (0.031) & (0.017)\\
+wdbc & $0.636_{6}$ & $0.150_{3}$ & $0.149_{2}$ & $\textbf{0.147}_1$ & $0.220_{4}$ & $0.235_{5}$\\
+ & (0.292) & (0.041) & (0.041) & (\textbf{0.040}) & (0.174) & (0.055)\\
+wpbc & $1.740_{6}$ & $0.533_{2}$ & $0.601_{4}$ & $\textbf{0.533}_1$ & $0.682_{5}$ & $0.534_{3}$\\
+ & (0.720) & (0.048) & (0.070) & (\textbf{0.043}) & (0.506) & (0.030)\\
+yeast & $1.900_{6}$ & $0.582_{2}$ & $0.634_{5}$ & $0.592_{4}$ & $0.589_{3}$ & $\textbf{0.562}_1$\\
+ & (2.066) & (0.028) & (0.019) & (0.030) & (0.047) & (\textbf{0.030})\\
+zoo & $0.642_{6}$ & $0.134_{2}$ & $0.134_{3}$ & $0.134_{4}$ & $0.312_{5}$ & $\textbf{0.134}_1$\\
+ & (1.114) & (0.200) & (0.200) & (0.200) & (0.630) & (\textbf{0.200})\\
+\midrule
+rank & 5.78 & 1.73 & 3.61 & 2.54 & 3.71 & 3.63\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=109.27874564459933, pvalue=5.8198437705564291e-22)
+-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $0.303_{6}$ & $0.216_{2}$ & $0.220_{5}$ & $0.216_{3}$ & $\textbf{0.216}_1$ & $0.217_{4}$\\
+ & (0.012) & (0.003) & (0.003) & (0.003) & (\textbf{0.004}) & (0.004)\\
+autos & $0.254_{6}$ & $\textbf{0.186}_1$ & $0.188_{3}$ & $0.187_{2}$ & $0.189_{4}$ & $0.192_{5}$\\
+ & (0.060) & (\textbf{0.019}) & (0.021) & (0.017) & (0.027) & (0.020)\\
+balance & $0.077_{6}$ & $\textbf{0.033}_1$ & $0.034_{5}$ & $0.033_{3}$ & $0.034_{4}$ & $0.033_{2}$\\
+ & (0.005) & (\textbf{0.012}) & (0.012) & (0.012) & (0.013) & (0.012)\\
+car & $0.134_{5}$ & $0.132_{3}$ & $0.134_{4}$ & $0.132_{2}$ & $\textbf{0.130}_1$ & $0.135_{6}$\\
+ & (0.006) & (0.009) & (0.008) & (0.010) & (\textbf{0.009}) & (0.011)\\
+clevela & $0.140_{6}$ & $0.129_{3}$ & $\textbf{0.128}_1$ & $0.128_{2}$ & $0.130_{5}$ & $0.130_{4}$\\
+ & (0.038) & (0.027) & (\textbf{0.027}) & (0.026) & (0.028) & (0.030)\\
+credit- & $0.168_{6}$ & $\textbf{0.118}_1$ & $0.132_{4}$ & $0.124_{3}$ & $0.119_{2}$ & $0.144_{5}$\\
+ & (0.031) & (\textbf{0.017}) & (0.018) & (0.017) & (0.020) & (0.022)\\
+dermato & $0.013_{6}$ & $0.013_{2}$ & $0.013_{3}$ & $\textbf{0.013}_1$ & $0.013_{4}$ & $0.013_{5}$\\
+ & (0.013) & (0.013) & (0.013) & (\textbf{0.013}) & (0.013) & (0.013)\\
+diabete & $0.180_{6}$ & $0.168_{2}$ & $\textbf{0.167}_1$ & $0.171_{4}$ & $0.169_{3}$ & $0.171_{5}$\\
+ & (0.022) & (0.014) & (\textbf{0.013}) & (0.012) & (0.014) & (0.015)\\
+ecoli & $0.361_{6}$ & $0.047_{2}$ & $0.201_{5}$ & $\textbf{0.047}_1$ & $0.049_{3}$ & $0.132_{4}$\\
+ & (0.096) & (0.019) & (0.045) & (\textbf{0.019}) & (0.020) & (0.047)\\
+flare & $0.454_{6}$ & $0.136_{2}$ & $0.205_{5}$ & $0.137_{3}$ & $\textbf{0.136}_1$ & $0.186_{4}$\\
+ & (0.031) & (0.009) & (0.008) & (0.008) & (\textbf{0.008}) & (0.005)\\
+german & $0.195_{6}$ & $0.179_{3}$ & $0.185_{4}$ & $0.187_{5}$ & $0.176_{2}$ & $\textbf{0.174}_1$\\
+ & (0.019) & (0.007) & (0.011) & (0.007) & (0.011) & (\textbf{0.010})\\
+glass & $0.304_{6}$ & $0.205_{2}$ & $0.217_{5}$ & $\textbf{0.205}_1$ & $0.209_{4}$ & $0.208_{3}$\\
+ & (0.074) & (0.018) & (0.015) & (\textbf{0.014}) & (0.021) & (0.018)\\
+heart-s & $0.132_{6}$ & $0.122_{4}$ & $0.122_{2}$ & $0.122_{3}$ & $\textbf{0.122}_1$ & $0.123_{5}$\\
+ & (0.040) & (0.028) & (0.028) & (0.027) & (\textbf{0.030}) & (0.032)\\
+hepatit & $0.357_{6}$ & $0.117_{2}$ & $0.194_{5}$ & $\textbf{0.117}_1$ & $0.118_{3}$ & $0.137_{4}$\\
+ & (0.108) & (0.028) & (0.028) & (\textbf{0.024}) & (0.033) & (0.022)\\
+horse & $0.493_{6}$ & $0.166_{2}$ & $0.244_{5}$ & $0.172_{3}$ & $\textbf{0.164}_1$ & $0.220_{4}$\\
+ & (0.119) & (0.021) & (0.026) & (0.017) & (\textbf{0.022}) & (0.021)\\
+ionosph & $0.104_{6}$ & $0.088_{3}$ & $0.089_{4}$ & $0.088_{2}$ & $\textbf{0.086}_1$ & $0.092_{5}$\\
+ & (0.031) & (0.021) & (0.021) & (0.021) & (\textbf{0.022}) & (0.025)\\
+iris & $0.000_{3}$ & $0.000_{4}$ & $0.000_{5}$ & $0.000_{6}$ & $0.000_{2}$ & $\textbf{0.000}_1$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (0.000) & (\textbf{0.000})\\
+landsat & $0.060_{6}$ & $0.050_{2}$ & $0.051_{4}$ & $0.050_{3}$ & $\textbf{0.050}_1$ & $0.057_{5}$\\
+ & (0.006) & (0.005) & (0.005) & (0.005) & (\textbf{0.005}) & (0.006)\\
+letter & $0.021_{3}$ & $0.021_{4}$ & $0.021_{5}$ & $0.021_{2}$ & $\textbf{0.020}_1$ & $0.022_{6}$\\
+ & (0.001) & (0.001) & (0.001) & (0.001) & (\textbf{0.001}) & (0.001)\\
+libras- & $0.047_{6}$ & $\textbf{0.030}_1$ & $0.039_{5}$ & $0.032_{3}$ & $0.031_{2}$ & $0.035_{4}$\\
+ & (0.028) & (\textbf{0.017}) & (0.018) & (0.014) & (0.017) & (0.017)\\
+lung-ca & $\textbf{0.010}_1$ & $0.015_{3}$ & $0.016_{4}$ & $0.013_{2}$ & $0.021_{6}$ & $0.019_{5}$\\
+ & (\textbf{0.021}) & (0.018) & (0.019) & (0.019) & (0.020) & (0.019)\\
+mfeat-k & $0.013_{5}$ & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{4}$ & $0.013_{3}$ & $0.014_{6}$\\
+ & (0.005) & (\textbf{0.004}) & (0.004) & (0.004) & (0.005) & (0.005)\\
+mfeat-m & $0.002_{4}$ & $0.001_{2}$ & $0.001_{3}$ & $0.002_{5}$ & $0.002_{6}$ & $\textbf{0.001}_1$\\
+ & (0.002) & (0.002) & (0.002) & (0.002) & (0.002) & (\textbf{0.002})\\
+mfeat-z & $0.072_{6}$ & $0.024_{2}$ & $0.042_{4}$ & $0.025_{3}$ & $\textbf{0.022}_1$ & $0.044_{5}$\\
+ & (0.009) & (0.005) & (0.004) & (0.005) & (\textbf{0.006}) & (0.004)\\
+mushroo & $0.076_{4}$ & $0.074_{3}$ & $0.096_{6}$ & $0.080_{5}$ & $\textbf{0.063}_1$ & $0.070_{2}$\\
+ & (0.006) & (0.005) & (0.005) & (0.004) & (\textbf{0.004}) & (0.005)\\
+optdigi & $0.449_{6}$ & $0.078_{2}$ & $0.102_{5}$ & $0.078_{3}$ & $\textbf{0.077}_1$ & $0.083_{4}$\\
+ & (0.023) & (0.002) & (0.002) & (0.002) & (\textbf{0.002}) & (0.001)\\
+page-bl & $0.093_{6}$ & $0.063_{2}$ & $0.064_{3}$ & $0.064_{4}$ & $\textbf{0.057}_1$ & $0.073_{5}$\\
+ & (0.010) & (0.004) & (0.004) & (0.004) & (\textbf{0.003}) & (0.004)\\
+pendigi & $0.027_{6}$ & $0.022_{2}$ & $0.022_{3}$ & $0.023_{4}$ & $\textbf{0.022}_1$ & $0.023_{5}$\\
+ & (0.002) & (0.002) & (0.002) & (0.002) & (\textbf{0.002}) & (0.002)\\
+scene-c & $0.394_{6}$ & $\textbf{0.148}_1$ & $0.161_{5}$ & $0.148_{2}$ & $0.151_{3}$ & $0.153_{4}$\\
+ & (0.022) & (\textbf{0.005}) & (0.005) & (0.004) & (0.008) & (0.004)\\
+segment & $0.151_{6}$ & $0.030_{2}$ & $0.083_{5}$ & $0.031_{3}$ & $\textbf{0.029}_1$ & $0.066_{4}$\\
+ & (0.013) & (0.006) & (0.005) & (0.005) & (\textbf{0.006}) & (0.005)\\
+shuttle & $0.098_{6}$ & $0.083_{4}$ & $0.083_{3}$ & $0.083_{2}$ & $\textbf{0.072}_1$ & $0.090_{5}$\\
+ & (0.001) & (0.001) & (0.001) & (0.001) & (\textbf{0.002}) & (0.001)\\
+sonar & $0.289_{6}$ & $0.185_{2}$ & $0.195_{4}$ & $0.189_{3}$ & $\textbf{0.180}_1$ & $0.207_{5}$\\
+ & (0.066) & (0.032) & (0.030) & (0.029) & (\textbf{0.031}) & (0.030)\\
+spambas & $0.182_{6}$ & $0.110_{2}$ & $0.126_{4}$ & $0.116_{3}$ & $\textbf{0.092}_1$ & $0.131_{5}$\\
+ & (0.012) & (0.009) & (0.007) & (0.008) & (\textbf{0.014}) & (0.006)\\
+tic-tac & $0.201_{6}$ & $0.197_{2}$ & $0.200_{5}$ & $0.199_{4}$ & $\textbf{0.195}_1$ & $0.198_{3}$\\
+ & (0.007) & (0.010) & (0.007) & (0.010) & (\textbf{0.011}) & (0.010)\\
+vehicle & $0.143_{6}$ & $0.132_{2}$ & $0.134_{3}$ & $0.136_{5}$ & $\textbf{0.131}_1$ & $0.136_{4}$\\
+ & (0.024) & (0.015) & (0.016) & (0.014) & (\textbf{0.015}) & (0.017)\\
+vowel & $0.035_{4}$ & $0.034_{2}$ & $0.035_{5}$ & $\textbf{0.034}_1$ & $0.035_{3}$ & $0.035_{6}$\\
+ & (0.008) & (0.008) & (0.008) & (\textbf{0.007}) & (0.008) & (0.009)\\
+wavefor & $0.109_{6}$ & $\textbf{0.094}_1$ & $0.099_{5}$ & $0.094_{2}$ & $0.094_{3}$ & $0.097_{4}$\\
+ & (0.009) & (\textbf{0.006}) & (0.006) & (0.006) & (0.006) & (0.007)\\
+wdbc & $0.063_{6}$ & $0.045_{4}$ & $0.045_{3}$ & $\textbf{0.044}_1$ & $0.045_{2}$ & $0.060_{5}$\\
+ & (0.020) & (0.013) & (0.013) & (\textbf{0.013}) & (0.013) & (0.018)\\
+wpbc & $0.281_{6}$ & $0.175_{2}$ & $0.203_{5}$ & $\textbf{0.174}_1$ & $0.179_{4}$ & $0.176_{3}$\\
+ & (0.058) & (0.018) & (0.020) & (\textbf{0.014}) & (0.027) & (0.012)\\
+yeast & $0.346_{6}$ & $0.199_{3}$ & $0.222_{5}$ & $0.199_{4}$ & $0.194_{2}$ & $\textbf{0.191}_1$\\
+ & (0.162) & (0.009) & (0.008) & (0.007) & (0.010) & (\textbf{0.011})\\
+zoo & $\textbf{0.017}_1$ & $0.018_{4}$ & $0.018_{5}$ & $0.018_{2}$ & $0.018_{6}$ & $0.018_{3}$\\
+ & (\textbf{0.030}) & (0.029) & (0.029) & (0.029) & (0.029) & (0.029)\\
+\midrule
+rank & 5.41 & 2.29 & 4.07 & 2.83 & 2.32 & 4.07\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=89.376306620209107, pvalue=9.0850700908834033e-18)
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+[None, 'sigmoid', 'beta', 'beta_am', 'beta_ab']
+-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & beta_am & sigmoid\\
+\midrule
+abalone & $61.848_{4}$ & $63.321_{2}$ & $61.343_{5}$ & $\textbf{63.383}_1$ & $63.003_{3}$\\
+ & (1.417) & (0.937) & (1.415) & (\textbf{0.948}) & (1.374)\\
+autos & $67.483_{4}$ & $69.359_{2}$ & $67.443_{5}$ & $\textbf{70.105}_1$ & $69.254_{3}$\\
+ & (7.667) & (5.642) & (6.955) & (\textbf{4.586}) & (5.159)\\
+balance & $95.362_{4.5}$ & $95.761_{3}$ & $95.362_{4.5}$ & $95.842_{2}$ & $\textbf{95.857}_1$\\
+ & (1.727) & (2.078) & (1.727) & (2.067) & (\textbf{2.047})\\
+car & $78.745_{1.5}$ & $78.322_{5}$ & $78.745_{1.5}$ & $78.496_{4}$ & $78.583_{3}$\\
+ & (2.210) & (2.241) & (2.210) & (2.304) & (2.252)\\
+clevela & $83.675_{1.5}$ & $83.475_{5}$ & $83.675_{1.5}$ & $83.675_{3}$ & $83.539_{4}$\\
+ & (4.589) & (4.493) & (4.589) & (4.434) & (4.477)\\
+credit- & $80.231_{4.5}$ & $\textbf{84.396}_1$ & $80.231_{4.5}$ & $83.020_{2}$ & $81.167_{3}$\\
+ & (3.617) & (\textbf{2.831}) & (3.617) & (2.971) & (3.194)\\
+dermato & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$\\
+ & (1.312) & (1.312) & (1.312) & (1.312) & (1.312)\\
+diabete & $75.363_{2.5}$ & $74.713_{5}$ & $75.363_{2.5}$ & $74.713_{4}$ & $\textbf{75.429}_1$\\
+ & (3.545) & (3.435) & (3.545) & (2.904) & (\textbf{3.279})\\
+ecoli & $61.688_{5}$ & $\textbf{95.188}_1$ & $61.749_{4}$ & $95.187_{2}$ & $80.656_{3}$\\
+ & (9.419) & (\textbf{2.866}) & (9.441) & (2.868) & (7.908)\\
+flare & $51.401_{5}$ & $82.289_{1.5}$ & $51.858_{4}$ & $82.289_{1.5}$ & $71.489_{3}$\\
+ & (2.543) & (1.133) & (2.735) & (1.133) & (0.140)\\
+german & $73.330_{3}$ & $72.110_{4}$ & $73.340_{2}$ & $71.060_{5}$ & $\textbf{74.120}_1$\\
+ & (2.392) & (1.819) & (2.425) & (1.316) & (\textbf{2.163})\\
+glass & $58.705_{4}$ & $64.208_{2}$ & $58.636_{5}$ & $\textbf{64.732}_1$ & $62.642_{3}$\\
+ & (5.702) & (4.292) & (5.743) & (\textbf{3.961}) & (4.540)\\
+heart-s & $84.222_{4.5}$ & $84.704_{2}$ & $84.222_{4.5}$ & $\textbf{84.778}_1$ & $84.370_{3}$\\
+ & (5.106) & (4.744) & (5.106) & (\textbf{4.525}) & (4.852)\\
+hepatit & $60.127_{4}$ & $\textbf{84.470}_1$ & $59.237_{5}$ & $84.034_{2}$ & $79.371_{3}$\\
+ & (10.148) & (\textbf{5.317}) & (9.522) & (5.038) & (1.530)\\
+horse & $47.889_{5}$ & $77.663_{2}$ & $48.189_{4}$ & $\textbf{77.997}_1$ & $64.905_{3}$\\
+ & (11.582) & (4.906) & (11.767) & (\textbf{4.991}) & (5.869)\\
+ionosph & $88.573_{4.5}$ & $89.203_{2}$ & $88.573_{4.5}$ & $\textbf{89.687}_1$ & $88.802_{3}$\\
+ & (3.409) & (3.515) & (3.409) & (\textbf{3.675}) & (3.278)\\
+iris & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (0.000)\\
+landsat & $93.521_{4.5}$ & $\textbf{93.814}_1$ & $93.521_{4.5}$ & $93.739_{2}$ & $93.591_{3}$\\
+ & (0.671) & (\textbf{0.659}) & (0.671) & (0.640) & (0.690)\\
+letter & $97.263_{1.5}$ & $97.201_{3}$ & $97.263_{1.5}$ & $97.052_{5}$ & $97.108_{4}$\\
+ & (0.108) & (0.211) & (0.108) & (0.188) & (0.181)\\
+libras- & $94.827_{4.5}$ & $\textbf{96.273}_1$ & $94.827_{4.5}$ & $96.087_{2}$ & $95.180_{3}$\\
+ & (3.119) & (\textbf{2.474}) & (3.119) & (1.979) & (2.881)\\
+lung-ca & $98.953_{2.5}$ & $98.953_{2.5}$ & $98.953_{2.5}$ & $98.953_{2.5}$ & $98.121_{5}$\\
+ & (2.116) & (2.116) & (2.116) & (2.116) & (3.289)\\
+mfeat-k & $98.395_{2}$ & $98.395_{2}$ & $98.395_{2}$ & $98.390_{4}$ & $98.385_{5}$\\
+ & (0.606) & (0.613) & (0.606) & (0.609) & (0.625)\\
+mfeat-m & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$\\
+ & (0.196) & (0.196) & (0.196) & (0.196) & (0.196)\\
+mfeat-z & $92.580_{4.5}$ & $\textbf{96.975}_1$ & $92.580_{4.5}$ & $96.750_{2}$ & $93.015_{3}$\\
+ & (0.900) & (\textbf{0.799}) & (0.900) & (0.802) & (0.868)\\
+mushroo & $91.273_{3.5}$ & $90.195_{5}$ & $91.273_{3.5}$ & $91.274_{2}$ & $\textbf{91.750}_1$\\
+ & (0.726) & (0.714) & (0.726) & (0.725) & (\textbf{0.589})\\
+optdigi & $54.772_{5}$ & $89.822_{2}$ & $88.496_{4}$ & $89.822_{2}$ & $89.822_{2}$\\
+ & (2.364) & (0.021) & (0.382) & (0.021) & (0.021)\\
+page-bl & $89.962_{4.5}$ & $90.901_{3}$ & $89.962_{4.5}$ & $\textbf{92.105}_1$ & $91.073_{2}$\\
+ & (1.017) & (1.021) & (1.017) & (\textbf{0.507}) & (0.932)\\
+pendigi & $97.231_{1.5}$ & $97.187_{4}$ & $97.231_{1.5}$ & $97.168_{5}$ & $97.229_{3}$\\
+ & (0.230) & (0.249) & (0.230) & (0.280) & (0.246)\\
+scene-c & $60.327_{5}$ & $77.856_{2}$ & $76.955_{4}$ & $77.856_{2}$ & $77.856_{2}$\\
+ & (2.215) & (0.070) & (0.515) & (0.070) & (0.070)\\
+segment & $83.645_{4.5}$ & $95.996_{2}$ & $83.645_{4.5}$ & $\textbf{96.009}_1$ & $89.810_{3}$\\
+ & (1.504) & (0.882) & (1.504) & (\textbf{0.878}) & (1.546)\\
+shuttle & $89.461_{4.5}$ & $89.488_{3}$ & $89.461_{4.5}$ & $\textbf{89.707}_1$ & $89.516_{2}$\\
+ & (0.185) & (0.147) & (0.185) & (\textbf{0.170}) & (0.202)\\
+sonar & $67.696_{4.5}$ & $\textbf{70.414}_1$ & $67.696_{4.5}$ & $69.667_{2}$ & $68.373_{3}$\\
+ & (6.808) & (\textbf{7.295}) & (6.808) & (7.848) & (7.539)\\
+spambas & $81.669_{4.5}$ & $\textbf{84.451}_1$ & $81.669_{4.5}$ & $83.582_{2}$ & $81.843_{3}$\\
+ & (1.242) & (\textbf{1.200}) & (1.242) & (1.160) & (1.246)\\
+tic-tac & $71.335_{3.5}$ & $\textbf{71.471}_1$ & $71.335_{3.5}$ & $71.377_{2}$ & $71.242_{5}$\\
+ & (1.821) & (\textbf{2.746}) & (1.821) & (2.907) & (2.998)\\
+vehicle & $80.189_{5}$ & $81.123_{2}$ & $80.201_{4}$ & $\textbf{81.303}_1$ & $81.016_{3}$\\
+ & (3.378) & (2.799) & (3.394) & (\textbf{2.623}) & (3.049)\\
+vowel & $94.980_{4.5}$ & $\textbf{95.323}_1$ & $94.980_{4.5}$ & $95.313_{2}$ & $95.303_{3}$\\
+ & (1.292) & (\textbf{1.387}) & (1.292) & (1.407) & (1.400)\\
+wavefor & $85.580_{4.5}$ & $\textbf{86.372}_1$ & $85.580_{4.5}$ & $86.354_{2}$ & $86.302_{3}$\\
+ & (1.180) & (\textbf{1.180}) & (1.180) & (1.104) & (1.147)\\
+wdbc & $93.269_{3.5}$ & $93.180_{5}$ & $93.269_{3.5}$ & $\textbf{93.480}_1$ & $93.286_{2}$\\
+ & (2.200) & (1.991) & (2.200) & (\textbf{2.062}) & (2.195)\\
+wpbc & $67.047_{5}$ & $75.620_{3}$ & $68.196_{4}$ & $75.780_{2}$ & $\textbf{76.296}_1$\\
+ & (6.210) & (3.448) & (6.253) & (2.066) & (\textbf{0.710})\\
+yeast & $55.337_{5}$ & $68.538_{2}$ & $62.506_{4}$ & $68.503_{3}$ & $\textbf{68.605}_1$\\
+ & (11.620) & (0.523) & (4.039) & (0.491) & (\textbf{0.509})\\
+zoo & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$\\
+ & (3.024) & (3.024) & (3.024) & (3.024) & (3.024)\\
+\midrule
+rank & 3.84 & 2.41 & 3.72 & 2.24 & 2.78\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=42.342446043165452, pvalue=1.4165904744585062e-08)
+-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & beta_am & sigmoid\\
+\midrule
+abalone & $1.181_{5}$ & $\textbf{0.621}_1$ & $0.631_{4}$ & $0.622_{2}$ & $0.623_{3}$\\
+ & (0.076) & (\textbf{0.008}) & (0.008) & (0.008) & (0.008)\\
+autos & $1.149_{5}$ & $\textbf{0.547}_1$ & $0.554_{3}$ & $0.553_{2}$ & $0.565_{4}$\\
+ & (0.415) & (\textbf{0.047}) & (0.051) & (0.040) & (0.047)\\
+balance & $0.283_{5}$ & $\textbf{0.114}_1$ & $0.118_{4}$ & $0.115_{3}$ & $0.114_{2}$\\
+ & (0.013) & (\textbf{0.035}) & (0.036) & (0.035) & (0.035)\\
+car & $0.396_{4}$ & $0.383_{2}$ & $0.389_{3}$ & $\textbf{0.383}_1$ & $0.397_{5}$\\
+ & (0.015) & (0.022) & (0.019) & (\textbf{0.022}) & (0.026)\\
+clevela & $0.677_{5}$ & $0.414_{3}$ & $\textbf{0.412}_1$ & $0.414_{2}$ & $0.425_{4}$\\
+ & (0.240) & (0.071) & (\textbf{0.070}) & (0.070) & (0.076)\\
+credit- & $1.186_{5}$ & $\textbf{0.391}_1$ & $0.420_{3}$ & $0.413_{2}$ & $0.459_{4}$\\
+ & (0.387) & (\textbf{0.049}) & (0.050) & (0.060) & (0.057)\\
+dermato & $0.464_{5}$ & $0.076_{3}$ & $0.075_{2}$ & $\textbf{0.073}_1$ & $0.078_{4}$\\
+ & (0.476) & (0.064) & (0.063) & (\textbf{0.059}) & (0.066)\\
+diabete & $0.628_{5}$ & $\textbf{0.503}_1$ & $0.503_{2}$ & $0.528_{4}$ & $0.518_{3}$\\
+ & (0.122) & (\textbf{0.032}) & (0.031) & (0.042) & (0.034)\\
+ecoli & $3.677_{5}$ & $0.182_{2}$ & $0.563_{4}$ & $\textbf{0.181}_1$ & $0.393_{3}$\\
+ & (1.367) & (0.080) & (0.115) & (\textbf{0.080}) & (0.116)\\
+flare & $2.010_{5}$ & $\textbf{0.427}_1$ & $0.585_{4}$ & $0.442_{2}$ & $0.549_{3}$\\
+ & (0.824) & (\textbf{0.028}) & (0.023) & (0.031) & (0.018)\\
+german & $0.907_{5}$ & $0.541_{2}$ & $0.568_{4}$ & $0.564_{3}$ & $\textbf{0.523}_1$\\
+ & (0.239) & (0.026) & (0.049) & (0.025) & (\textbf{0.026})\\
+glass & $1.231_{5}$ & $\textbf{0.594}_1$ & $0.622_{4}$ & $0.595_{2}$ & $0.598_{3}$\\
+ & (0.805) & (\textbf{0.055}) & (0.048) & (0.051) & (0.047)\\
+heart-s & $0.606_{5}$ & $0.398_{3}$ & $\textbf{0.397}_1$ & $0.397_{2}$ & $0.409_{4}$\\
+ & (0.227) & (0.078) & (\textbf{0.077}) & (0.076) & (0.083)\\
+hepatit & $3.899_{5}$ & $0.401_{2}$ & $0.568_{4}$ & $\textbf{0.388}_1$ & $0.436_{3}$\\
+ & (2.154) & (0.162) & (0.087) & (\textbf{0.092}) & (0.099)\\
+horse & $5.096_{5}$ & $\textbf{0.514}_1$ & $0.682_{4}$ & $0.543_{2}$ & $0.631_{3}$\\
+ & (2.454) & (\textbf{0.054}) & (0.058) & (0.053) & (0.048)\\
+ionosph & $1.166_{5}$ & $0.294_{2}$ & $0.295_{3}$ & $\textbf{0.293}_1$ & $0.325_{4}$\\
+ & (0.406) & (0.061) & (0.059) & (\textbf{0.059}) & (0.070)\\
+iris & $\textbf{0.000}_1$ & $0.000_{3}$ & $0.000_{4}$ & $0.000_{5}$ & $0.000_{2}$\\
+ & (\textbf{0.000}) & (0.000) & (0.000) & (0.000) & (0.000)\\
+landsat & $0.650_{5}$ & $\textbf{0.181}_1$ & $0.184_{3}$ & $0.183_{2}$ & $0.223_{4}$\\
+ & (0.097) & (\textbf{0.016}) & (0.016) & (0.016) & (0.017)\\
+letter & $0.088_{5}$ & $\textbf{0.081}_1$ & $0.084_{3}$ & $0.083_{2}$ & $0.086_{4}$\\
+ & (0.006) & (\textbf{0.003}) & (0.004) & (0.004) & (0.003)\\
+libras- & $0.542_{5}$ & $\textbf{0.130}_1$ & $0.158_{4}$ & $0.138_{2}$ & $0.139_{3}$\\
+ & (0.514) & (\textbf{0.073}) & (0.073) & (0.065) & (0.061)\\
+lung-ca & $0.385_{5}$ & $0.100_{2}$ & $0.102_{3}$ & $\textbf{0.090}_1$ & $0.110_{4}$\\
+ & (0.777) & (0.061) & (0.061) & (\textbf{0.060}) & (0.063)\\
+mfeat-k & $0.133_{5}$ & $\textbf{0.056}_1$ & $0.057_{2}$ & $0.061_{3}$ & $0.068_{4}$\\
+ & (0.083) & (\textbf{0.019}) & (0.019) & (0.021) & (0.021)\\
+mfeat-m & $0.055_{5}$ & $0.013_{2}$ & $0.013_{3}$ & $0.013_{4}$ & $\textbf{0.013}_1$\\
+ & (0.072) & (0.017) & (0.017) & (0.017) & (\textbf{0.017})\\
+mfeat-z & $1.269_{5}$ & $\textbf{0.092}_1$ & $0.136_{3}$ & $0.097_{2}$ & $0.139_{4}$\\
+ & (0.190) & (\textbf{0.022}) & (0.016) & (0.021) & (0.017)\\
+mushroo & $0.626_{5}$ & $\textbf{0.259}_1$ & $0.316_{4}$ & $0.310_{3}$ & $0.267_{2}$\\
+ & (0.089) & (\textbf{0.015}) & (0.016) & (0.023) & (0.017)\\
+optdigi & $13.906_{5}$ & $\textbf{0.246}_1$ & $0.322_{4}$ & $0.251_{2}$ & $0.272_{3}$\\
+ & (0.924) & (\textbf{0.010}) & (0.006) & (0.010) & (0.006)\\
+page-bl & $1.062_{5}$ & $\textbf{0.212}_1$ & $0.212_{2}$ & $0.228_{3}$ & $0.265_{4}$\\
+ & (0.150) & (\textbf{0.012}) & (0.012) & (0.012) & (0.011)\\
+pendigi & $0.335_{5}$ & $\textbf{0.076}_1$ & $0.077_{3}$ & $0.077_{2}$ & $0.086_{4}$\\
+ & (0.037) & (\textbf{0.006}) & (0.006) & (0.006) & (0.006)\\
+scene-c & $12.423_{5}$ & $\textbf{0.452}_1$ & $0.483_{4}$ & $0.454_{2}$ & $0.465_{3}$\\
+ & (0.748) & (\textbf{0.015}) & (0.015) & (0.015) & (0.014)\\
+segment & $1.316_{5}$ & $\textbf{0.109}_1$ & $0.241_{4}$ & $0.111_{2}$ & $0.197_{3}$\\
+ & (0.131) & (\textbf{0.022}) & (0.014) & (0.022) & (0.022)\\
+shuttle & $0.687_{5}$ & $\textbf{0.277}_1$ & $0.278_{2}$ & $0.286_{3}$ & $0.323_{4}$\\
+ & (0.024) & (\textbf{0.003}) & (0.003) & (0.003) & (0.003)\\
+sonar & $2.504_{5}$ & $\textbf{0.545}_1$ & $0.571_{3}$ & $0.567_{2}$ & $0.603_{4}$\\
+ & (1.021) & (\textbf{0.074}) & (0.071) & (0.072) & (0.067)\\
+spambas & $5.369_{5}$ & $\textbf{0.359}_1$ & $0.393_{3}$ & $0.371_{2}$ & $0.407_{4}$\\
+ & (0.508) & (\textbf{0.024}) & (0.018) & (0.021) & (0.016)\\
+tic-tac & $0.589_{5}$ & $\textbf{0.580}_1$ & $0.587_{4}$ & $0.584_{3}$ & $0.582_{2}$\\
+ & (0.016) & (\textbf{0.023}) & (0.017) & (0.022) & (0.023)\\
+vehicle & $0.588_{5}$ & $\textbf{0.410}_1$ & $0.416_{2}$ & $0.446_{4}$ & $0.429_{3}$\\
+ & (0.191) & (\textbf{0.040}) & (0.043) & (0.051) & (0.045)\\
+vowel & $0.113_{3}$ & $0.112_{2}$ & $0.114_{4}$ & $\textbf{0.112}_1$ & $0.128_{5}$\\
+ & (0.024) & (0.023) & (0.023) & (\textbf{0.022}) & (0.030)\\
+wavefor & $0.364_{5}$ & $\textbf{0.291}_1$ & $0.303_{3}$ & $0.292_{2}$ & $0.308_{4}$\\
+ & (0.031) & (\textbf{0.016}) & (0.016) & (0.016) & (0.017)\\
+wdbc & $0.636_{5}$ & $0.150_{3}$ & $0.149_{2}$ & $\textbf{0.147}_1$ & $0.235_{4}$\\
+ & (0.292) & (0.041) & (0.041) & (\textbf{0.040}) & (0.055)\\
+wpbc & $1.740_{5}$ & $0.533_{2}$ & $0.601_{4}$ & $\textbf{0.533}_1$ & $0.534_{3}$\\
+ & (0.720) & (0.048) & (0.070) & (\textbf{0.043}) & (0.030)\\
+yeast & $1.900_{5}$ & $0.582_{2}$ & $0.634_{4}$ & $0.592_{3}$ & $\textbf{0.562}_1$\\
+ & (2.066) & (0.028) & (0.019) & (0.030) & (\textbf{0.030})\\
+zoo & $0.642_{5}$ & $0.134_{2}$ & $0.134_{3}$ & $0.134_{4}$ & $\textbf{0.134}_1$\\
+ & (1.114) & (0.200) & (0.200) & (0.200) & (\textbf{0.200})\\
+\midrule
+rank & 4.83 & 1.51 & 3.17 & 2.24 & 3.24\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=102.00975609756097, pvalue=3.6720365518144735e-21)
+-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & beta_am & sigmoid\\
+\midrule
+abalone & $0.303_{5}$ & $\textbf{0.216}_1$ & $0.220_{4}$ & $0.216_{2}$ & $0.217_{3}$\\
+ & (0.012) & (\textbf{0.003}) & (0.003) & (0.003) & (0.004)\\
+autos & $0.254_{5}$ & $\textbf{0.186}_1$ & $0.188_{3}$ & $0.187_{2}$ & $0.192_{4}$\\
+ & (0.060) & (\textbf{0.019}) & (0.021) & (0.017) & (0.020)\\
+balance & $0.077_{5}$ & $\textbf{0.033}_1$ & $0.034_{4}$ & $0.033_{3}$ & $0.033_{2}$\\
+ & (0.005) & (\textbf{0.012}) & (0.012) & (0.012) & (0.012)\\
+car & $0.134_{4}$ & $0.132_{2}$ & $0.134_{3}$ & $\textbf{0.132}_1$ & $0.135_{5}$\\
+ & (0.006) & (0.009) & (0.008) & (\textbf{0.010}) & (0.011)\\
+clevela & $0.140_{5}$ & $0.129_{3}$ & $\textbf{0.128}_1$ & $0.128_{2}$ & $0.130_{4}$\\
+ & (0.038) & (0.027) & (\textbf{0.027}) & (0.026) & (0.030)\\
+credit- & $0.168_{5}$ & $\textbf{0.118}_1$ & $0.132_{3}$ & $0.124_{2}$ & $0.144_{4}$\\
+ & (0.031) & (\textbf{0.017}) & (0.018) & (0.017) & (0.022)\\
+dermato & $0.013_{5}$ & $0.013_{2}$ & $0.013_{3}$ & $\textbf{0.013}_1$ & $0.013_{4}$\\
+ & (0.013) & (0.013) & (0.013) & (\textbf{0.013}) & (0.013)\\
+diabete & $0.180_{5}$ & $0.168_{2}$ & $\textbf{0.167}_1$ & $0.171_{3}$ & $0.171_{4}$\\
+ & (0.022) & (0.014) & (\textbf{0.013}) & (0.012) & (0.015)\\
+ecoli & $0.361_{5}$ & $0.047_{2}$ & $0.201_{4}$ & $\textbf{0.047}_1$ & $0.132_{3}$\\
+ & (0.096) & (0.019) & (0.045) & (\textbf{0.019}) & (0.047)\\
+flare & $0.454_{5}$ & $\textbf{0.136}_1$ & $0.205_{4}$ & $0.137_{2}$ & $0.186_{3}$\\
+ & (0.031) & (\textbf{0.009}) & (0.008) & (0.008) & (0.005)\\
+german & $0.195_{5}$ & $0.179_{2}$ & $0.185_{3}$ & $0.187_{4}$ & $\textbf{0.174}_1$\\
+ & (0.019) & (0.007) & (0.011) & (0.007) & (\textbf{0.010})\\
+glass & $0.304_{5}$ & $0.205_{2}$ & $0.217_{4}$ & $\textbf{0.205}_1$ & $0.208_{3}$\\
+ & (0.074) & (0.018) & (0.015) & (\textbf{0.014}) & (0.018)\\
+heart-s & $0.132_{5}$ & $0.122_{3}$ & $\textbf{0.122}_1$ & $0.122_{2}$ & $0.123_{4}$\\
+ & (0.040) & (0.028) & (\textbf{0.028}) & (0.027) & (0.032)\\
+hepatit & $0.357_{5}$ & $0.117_{2}$ & $0.194_{4}$ & $\textbf{0.117}_1$ & $0.137_{3}$\\
+ & (0.108) & (0.028) & (0.028) & (\textbf{0.024}) & (0.022)\\
+horse & $0.493_{5}$ & $\textbf{0.166}_1$ & $0.244_{4}$ & $0.172_{2}$ & $0.220_{3}$\\
+ & (0.119) & (\textbf{0.021}) & (0.026) & (0.017) & (0.021)\\
+ionosph & $0.104_{5}$ & $0.088_{2}$ & $0.089_{3}$ & $\textbf{0.088}_1$ & $0.092_{4}$\\
+ & (0.031) & (0.021) & (0.021) & (\textbf{0.021}) & (0.025)\\
+iris & $0.000_{2}$ & $0.000_{3}$ & $0.000_{4}$ & $0.000_{5}$ & $\textbf{0.000}_1$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (\textbf{0.000})\\
+landsat & $0.060_{5}$ & $\textbf{0.050}_1$ & $0.051_{3}$ & $0.050_{2}$ & $0.057_{4}$\\
+ & (0.006) & (\textbf{0.005}) & (0.005) & (0.005) & (0.006)\\
+letter & $0.021_{2}$ & $0.021_{3}$ & $0.021_{4}$ & $\textbf{0.021}_1$ & $0.022_{5}$\\
+ & (0.001) & (0.001) & (0.001) & (\textbf{0.001}) & (0.001)\\
+libras- & $0.047_{5}$ & $\textbf{0.030}_1$ & $0.039_{4}$ & $0.032_{2}$ & $0.035_{3}$\\
+ & (0.028) & (\textbf{0.017}) & (0.018) & (0.014) & (0.017)\\
+lung-ca & $\textbf{0.010}_1$ & $0.015_{3}$ & $0.016_{4}$ & $0.013_{2}$ & $0.019_{5}$\\
+ & (\textbf{0.021}) & (0.018) & (0.019) & (0.019) & (0.019)\\
+mfeat-k & $0.013_{4}$ & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{3}$ & $0.014_{5}$\\
+ & (0.005) & (\textbf{0.004}) & (0.004) & (0.004) & (0.005)\\
+mfeat-m & $0.002_{4}$ & $0.001_{2}$ & $0.001_{3}$ & $0.002_{5}$ & $\textbf{0.001}_1$\\
+ & (0.002) & (0.002) & (0.002) & (0.002) & (\textbf{0.002})\\
+mfeat-z & $0.072_{5}$ & $\textbf{0.024}_1$ & $0.042_{3}$ & $0.025_{2}$ & $0.044_{4}$\\
+ & (0.009) & (\textbf{0.005}) & (0.004) & (0.005) & (0.004)\\
+mushroo & $0.076_{3}$ & $0.074_{2}$ & $0.096_{5}$ & $0.080_{4}$ & $\textbf{0.070}_1$\\
+ & (0.006) & (0.005) & (0.005) & (0.004) & (\textbf{0.005})\\
+optdigi & $0.449_{5}$ & $\textbf{0.078}_1$ & $0.102_{4}$ & $0.078_{2}$ & $0.083_{3}$\\
+ & (0.023) & (\textbf{0.002}) & (0.002) & (0.002) & (0.001)\\
+page-bl & $0.093_{5}$ & $\textbf{0.063}_1$ & $0.064_{2}$ & $0.064_{3}$ & $0.073_{4}$\\
+ & (0.010) & (\textbf{0.004}) & (0.004) & (0.004) & (0.004)\\
+pendigi & $0.027_{5}$ & $\textbf{0.022}_1$ & $0.022_{2}$ & $0.023_{3}$ & $0.023_{4}$\\
+ & (0.002) & (\textbf{0.002}) & (0.002) & (0.002) & (0.002)\\
+scene-c & $0.394_{5}$ & $\textbf{0.148}_1$ & $0.161_{4}$ & $0.148_{2}$ & $0.153_{3}$\\
+ & (0.022) & (\textbf{0.005}) & (0.005) & (0.004) & (0.004)\\
+segment & $0.151_{5}$ & $\textbf{0.030}_1$ & $0.083_{4}$ & $0.031_{2}$ & $0.066_{3}$\\
+ & (0.013) & (\textbf{0.006}) & (0.005) & (0.005) & (0.005)\\
+shuttle & $0.098_{5}$ & $0.083_{3}$ & $0.083_{2}$ & $\textbf{0.083}_1$ & $0.090_{4}$\\
+ & (0.001) & (0.001) & (0.001) & (\textbf{0.001}) & (0.001)\\
+sonar & $0.289_{5}$ & $\textbf{0.185}_1$ & $0.195_{3}$ & $0.189_{2}$ & $0.207_{4}$\\
+ & (0.066) & (\textbf{0.032}) & (0.030) & (0.029) & (0.030)\\
+spambas & $0.182_{5}$ & $\textbf{0.110}_1$ & $0.126_{3}$ & $0.116_{2}$ & $0.131_{4}$\\
+ & (0.012) & (\textbf{0.009}) & (0.007) & (0.008) & (0.006)\\
+tic-tac & $0.201_{5}$ & $\textbf{0.197}_1$ & $0.200_{4}$ & $0.199_{3}$ & $0.198_{2}$\\
+ & (0.007) & (\textbf{0.010}) & (0.007) & (0.010) & (0.010)\\
+vehicle & $0.143_{5}$ & $\textbf{0.132}_1$ & $0.134_{2}$ & $0.136_{4}$ & $0.136_{3}$\\
+ & (0.024) & (\textbf{0.015}) & (0.016) & (0.014) & (0.017)\\
+vowel & $0.035_{3}$ & $0.034_{2}$ & $0.035_{4}$ & $\textbf{0.034}_1$ & $0.035_{5}$\\
+ & (0.008) & (0.008) & (0.008) & (\textbf{0.007}) & (0.009)\\
+wavefor & $0.109_{5}$ & $\textbf{0.094}_1$ & $0.099_{4}$ & $0.094_{2}$ & $0.097_{3}$\\
+ & (0.009) & (\textbf{0.006}) & (0.006) & (0.006) & (0.007)\\
+wdbc & $0.063_{5}$ & $0.045_{3}$ & $0.045_{2}$ & $\textbf{0.044}_1$ & $0.060_{4}$\\
+ & (0.020) & (0.013) & (0.013) & (\textbf{0.013}) & (0.018)\\
+wpbc & $0.281_{5}$ & $0.175_{2}$ & $0.203_{4}$ & $\textbf{0.174}_1$ & $0.176_{3}$\\
+ & (0.058) & (0.018) & (0.020) & (\textbf{0.014}) & (0.012)\\
+yeast & $0.346_{5}$ & $0.199_{2}$ & $0.222_{4}$ & $0.199_{3}$ & $\textbf{0.191}_1$\\
+ & (0.162) & (0.009) & (0.008) & (0.007) & (\textbf{0.011})\\
+zoo & $\textbf{0.017}_1$ & $0.018_{4}$ & $0.018_{5}$ & $0.018_{2}$ & $0.018_{3}$\\
+ & (\textbf{0.030}) & (0.029) & (0.029) & (0.029) & (0.029)\\
+\midrule
+rank & 4.49 & 1.73 & 3.27 & 2.20 & 3.32\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=76.136585365853648, pvalue=1.1454469625820919e-15)
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+[None, 'sigmoid', 'isotonic', 'beta', 'beta_ab']
+-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & isotonic & sigmoid\\
+\midrule
+abalone & $61.848_{4}$ & $\textbf{63.321}_1$ & $61.343_{5}$ & $63.302_{2}$ & $63.003_{3}$\\
+ & (1.417) & (\textbf{0.937}) & (1.415) & (0.993) & (1.374)\\
+autos & $67.483_{4}$ & $69.359_{2}$ & $67.443_{5}$ & $\textbf{70.067}_1$ & $69.254_{3}$\\
+ & (7.667) & (5.642) & (6.955) & (\textbf{5.364}) & (5.159)\\
+balance & $95.362_{4.5}$ & $95.761_{2}$ & $95.362_{4.5}$ & $95.715_{3}$ & $\textbf{95.857}_1$\\
+ & (1.727) & (2.078) & (1.727) & (2.022) & (\textbf{2.047})\\
+car & $78.745_{1.5}$ & $78.322_{5}$ & $78.745_{1.5}$ & $78.328_{4}$ & $78.583_{3}$\\
+ & (2.210) & (2.241) & (2.210) & (2.106) & (2.252)\\
+clevela & $83.675_{1.5}$ & $83.475_{4}$ & $83.675_{1.5}$ & $82.969_{5}$ & $83.539_{3}$\\
+ & (4.589) & (4.493) & (4.589) & (4.506) & (4.477)\\
+credit- & $80.231_{4.5}$ & $\textbf{84.396}_1$ & $80.231_{4.5}$ & $84.336_{2}$ & $81.167_{3}$\\
+ & (3.617) & (\textbf{2.831}) & (3.617) & (2.822) & (3.194)\\
+dermato & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$\\
+ & (1.312) & (1.312) & (1.312) & (1.312) & (1.312)\\
+diabete & $75.363_{2.5}$ & $74.713_{5}$ & $75.363_{2.5}$ & $75.298_{4}$ & $\textbf{75.429}_1$\\
+ & (3.545) & (3.435) & (3.545) & (3.404) & (\textbf{3.279})\\
+ecoli & $61.688_{5}$ & $\textbf{95.188}_1$ & $61.749_{4}$ & $95.068_{2}$ & $80.656_{3}$\\
+ & (9.419) & (\textbf{2.866}) & (9.441) & (3.037) & (7.908)\\
+flare & $51.401_{5}$ & $\textbf{82.289}_1$ & $51.858_{4}$ & $82.230_{2}$ & $71.489_{3}$\\
+ & (2.543) & (\textbf{1.133}) & (2.735) & (1.069) & (0.140)\\
+german & $73.330_{4}$ & $72.110_{5}$ & $73.340_{3}$ & $73.460_{2}$ & $\textbf{74.120}_1$\\
+ & (2.392) & (1.819) & (2.425) & (2.285) & (\textbf{2.163})\\
+glass & $58.705_{4}$ & $\textbf{64.208}_1$ & $58.636_{5}$ & $63.746_{2}$ & $62.642_{3}$\\
+ & (5.702) & (\textbf{4.292}) & (5.743) & (4.874) & (4.540)\\
+heart-s & $84.222_{4.5}$ & $\textbf{84.704}_1$ & $84.222_{4.5}$ & $84.667_{2}$ & $84.370_{3}$\\
+ & (5.106) & (\textbf{4.744}) & (5.106) & (4.718) & (4.852)\\
+hepatit & $60.127_{4}$ & $\textbf{84.470}_1$ & $59.237_{5}$ & $84.222_{2}$ & $79.371_{3}$\\
+ & (10.148) & (\textbf{5.317}) & (9.522) & (4.831) & (1.530)\\
+horse & $47.889_{5}$ & $77.663_{2}$ & $48.189_{4}$ & $\textbf{79.256}_1$ & $64.905_{3}$\\
+ & (11.582) & (4.906) & (11.767) & (\textbf{4.123}) & (5.869)\\
+ionosph & $88.573_{4.5}$ & $89.203_{2}$ & $88.573_{4.5}$ & $\textbf{89.517}_1$ & $88.802_{3}$\\
+ & (3.409) & (3.515) & (3.409) & (\textbf{3.638}) & (3.278)\\
+iris & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (0.000)\\
+landsat & $93.521_{4.5}$ & $\textbf{93.814}_1$ & $93.521_{4.5}$ & $93.795_{2}$ & $93.591_{3}$\\
+ & (0.671) & (\textbf{0.659}) & (0.671) & (0.644) & (0.690)\\
+letter & $97.263_{2.5}$ & $97.201_{4}$ & $97.263_{2.5}$ & $\textbf{97.286}_1$ & $97.108_{5}$\\
+ & (0.108) & (0.211) & (0.108) & (\textbf{0.119}) & (0.181)\\
+libras- & $94.827_{4.5}$ & $\textbf{96.273}_1$ & $94.827_{4.5}$ & $96.020_{2}$ & $95.180_{3}$\\
+ & (3.119) & (\textbf{2.474}) & (3.119) & (2.601) & (2.881)\\
+lung-ca & $98.953_{2}$ & $98.953_{2}$ & $98.953_{2}$ & $97.711_{5}$ & $98.121_{4}$\\
+ & (2.116) & (2.116) & (2.116) & (3.657) & (3.289)\\
+mfeat-k & $98.395_{2}$ & $98.395_{2}$ & $98.395_{2}$ & $98.385_{4.5}$ & $98.385_{4.5}$\\
+ & (0.606) & (0.613) & (0.606) & (0.631) & (0.625)\\
+mfeat-m & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$\\
+ & (0.196) & (0.196) & (0.196) & (0.196) & (0.196)\\
+mfeat-z & $92.580_{4.5}$ & $96.975_{2}$ & $92.580_{4.5}$ & $\textbf{97.225}_1$ & $93.015_{3}$\\
+ & (0.900) & (0.799) & (0.900) & (\textbf{0.786}) & (0.868)\\
+mushroo & $91.273_{3.5}$ & $90.195_{5}$ & $91.273_{3.5}$ & $\textbf{92.622}_1$ & $91.750_{2}$\\
+ & (0.726) & (0.714) & (0.726) & (\textbf{0.516}) & (0.589)\\
+optdigi & $54.772_{5}$ & $89.822_{2}$ & $88.496_{4}$ & $89.822_{2}$ & $89.822_{2}$\\
+ & (2.364) & (0.021) & (0.382) & (0.021) & (0.021)\\
+page-bl & $89.962_{4.5}$ & $90.901_{3}$ & $89.962_{4.5}$ & $\textbf{92.136}_1$ & $91.073_{2}$\\
+ & (1.017) & (1.021) & (1.017) & (\textbf{0.498}) & (0.932)\\
+pendigi & $97.231_{1.5}$ & $97.187_{5}$ & $97.231_{1.5}$ & $97.216_{4}$ & $97.229_{3}$\\
+ & (0.230) & (0.249) & (0.230) & (0.247) & (0.246)\\
+scene-c & $60.327_{5}$ & $77.856_{1.5}$ & $76.955_{3}$ & $76.052_{4}$ & $77.856_{1.5}$\\
+ & (2.215) & (0.070) & (0.515) & (4.004) & (0.070)\\
+segment & $83.645_{4.5}$ & $95.996_{2}$ & $83.645_{4.5}$ & $\textbf{96.390}_1$ & $89.810_{3}$\\
+ & (1.504) & (0.882) & (1.504) & (\textbf{0.757}) & (1.546)\\
+shuttle & $89.461_{4.5}$ & $89.488_{3}$ & $89.461_{4.5}$ & $\textbf{89.851}_1$ & $89.516_{2}$\\
+ & (0.185) & (0.147) & (0.185) & (\textbf{0.171}) & (0.202)\\
+sonar & $67.696_{4.5}$ & $70.414_{2}$ & $67.696_{4.5}$ & $\textbf{70.693}_1$ & $68.373_{3}$\\
+ & (6.808) & (7.295) & (6.808) & (\textbf{7.154}) & (7.539)\\
+spambas & $81.669_{4.5}$ & $84.451_{2}$ & $81.669_{4.5}$ & $\textbf{88.807}_1$ & $81.843_{3}$\\
+ & (1.242) & (1.200) & (1.242) & (\textbf{2.212}) & (1.246)\\
+tic-tac & $71.335_{3.5}$ & $71.471_{2}$ & $71.335_{3.5}$ & $\textbf{71.606}_1$ & $71.242_{5}$\\
+ & (1.821) & (2.746) & (1.821) & (\textbf{2.051}) & (2.998)\\
+vehicle & $80.189_{5}$ & $\textbf{81.123}_1$ & $80.201_{4}$ & $80.829_{3}$ & $81.016_{2}$\\
+ & (3.378) & (\textbf{2.799}) & (3.394) & (2.504) & (3.049)\\
+vowel & $94.980_{4.5}$ & $95.323_{2}$ & $94.980_{4.5}$ & $\textbf{95.404}_1$ & $95.303_{3}$\\
+ & (1.292) & (1.387) & (1.292) & (\textbf{1.304}) & (1.400)\\
+wavefor & $85.580_{4.5}$ & $\textbf{86.372}_1$ & $85.580_{4.5}$ & $86.250_{3}$ & $86.302_{2}$\\
+ & (1.180) & (\textbf{1.180}) & (1.180) & (1.116) & (1.147)\\
+wdbc & $93.269_{2.5}$ & $93.180_{4}$ & $93.269_{2.5}$ & $93.109_{5}$ & $\textbf{93.286}_1$\\
+ & (2.200) & (1.991) & (2.200) & (2.076) & (\textbf{2.195})\\
+wpbc & $67.047_{5}$ & $75.620_{3}$ & $68.196_{4}$ & $76.083_{2}$ & $\textbf{76.296}_1$\\
+ & (6.210) & (3.448) & (6.253) & (4.573) & (\textbf{0.710})\\
+yeast & $55.337_{5}$ & $68.538_{3}$ & $62.506_{4}$ & $68.597_{2}$ & $\textbf{68.605}_1$\\
+ & (11.620) & (0.523) & (4.039) & (1.345) & (\textbf{0.509})\\
+zoo & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$\\
+ & (3.024) & (3.024) & (3.024) & (3.024) & (3.024)\\
+\midrule
+rank & 3.85 & 2.43 & 3.71 & 2.33 & 2.68\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=40.26704545454551, pvalue=3.811483758572436e-08)
+-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & isotonic & sigmoid\\
+\midrule
+abalone & $1.181_{5}$ & $\textbf{0.621}_1$ & $0.631_{4}$ & $0.626_{3}$ & $0.623_{2}$\\
+ & (0.076) & (\textbf{0.008}) & (0.008) & (0.024) & (0.008)\\
+autos & $1.149_{5}$ & $\textbf{0.547}_1$ & $0.554_{2}$ & $0.582_{4}$ & $0.565_{3}$\\
+ & (0.415) & (\textbf{0.047}) & (0.051) & (0.155) & (0.047)\\
+balance & $0.283_{5}$ & $\textbf{0.114}_1$ & $0.118_{3}$ & $0.182_{4}$ & $0.114_{2}$\\
+ & (0.013) & (\textbf{0.035}) & (0.036) & (0.189) & (0.035)\\
+car & $0.396_{4}$ & $0.383_{2}$ & $0.389_{3}$ & $\textbf{0.381}_1$ & $0.397_{5}$\\
+ & (0.015) & (0.022) & (0.019) & (\textbf{0.058}) & (0.026)\\
+clevela & $0.677_{5}$ & $0.414_{2}$ & $\textbf{0.412}_1$ & $0.583_{4}$ & $0.425_{3}$\\
+ & (0.240) & (0.071) & (\textbf{0.070}) & (0.375) & (0.076)\\
+credit- & $1.186_{5}$ & $\textbf{0.391}_1$ & $0.420_{2}$ & $0.475_{4}$ & $0.459_{3}$\\
+ & (0.387) & (\textbf{0.049}) & (0.050) & (0.161) & (0.057)\\
+dermato & $0.464_{5}$ & $0.076_{2}$ & $\textbf{0.075}_1$ & $0.112_{4}$ & $0.078_{3}$\\
+ & (0.476) & (0.064) & (\textbf{0.063}) & (0.151) & (0.066)\\
+diabete & $0.628_{5}$ & $\textbf{0.503}_1$ & $0.503_{2}$ & $0.559_{4}$ & $0.518_{3}$\\
+ & (0.122) & (\textbf{0.032}) & (0.031) & (0.142) & (0.034)\\
+ecoli & $3.677_{5}$ & $\textbf{0.182}_1$ & $0.563_{4}$ & $0.408_{3}$ & $0.393_{2}$\\
+ & (1.367) & (\textbf{0.080}) & (0.115) & (0.444) & (0.116)\\
+flare & $2.010_{5}$ & $\textbf{0.427}_1$ & $0.585_{4}$ & $0.431_{2}$ & $0.549_{3}$\\
+ & (0.824) & (\textbf{0.028}) & (0.023) & (0.043) & (0.018)\\
+german & $0.907_{5}$ & $0.541_{3}$ & $0.568_{4}$ & $0.536_{2}$ & $\textbf{0.523}_1$\\
+ & (0.239) & (0.026) & (0.049) & (0.044) & (\textbf{0.026})\\
+glass & $1.231_{5}$ & $\textbf{0.594}_1$ & $0.622_{3}$ & $0.788_{4}$ & $0.598_{2}$\\
+ & (0.805) & (\textbf{0.055}) & (0.048) & (0.472) & (0.047)\\
+heart-s & $0.606_{5}$ & $0.398_{2}$ & $\textbf{0.397}_1$ & $0.519_{4}$ & $0.409_{3}$\\
+ & (0.227) & (0.078) & (\textbf{0.077}) & (0.504) & (0.083)\\
+hepatit & $3.899_{5}$ & $\textbf{0.401}_1$ & $0.568_{4}$ & $0.517_{3}$ & $0.436_{2}$\\
+ & (2.154) & (\textbf{0.162}) & (0.087) & (0.438) & (0.099)\\
+horse & $5.096_{5}$ & $\textbf{0.514}_1$ & $0.682_{3}$ & $0.713_{4}$ & $0.631_{2}$\\
+ & (2.454) & (\textbf{0.054}) & (0.058) & (0.409) & (0.048)\\
+ionosph & $1.166_{5}$ & $\textbf{0.294}_1$ & $0.295_{2}$ & $0.387_{4}$ & $0.325_{3}$\\
+ & (0.406) & (\textbf{0.061}) & (0.059) & (0.363) & (0.070)\\
+iris & $0.000_{2}$ & $0.000_{4}$ & $0.000_{5}$ & $\textbf{0.000}_1$ & $0.000_{3}$\\
+ & (0.000) & (0.000) & (0.000) & (\textbf{0.000}) & (0.000)\\
+landsat & $0.650_{5}$ & $\textbf{0.181}_1$ & $0.184_{2}$ & $0.191_{3}$ & $0.223_{4}$\\
+ & (0.097) & (\textbf{0.016}) & (0.016) & (0.025) & (0.017)\\
+letter & $0.088_{5}$ & $0.081_{2}$ & $0.084_{3}$ & $\textbf{0.079}_1$ & $0.086_{4}$\\
+ & (0.006) & (0.003) & (0.004) & (\textbf{0.005}) & (0.003)\\
+libras- & $0.542_{5}$ & $\textbf{0.130}_1$ & $0.158_{3}$ & $0.234_{4}$ & $0.139_{2}$\\
+ & (0.514) & (\textbf{0.073}) & (0.073) & (0.331) & (0.061)\\
+lung-ca & $0.385_{5}$ & $\textbf{0.100}_1$ & $0.102_{2}$ & $0.114_{4}$ & $0.110_{3}$\\
+ & (0.777) & (\textbf{0.061}) & (0.061) & (0.065) & (0.063)\\
+mfeat-k & $0.133_{5}$ & $\textbf{0.056}_1$ & $0.057_{2}$ & $0.096_{4}$ & $0.068_{3}$\\
+ & (0.083) & (\textbf{0.019}) & (0.019) & (0.083) & (0.021)\\
+mfeat-m & $0.055_{5}$ & $0.013_{2}$ & $0.013_{3}$ & $0.016_{4}$ & $\textbf{0.013}_1$\\
+ & (0.072) & (0.017) & (0.017) & (0.039) & (\textbf{0.017})\\
+mfeat-z & $1.269_{5}$ & $\textbf{0.092}_1$ & $0.136_{3}$ & $0.103_{2}$ & $0.139_{4}$\\
+ & (0.190) & (\textbf{0.022}) & (0.016) & (0.057) & (0.017)\\
+mushroo & $0.626_{5}$ & $0.259_{2}$ & $0.316_{4}$ & $\textbf{0.227}_1$ & $0.267_{3}$\\
+ & (0.089) & (0.015) & (0.016) & (\textbf{0.014}) & (0.017)\\
+optdigi & $13.906_{5}$ & $0.246_{2}$ & $0.322_{4}$ & $\textbf{0.243}_1$ & $0.272_{3}$\\
+ & (0.924) & (0.010) & (0.006) & (\textbf{0.013}) & (0.006)\\
+page-bl & $1.062_{5}$ & $0.212_{2}$ & $0.212_{3}$ & $\textbf{0.189}_1$ & $0.265_{4}$\\
+ & (0.150) & (0.012) & (0.012) & (\textbf{0.016}) & (0.011)\\
+pendigi & $0.335_{5}$ & $\textbf{0.076}_1$ & $0.077_{2}$ & $0.079_{3}$ & $0.086_{4}$\\
+ & (0.037) & (\textbf{0.006}) & (0.006) & (0.013) & (0.006)\\
+scene-c & $12.423_{5}$ & $\textbf{0.452}_1$ & $0.483_{4}$ & $0.460_{2}$ & $0.465_{3}$\\
+ & (0.748) & (\textbf{0.015}) & (0.015) & (0.024) & (0.014)\\
+segment & $1.316_{5}$ & $\textbf{0.109}_1$ & $0.241_{4}$ & $0.132_{2}$ & $0.197_{3}$\\
+ & (0.131) & (\textbf{0.022}) & (0.014) & (0.082) & (0.022)\\
+shuttle & $0.687_{5}$ & $0.277_{2}$ & $0.278_{3}$ & $\textbf{0.218}_1$ & $0.323_{4}$\\
+ & (0.024) & (0.003) & (0.003) & (\textbf{0.006}) & (0.003)\\
+sonar & $2.504_{5}$ & $\textbf{0.545}_1$ & $0.571_{2}$ & $0.610_{4}$ & $0.603_{3}$\\
+ & (1.021) & (\textbf{0.074}) & (0.071) & (0.378) & (0.067)\\
+spambas & $5.369_{5}$ & $0.359_{2}$ & $0.393_{3}$ & $\textbf{0.315}_1$ & $0.407_{4}$\\
+ & (0.508) & (0.024) & (0.018) & (\textbf{0.038}) & (0.016)\\
+tic-tac & $0.589_{4}$ & $\textbf{0.580}_1$ & $0.587_{3}$ & $0.591_{5}$ & $0.582_{2}$\\
+ & (0.016) & (\textbf{0.023}) & (0.017) & (0.067) & (0.023)\\
+vehicle & $0.588_{5}$ & $\textbf{0.410}_1$ & $0.416_{3}$ & $0.414_{2}$ & $0.429_{4}$\\
+ & (0.191) & (\textbf{0.040}) & (0.043) & (0.062) & (0.045)\\
+vowel & $0.113_{2}$ & $\textbf{0.112}_1$ & $0.114_{3}$ & $0.166_{5}$ & $0.128_{4}$\\
+ & (0.024) & (\textbf{0.023}) & (0.023) & (0.145) & (0.030)\\
+wavefor & $0.364_{5}$ & $\textbf{0.291}_1$ & $0.303_{2}$ & $0.308_{4}$ & $0.308_{3}$\\
+ & (0.031) & (\textbf{0.016}) & (0.016) & (0.031) & (0.017)\\
+wdbc & $0.636_{5}$ & $0.150_{2}$ & $\textbf{0.149}_1$ & $0.220_{3}$ & $0.235_{4}$\\
+ & (0.292) & (0.041) & (\textbf{0.041}) & (0.174) & (0.055)\\
+wpbc & $1.740_{5}$ & $\textbf{0.533}_1$ & $0.601_{3}$ & $0.682_{4}$ & $0.534_{2}$\\
+ & (0.720) & (\textbf{0.048}) & (0.070) & (0.506) & (0.030)\\
+yeast & $1.900_{5}$ & $0.582_{2}$ & $0.634_{4}$ & $0.589_{3}$ & $\textbf{0.562}_1$\\
+ & (2.066) & (0.028) & (0.019) & (0.047) & (\textbf{0.030})\\
+zoo & $0.642_{5}$ & $0.134_{2}$ & $0.134_{3}$ & $0.312_{4}$ & $\textbf{0.134}_1$\\
+ & (1.114) & (0.200) & (0.200) & (0.630) & (\textbf{0.200})\\
+\midrule
+rank & 4.80 & 1.46 & 2.85 & 3.00 & 2.88\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=92.741463414634154, pvalue=3.4431598920511438e-19)
+-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_ab & isotonic & sigmoid\\
+\midrule
+abalone & $0.303_{5}$ & $0.216_{2}$ & $0.220_{4}$ & $\textbf{0.216}_1$ & $0.217_{3}$\\
+ & (0.012) & (0.003) & (0.003) & (\textbf{0.004}) & (0.004)\\
+autos & $0.254_{5}$ & $\textbf{0.186}_1$ & $0.188_{2}$ & $0.189_{3}$ & $0.192_{4}$\\
+ & (0.060) & (\textbf{0.019}) & (0.021) & (0.027) & (0.020)\\
+balance & $0.077_{5}$ & $\textbf{0.033}_1$ & $0.034_{4}$ & $0.034_{3}$ & $0.033_{2}$\\
+ & (0.005) & (\textbf{0.012}) & (0.012) & (0.013) & (0.012)\\
+car & $0.134_{4}$ & $0.132_{2}$ & $0.134_{3}$ & $\textbf{0.130}_1$ & $0.135_{5}$\\
+ & (0.006) & (0.009) & (0.008) & (\textbf{0.009}) & (0.011)\\
+clevela & $0.140_{5}$ & $0.129_{2}$ & $\textbf{0.128}_1$ & $0.130_{4}$ & $0.130_{3}$\\
+ & (0.038) & (0.027) & (\textbf{0.027}) & (0.028) & (0.030)\\
+credit- & $0.168_{5}$ & $\textbf{0.118}_1$ & $0.132_{3}$ & $0.119_{2}$ & $0.144_{4}$\\
+ & (0.031) & (\textbf{0.017}) & (0.018) & (0.020) & (0.022)\\
+dermato & $0.013_{5}$ & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{3}$ & $0.013_{4}$\\
+ & (0.013) & (\textbf{0.013}) & (0.013) & (0.013) & (0.013)\\
+diabete & $0.180_{5}$ & $0.168_{2}$ & $\textbf{0.167}_1$ & $0.169_{3}$ & $0.171_{4}$\\
+ & (0.022) & (0.014) & (\textbf{0.013}) & (0.014) & (0.015)\\
+ecoli & $0.361_{5}$ & $\textbf{0.047}_1$ & $0.201_{4}$ & $0.049_{2}$ & $0.132_{3}$\\
+ & (0.096) & (\textbf{0.019}) & (0.045) & (0.020) & (0.047)\\
+flare & $0.454_{5}$ & $0.136_{2}$ & $0.205_{4}$ & $\textbf{0.136}_1$ & $0.186_{3}$\\
+ & (0.031) & (0.009) & (0.008) & (\textbf{0.008}) & (0.005)\\
+german & $0.195_{5}$ & $0.179_{3}$ & $0.185_{4}$ & $0.176_{2}$ & $\textbf{0.174}_1$\\
+ & (0.019) & (0.007) & (0.011) & (0.011) & (\textbf{0.010})\\
+glass & $0.304_{5}$ & $\textbf{0.205}_1$ & $0.217_{4}$ & $0.209_{3}$ & $0.208_{2}$\\
+ & (0.074) & (\textbf{0.018}) & (0.015) & (0.021) & (0.018)\\
+heart-s & $0.132_{5}$ & $0.122_{3}$ & $0.122_{2}$ & $\textbf{0.122}_1$ & $0.123_{4}$\\
+ & (0.040) & (0.028) & (0.028) & (\textbf{0.030}) & (0.032)\\
+hepatit & $0.357_{5}$ & $\textbf{0.117}_1$ & $0.194_{4}$ & $0.118_{2}$ & $0.137_{3}$\\
+ & (0.108) & (\textbf{0.028}) & (0.028) & (0.033) & (0.022)\\
+horse & $0.493_{5}$ & $0.166_{2}$ & $0.244_{4}$ & $\textbf{0.164}_1$ & $0.220_{3}$\\
+ & (0.119) & (0.021) & (0.026) & (\textbf{0.022}) & (0.021)\\
+ionosph & $0.104_{5}$ & $0.088_{2}$ & $0.089_{3}$ & $\textbf{0.086}_1$ & $0.092_{4}$\\
+ & (0.031) & (0.021) & (0.021) & (\textbf{0.022}) & (0.025)\\
+iris & $0.000_{3}$ & $0.000_{4}$ & $0.000_{5}$ & $0.000_{2}$ & $\textbf{0.000}_1$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (\textbf{0.000})\\
+landsat & $0.060_{5}$ & $0.050_{2}$ & $0.051_{3}$ & $\textbf{0.050}_1$ & $0.057_{4}$\\
+ & (0.006) & (0.005) & (0.005) & (\textbf{0.005}) & (0.006)\\
+letter & $0.021_{2}$ & $0.021_{3}$ & $0.021_{4}$ & $\textbf{0.020}_1$ & $0.022_{5}$\\
+ & (0.001) & (0.001) & (0.001) & (\textbf{0.001}) & (0.001)\\
+libras- & $0.047_{5}$ & $\textbf{0.030}_1$ & $0.039_{4}$ & $0.031_{2}$ & $0.035_{3}$\\
+ & (0.028) & (\textbf{0.017}) & (0.018) & (0.017) & (0.017)\\
+lung-ca & $\textbf{0.010}_1$ & $0.015_{2}$ & $0.016_{3}$ & $0.021_{5}$ & $0.019_{4}$\\
+ & (\textbf{0.021}) & (0.018) & (0.019) & (0.020) & (0.019)\\
+mfeat-k & $0.013_{4}$ & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{3}$ & $0.014_{5}$\\
+ & (0.005) & (\textbf{0.004}) & (0.004) & (0.005) & (0.005)\\
+mfeat-m & $0.002_{4}$ & $0.001_{2}$ & $0.001_{3}$ & $0.002_{5}$ & $\textbf{0.001}_1$\\
+ & (0.002) & (0.002) & (0.002) & (0.002) & (\textbf{0.002})\\
+mfeat-z & $0.072_{5}$ & $0.024_{2}$ & $0.042_{3}$ & $\textbf{0.022}_1$ & $0.044_{4}$\\
+ & (0.009) & (0.005) & (0.004) & (\textbf{0.006}) & (0.004)\\
+mushroo & $0.076_{4}$ & $0.074_{3}$ & $0.096_{5}$ & $\textbf{0.063}_1$ & $0.070_{2}$\\
+ & (0.006) & (0.005) & (0.005) & (\textbf{0.004}) & (0.005)\\
+optdigi & $0.449_{5}$ & $0.078_{2}$ & $0.102_{4}$ & $\textbf{0.077}_1$ & $0.083_{3}$\\
+ & (0.023) & (0.002) & (0.002) & (\textbf{0.002}) & (0.001)\\
+page-bl & $0.093_{5}$ & $0.063_{2}$ & $0.064_{3}$ & $\textbf{0.057}_1$ & $0.073_{4}$\\
+ & (0.010) & (0.004) & (0.004) & (\textbf{0.003}) & (0.004)\\
+pendigi & $0.027_{5}$ & $0.022_{2}$ & $0.022_{3}$ & $\textbf{0.022}_1$ & $0.023_{4}$\\
+ & (0.002) & (0.002) & (0.002) & (\textbf{0.002}) & (0.002)\\
+scene-c & $0.394_{5}$ & $\textbf{0.148}_1$ & $0.161_{4}$ & $0.151_{2}$ & $0.153_{3}$\\
+ & (0.022) & (\textbf{0.005}) & (0.005) & (0.008) & (0.004)\\
+segment & $0.151_{5}$ & $0.030_{2}$ & $0.083_{4}$ & $\textbf{0.029}_1$ & $0.066_{3}$\\
+ & (0.013) & (0.006) & (0.005) & (\textbf{0.006}) & (0.005)\\
+shuttle & $0.098_{5}$ & $0.083_{3}$ & $0.083_{2}$ & $\textbf{0.072}_1$ & $0.090_{4}$\\
+ & (0.001) & (0.001) & (0.001) & (\textbf{0.002}) & (0.001)\\
+sonar & $0.289_{5}$ & $0.185_{2}$ & $0.195_{3}$ & $\textbf{0.180}_1$ & $0.207_{4}$\\
+ & (0.066) & (0.032) & (0.030) & (\textbf{0.031}) & (0.030)\\
+spambas & $0.182_{5}$ & $0.110_{2}$ & $0.126_{3}$ & $\textbf{0.092}_1$ & $0.131_{4}$\\
+ & (0.012) & (0.009) & (0.007) & (\textbf{0.014}) & (0.006)\\
+tic-tac & $0.201_{5}$ & $0.197_{2}$ & $0.200_{4}$ & $\textbf{0.195}_1$ & $0.198_{3}$\\
+ & (0.007) & (0.010) & (0.007) & (\textbf{0.011}) & (0.010)\\
+vehicle & $0.143_{5}$ & $0.132_{2}$ & $0.134_{3}$ & $\textbf{0.131}_1$ & $0.136_{4}$\\
+ & (0.024) & (0.015) & (0.016) & (\textbf{0.015}) & (0.017)\\
+vowel & $0.035_{3}$ & $\textbf{0.034}_1$ & $0.035_{4}$ & $0.035_{2}$ & $0.035_{5}$\\
+ & (0.008) & (\textbf{0.008}) & (0.008) & (0.008) & (0.009)\\
+wavefor & $0.109_{5}$ & $\textbf{0.094}_1$ & $0.099_{4}$ & $0.094_{2}$ & $0.097_{3}$\\
+ & (0.009) & (\textbf{0.006}) & (0.006) & (0.006) & (0.007)\\
+wdbc & $0.063_{5}$ & $0.045_{3}$ & $0.045_{2}$ & $\textbf{0.045}_1$ & $0.060_{4}$\\
+ & (0.020) & (0.013) & (0.013) & (\textbf{0.013}) & (0.018)\\
+wpbc & $0.281_{5}$ & $\textbf{0.175}_1$ & $0.203_{4}$ & $0.179_{3}$ & $0.176_{2}$\\
+ & (0.058) & (\textbf{0.018}) & (0.020) & (0.027) & (0.012)\\
+yeast & $0.346_{5}$ & $0.199_{3}$ & $0.222_{4}$ & $0.194_{2}$ & $\textbf{0.191}_1$\\
+ & (0.162) & (0.009) & (0.008) & (0.010) & (\textbf{0.011})\\
+zoo & $\textbf{0.017}_1$ & $0.018_{3}$ & $0.018_{4}$ & $0.018_{5}$ & $0.018_{2}$\\
+ & (\textbf{0.030}) & (0.029) & (0.029) & (0.029) & (0.029)\\
+\midrule
+rank & 4.54 & 1.93 & 3.32 & 1.95 & 3.27\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=78.478048780487825, pvalue=3.6589432579342538e-16)
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+[None, 'sigmoid', 'isotonic', 'beta', 'beta_am']
+-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $61.848_{5}$ & $63.321_{2}$ & $\textbf{63.383}_1$ & $63.302_{3}$ & $63.003_{4}$\\
+ & (1.417) & (0.937) & (\textbf{0.948}) & (0.993) & (1.374)\\
+autos & $67.483_{5}$ & $69.359_{3}$ & $\textbf{70.105}_1$ & $70.067_{2}$ & $69.254_{4}$\\
+ & (7.667) & (5.642) & (\textbf{4.586}) & (5.364) & (5.159)\\
+balance & $95.362_{5}$ & $95.761_{3}$ & $95.842_{2}$ & $95.715_{4}$ & $\textbf{95.857}_1$\\
+ & (1.727) & (2.078) & (2.067) & (2.022) & (\textbf{2.047})\\
+car & $\textbf{78.745}_1$ & $78.322_{5}$ & $78.496_{3}$ & $78.328_{4}$ & $78.583_{2}$\\
+ & (\textbf{2.210}) & (2.241) & (2.304) & (2.106) & (2.252)\\
+clevela & $\textbf{83.675}_1$ & $83.475_{4}$ & $83.675_{2}$ & $82.969_{5}$ & $83.539_{3}$\\
+ & (\textbf{4.589}) & (4.493) & (4.434) & (4.506) & (4.477)\\
+credit- & $80.231_{5}$ & $\textbf{84.396}_1$ & $83.020_{3}$ & $84.336_{2}$ & $81.167_{4}$\\
+ & (3.617) & (\textbf{2.831}) & (2.971) & (2.822) & (3.194)\\
+dermato & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$ & $98.715_{3}$\\
+ & (1.312) & (1.312) & (1.312) & (1.312) & (1.312)\\
+diabete & $75.363_{2}$ & $74.713_{5}$ & $74.713_{4}$ & $75.298_{3}$ & $\textbf{75.429}_1$\\
+ & (3.545) & (3.435) & (2.904) & (3.404) & (\textbf{3.279})\\
+ecoli & $61.688_{5}$ & $\textbf{95.188}_1$ & $95.187_{2}$ & $95.068_{3}$ & $80.656_{4}$\\
+ & (9.419) & (\textbf{2.866}) & (2.868) & (3.037) & (7.908)\\
+flare & $51.401_{5}$ & $82.289_{1.5}$ & $82.289_{1.5}$ & $82.230_{3}$ & $71.489_{4}$\\
+ & (2.543) & (1.133) & (1.133) & (1.069) & (0.140)\\
+german & $73.330_{3}$ & $72.110_{4}$ & $71.060_{5}$ & $73.460_{2}$ & $\textbf{74.120}_1$\\
+ & (2.392) & (1.819) & (1.316) & (2.285) & (\textbf{2.163})\\
+glass & $58.705_{5}$ & $64.208_{2}$ & $\textbf{64.732}_1$ & $63.746_{3}$ & $62.642_{4}$\\
+ & (5.702) & (4.292) & (\textbf{3.961}) & (4.874) & (4.540)\\
+heart-s & $84.222_{5}$ & $84.704_{2}$ & $\textbf{84.778}_1$ & $84.667_{3}$ & $84.370_{4}$\\
+ & (5.106) & (4.744) & (\textbf{4.525}) & (4.718) & (4.852)\\
+hepatit & $60.127_{5}$ & $\textbf{84.470}_1$ & $84.034_{3}$ & $84.222_{2}$ & $79.371_{4}$\\
+ & (10.148) & (\textbf{5.317}) & (5.038) & (4.831) & (1.530)\\
+horse & $47.889_{5}$ & $77.663_{3}$ & $77.997_{2}$ & $\textbf{79.256}_1$ & $64.905_{4}$\\
+ & (11.582) & (4.906) & (4.991) & (\textbf{4.123}) & (5.869)\\
+ionosph & $88.573_{5}$ & $89.203_{3}$ & $\textbf{89.687}_1$ & $89.517_{2}$ & $88.802_{4}$\\
+ & (3.409) & (3.515) & (\textbf{3.675}) & (3.638) & (3.278)\\
+iris & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$ & $100.000_{3}$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (0.000)\\
+landsat & $93.521_{5}$ & $\textbf{93.814}_1$ & $93.739_{3}$ & $93.795_{2}$ & $93.591_{4}$\\
+ & (0.671) & (\textbf{0.659}) & (0.640) & (0.644) & (0.690)\\
+letter & $97.263_{2}$ & $97.201_{3}$ & $97.052_{5}$ & $\textbf{97.286}_1$ & $97.108_{4}$\\
+ & (0.108) & (0.211) & (0.188) & (\textbf{0.119}) & (0.181)\\
+libras- & $94.827_{5}$ & $\textbf{96.273}_1$ & $96.087_{2}$ & $96.020_{3}$ & $95.180_{4}$\\
+ & (3.119) & (\textbf{2.474}) & (1.979) & (2.601) & (2.881)\\
+lung-ca & $98.953_{2}$ & $98.953_{2}$ & $98.953_{2}$ & $97.711_{5}$ & $98.121_{4}$\\
+ & (2.116) & (2.116) & (2.116) & (3.657) & (3.289)\\
+mfeat-k & $98.395_{1.5}$ & $98.395_{1.5}$ & $98.390_{3}$ & $98.385_{4.5}$ & $98.385_{4.5}$\\
+ & (0.606) & (0.613) & (0.609) & (0.631) & (0.625)\\
+mfeat-m & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$ & $99.850_{3}$\\
+ & (0.196) & (0.196) & (0.196) & (0.196) & (0.196)\\
+mfeat-z & $92.580_{5}$ & $96.975_{2}$ & $96.750_{3}$ & $\textbf{97.225}_1$ & $93.015_{4}$\\
+ & (0.900) & (0.799) & (0.802) & (\textbf{0.786}) & (0.868)\\
+mushroo & $91.273_{4}$ & $90.195_{5}$ & $91.274_{3}$ & $\textbf{92.622}_1$ & $91.750_{2}$\\
+ & (0.726) & (0.714) & (0.725) & (\textbf{0.516}) & (0.589)\\
+optdigi & $54.772_{5}$ & $89.822_{2.5}$ & $89.822_{2.5}$ & $89.822_{2.5}$ & $89.822_{2.5}$\\
+ & (2.364) & (0.021) & (0.021) & (0.021) & (0.021)\\
+page-bl & $89.962_{5}$ & $90.901_{4}$ & $92.105_{2}$ & $\textbf{92.136}_1$ & $91.073_{3}$\\
+ & (1.017) & (1.021) & (0.507) & (\textbf{0.498}) & (0.932)\\
+pendigi & $\textbf{97.231}_1$ & $97.187_{4}$ & $97.168_{5}$ & $97.216_{3}$ & $97.229_{2}$\\
+ & (\textbf{0.230}) & (0.249) & (0.280) & (0.247) & (0.246)\\
+scene-c & $60.327_{5}$ & $77.856_{2}$ & $77.856_{2}$ & $76.052_{4}$ & $77.856_{2}$\\
+ & (2.215) & (0.070) & (0.070) & (4.004) & (0.070)\\
+segment & $83.645_{5}$ & $95.996_{3}$ & $96.009_{2}$ & $\textbf{96.390}_1$ & $89.810_{4}$\\
+ & (1.504) & (0.882) & (0.878) & (\textbf{0.757}) & (1.546)\\
+shuttle & $89.461_{5}$ & $89.488_{4}$ & $89.707_{2}$ & $\textbf{89.851}_1$ & $89.516_{3}$\\
+ & (0.185) & (0.147) & (0.170) & (\textbf{0.171}) & (0.202)\\
+sonar & $67.696_{5}$ & $70.414_{2}$ & $69.667_{3}$ & $\textbf{70.693}_1$ & $68.373_{4}$\\
+ & (6.808) & (7.295) & (7.848) & (\textbf{7.154}) & (7.539)\\
+spambas & $81.669_{5}$ & $84.451_{2}$ & $83.582_{3}$ & $\textbf{88.807}_1$ & $81.843_{4}$\\
+ & (1.242) & (1.200) & (1.160) & (\textbf{2.212}) & (1.246)\\
+tic-tac & $71.335_{4}$ & $71.471_{2}$ & $71.377_{3}$ & $\textbf{71.606}_1$ & $71.242_{5}$\\
+ & (1.821) & (2.746) & (2.907) & (\textbf{2.051}) & (2.998)\\
+vehicle & $80.189_{5}$ & $81.123_{2}$ & $\textbf{81.303}_1$ & $80.829_{4}$ & $81.016_{3}$\\
+ & (3.378) & (2.799) & (\textbf{2.623}) & (2.504) & (3.049)\\
+vowel & $94.980_{5}$ & $95.323_{2}$ & $95.313_{3}$ & $\textbf{95.404}_1$ & $95.303_{4}$\\
+ & (1.292) & (1.387) & (1.407) & (\textbf{1.304}) & (1.400)\\
+wavefor & $85.580_{5}$ & $\textbf{86.372}_1$ & $86.354_{2}$ & $86.250_{4}$ & $86.302_{3}$\\
+ & (1.180) & (\textbf{1.180}) & (1.104) & (1.116) & (1.147)\\
+wdbc & $93.269_{3}$ & $93.180_{4}$ & $\textbf{93.480}_1$ & $93.109_{5}$ & $93.286_{2}$\\
+ & (2.200) & (1.991) & (\textbf{2.062}) & (2.076) & (2.195)\\
+wpbc & $67.047_{5}$ & $75.620_{4}$ & $75.780_{3}$ & $76.083_{2}$ & $\textbf{76.296}_1$\\
+ & (6.210) & (3.448) & (2.066) & (4.573) & (\textbf{0.710})\\
+yeast & $55.337_{5}$ & $68.538_{3}$ & $68.503_{4}$ & $68.597_{2}$ & $\textbf{68.605}_1$\\
+ & (11.620) & (0.523) & (0.491) & (1.345) & (\textbf{0.509})\\
+zoo & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$ & $98.258_{3}$\\
+ & (3.024) & (3.024) & (3.024) & (3.024) & (3.024)\\
+\midrule
+rank & 4.06 & 2.67 & 2.54 & 2.56 & 3.17\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=31.248956884561867, pvalue=2.7234741595509973e-06)
+-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $1.181_{5}$ & $\textbf{0.621}_1$ & $0.622_{2}$ & $0.626_{4}$ & $0.623_{3}$\\
+ & (0.076) & (\textbf{0.008}) & (0.008) & (0.024) & (0.008)\\
+autos & $1.149_{5}$ & $\textbf{0.547}_1$ & $0.553_{2}$ & $0.582_{4}$ & $0.565_{3}$\\
+ & (0.415) & (\textbf{0.047}) & (0.040) & (0.155) & (0.047)\\
+balance & $0.283_{5}$ & $\textbf{0.114}_1$ & $0.115_{3}$ & $0.182_{4}$ & $0.114_{2}$\\
+ & (0.013) & (\textbf{0.035}) & (0.035) & (0.189) & (0.035)\\
+car & $0.396_{4}$ & $0.383_{3}$ & $0.383_{2}$ & $\textbf{0.381}_1$ & $0.397_{5}$\\
+ & (0.015) & (0.022) & (0.022) & (\textbf{0.058}) & (0.026)\\
+clevela & $0.677_{5}$ & $0.414_{2}$ & $\textbf{0.414}_1$ & $0.583_{4}$ & $0.425_{3}$\\
+ & (0.240) & (0.071) & (\textbf{0.070}) & (0.375) & (0.076)\\
+credit- & $1.186_{5}$ & $\textbf{0.391}_1$ & $0.413_{2}$ & $0.475_{4}$ & $0.459_{3}$\\
+ & (0.387) & (\textbf{0.049}) & (0.060) & (0.161) & (0.057)\\
+dermato & $0.464_{5}$ & $0.076_{2}$ & $\textbf{0.073}_1$ & $0.112_{4}$ & $0.078_{3}$\\
+ & (0.476) & (0.064) & (\textbf{0.059}) & (0.151) & (0.066)\\
+diabete & $0.628_{5}$ & $\textbf{0.503}_1$ & $0.528_{3}$ & $0.559_{4}$ & $0.518_{2}$\\
+ & (0.122) & (\textbf{0.032}) & (0.042) & (0.142) & (0.034)\\
+ecoli & $3.677_{5}$ & $0.182_{2}$ & $\textbf{0.181}_1$ & $0.408_{4}$ & $0.393_{3}$\\
+ & (1.367) & (0.080) & (\textbf{0.080}) & (0.444) & (0.116)\\
+flare & $2.010_{5}$ & $\textbf{0.427}_1$ & $0.442_{3}$ & $0.431_{2}$ & $0.549_{4}$\\
+ & (0.824) & (\textbf{0.028}) & (0.031) & (0.043) & (0.018)\\
+german & $0.907_{5}$ & $0.541_{3}$ & $0.564_{4}$ & $0.536_{2}$ & $\textbf{0.523}_1$\\
+ & (0.239) & (0.026) & (0.025) & (0.044) & (\textbf{0.026})\\
+glass & $1.231_{5}$ & $\textbf{0.594}_1$ & $0.595_{2}$ & $0.788_{4}$ & $0.598_{3}$\\
+ & (0.805) & (\textbf{0.055}) & (0.051) & (0.472) & (0.047)\\
+heart-s & $0.606_{5}$ & $0.398_{2}$ & $\textbf{0.397}_1$ & $0.519_{4}$ & $0.409_{3}$\\
+ & (0.227) & (0.078) & (\textbf{0.076}) & (0.504) & (0.083)\\
+hepatit & $3.899_{5}$ & $0.401_{2}$ & $\textbf{0.388}_1$ & $0.517_{4}$ & $0.436_{3}$\\
+ & (2.154) & (0.162) & (\textbf{0.092}) & (0.438) & (0.099)\\
+horse & $5.096_{5}$ & $\textbf{0.514}_1$ & $0.543_{2}$ & $0.713_{4}$ & $0.631_{3}$\\
+ & (2.454) & (\textbf{0.054}) & (0.053) & (0.409) & (0.048)\\
+ionosph & $1.166_{5}$ & $0.294_{2}$ & $\textbf{0.293}_1$ & $0.387_{4}$ & $0.325_{3}$\\
+ & (0.406) & (0.061) & (\textbf{0.059}) & (0.363) & (0.070)\\
+iris & $0.000_{2}$ & $0.000_{4}$ & $0.000_{5}$ & $\textbf{0.000}_1$ & $0.000_{3}$\\
+ & (0.000) & (0.000) & (0.000) & (\textbf{0.000}) & (0.000)\\
+landsat & $0.650_{5}$ & $\textbf{0.181}_1$ & $0.183_{2}$ & $0.191_{3}$ & $0.223_{4}$\\
+ & (0.097) & (\textbf{0.016}) & (0.016) & (0.025) & (0.017)\\
+letter & $0.088_{5}$ & $0.081_{2}$ & $0.083_{3}$ & $\textbf{0.079}_1$ & $0.086_{4}$\\
+ & (0.006) & (0.003) & (0.004) & (\textbf{0.005}) & (0.003)\\
+libras- & $0.542_{5}$ & $\textbf{0.130}_1$ & $0.138_{2}$ & $0.234_{4}$ & $0.139_{3}$\\
+ & (0.514) & (\textbf{0.073}) & (0.065) & (0.331) & (0.061)\\
+lung-ca & $0.385_{5}$ & $0.100_{2}$ & $\textbf{0.090}_1$ & $0.114_{4}$ & $0.110_{3}$\\
+ & (0.777) & (0.061) & (\textbf{0.060}) & (0.065) & (0.063)\\
+mfeat-k & $0.133_{5}$ & $\textbf{0.056}_1$ & $0.061_{2}$ & $0.096_{4}$ & $0.068_{3}$\\
+ & (0.083) & (\textbf{0.019}) & (0.021) & (0.083) & (0.021)\\
+mfeat-m & $0.055_{5}$ & $0.013_{2}$ & $0.013_{3}$ & $0.016_{4}$ & $\textbf{0.013}_1$\\
+ & (0.072) & (0.017) & (0.017) & (0.039) & (\textbf{0.017})\\
+mfeat-z & $1.269_{5}$ & $\textbf{0.092}_1$ & $0.097_{2}$ & $0.103_{3}$ & $0.139_{4}$\\
+ & (0.190) & (\textbf{0.022}) & (0.021) & (0.057) & (0.017)\\
+mushroo & $0.626_{5}$ & $0.259_{2}$ & $0.310_{4}$ & $\textbf{0.227}_1$ & $0.267_{3}$\\
+ & (0.089) & (0.015) & (0.023) & (\textbf{0.014}) & (0.017)\\
+optdigi & $13.906_{5}$ & $0.246_{2}$ & $0.251_{3}$ & $\textbf{0.243}_1$ & $0.272_{4}$\\
+ & (0.924) & (0.010) & (0.010) & (\textbf{0.013}) & (0.006)\\
+page-bl & $1.062_{5}$ & $0.212_{2}$ & $0.228_{3}$ & $\textbf{0.189}_1$ & $0.265_{4}$\\
+ & (0.150) & (0.012) & (0.012) & (\textbf{0.016}) & (0.011)\\
+pendigi & $0.335_{5}$ & $\textbf{0.076}_1$ & $0.077_{2}$ & $0.079_{3}$ & $0.086_{4}$\\
+ & (0.037) & (\textbf{0.006}) & (0.006) & (0.013) & (0.006)\\
+scene-c & $12.423_{5}$ & $\textbf{0.452}_1$ & $0.454_{2}$ & $0.460_{3}$ & $0.465_{4}$\\
+ & (0.748) & (\textbf{0.015}) & (0.015) & (0.024) & (0.014)\\
+segment & $1.316_{5}$ & $\textbf{0.109}_1$ & $0.111_{2}$ & $0.132_{3}$ & $0.197_{4}$\\
+ & (0.131) & (\textbf{0.022}) & (0.022) & (0.082) & (0.022)\\
+shuttle & $0.687_{5}$ & $0.277_{2}$ & $0.286_{3}$ & $\textbf{0.218}_1$ & $0.323_{4}$\\
+ & (0.024) & (0.003) & (0.003) & (\textbf{0.006}) & (0.003)\\
+sonar & $2.504_{5}$ & $\textbf{0.545}_1$ & $0.567_{2}$ & $0.610_{4}$ & $0.603_{3}$\\
+ & (1.021) & (\textbf{0.074}) & (0.072) & (0.378) & (0.067)\\
+spambas & $5.369_{5}$ & $0.359_{2}$ & $0.371_{3}$ & $\textbf{0.315}_1$ & $0.407_{4}$\\
+ & (0.508) & (0.024) & (0.021) & (\textbf{0.038}) & (0.016)\\
+tic-tac & $0.589_{4}$ & $\textbf{0.580}_1$ & $0.584_{3}$ & $0.591_{5}$ & $0.582_{2}$\\
+ & (0.016) & (\textbf{0.023}) & (0.022) & (0.067) & (0.023)\\
+vehicle & $0.588_{5}$ & $\textbf{0.410}_1$ & $0.446_{4}$ & $0.414_{2}$ & $0.429_{3}$\\
+ & (0.191) & (\textbf{0.040}) & (0.051) & (0.062) & (0.045)\\
+vowel & $0.113_{3}$ & $0.112_{2}$ & $\textbf{0.112}_1$ & $0.166_{5}$ & $0.128_{4}$\\
+ & (0.024) & (0.023) & (\textbf{0.022}) & (0.145) & (0.030)\\
+wavefor & $0.364_{5}$ & $\textbf{0.291}_1$ & $0.292_{2}$ & $0.308_{4}$ & $0.308_{3}$\\
+ & (0.031) & (\textbf{0.016}) & (0.016) & (0.031) & (0.017)\\
+wdbc & $0.636_{5}$ & $0.150_{2}$ & $\textbf{0.147}_1$ & $0.220_{3}$ & $0.235_{4}$\\
+ & (0.292) & (0.041) & (\textbf{0.040}) & (0.174) & (0.055)\\
+wpbc & $1.740_{5}$ & $0.533_{2}$ & $\textbf{0.533}_1$ & $0.682_{4}$ & $0.534_{3}$\\
+ & (0.720) & (0.048) & (\textbf{0.043}) & (0.506) & (0.030)\\
+yeast & $1.900_{5}$ & $0.582_{2}$ & $0.592_{4}$ & $0.589_{3}$ & $\textbf{0.562}_1$\\
+ & (2.066) & (0.028) & (0.030) & (0.047) & (\textbf{0.030})\\
+zoo & $0.642_{5}$ & $0.134_{2}$ & $0.134_{3}$ & $0.312_{4}$ & $\textbf{0.134}_1$\\
+ & (1.114) & (0.200) & (0.200) & (0.630) & (\textbf{0.200})\\
+\midrule
+rank & 4.83 & 1.63 & 2.29 & 3.15 & 3.10\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=94.185365853658482, pvalue=1.6981915377395782e-19)
+-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+dataset & uncalibrated & beta & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $0.303_{5}$ & $0.216_{2}$ & $0.216_{3}$ & $\textbf{0.216}_1$ & $0.217_{4}$\\
+ & (0.012) & (0.003) & (0.003) & (\textbf{0.004}) & (0.004)\\
+autos & $0.254_{5}$ & $\textbf{0.186}_1$ & $0.187_{2}$ & $0.189_{3}$ & $0.192_{4}$\\
+ & (0.060) & (\textbf{0.019}) & (0.017) & (0.027) & (0.020)\\
+balance & $0.077_{5}$ & $\textbf{0.033}_1$ & $0.033_{3}$ & $0.034_{4}$ & $0.033_{2}$\\
+ & (0.005) & (\textbf{0.012}) & (0.012) & (0.013) & (0.012)\\
+car & $0.134_{4}$ & $0.132_{3}$ & $0.132_{2}$ & $\textbf{0.130}_1$ & $0.135_{5}$\\
+ & (0.006) & (0.009) & (0.010) & (\textbf{0.009}) & (0.011)\\
+clevela & $0.140_{5}$ & $0.129_{2}$ & $\textbf{0.128}_1$ & $0.130_{4}$ & $0.130_{3}$\\
+ & (0.038) & (0.027) & (\textbf{0.026}) & (0.028) & (0.030)\\
+credit- & $0.168_{5}$ & $\textbf{0.118}_1$ & $0.124_{3}$ & $0.119_{2}$ & $0.144_{4}$\\
+ & (0.031) & (\textbf{0.017}) & (0.017) & (0.020) & (0.022)\\
+dermato & $0.013_{5}$ & $0.013_{2}$ & $\textbf{0.013}_1$ & $0.013_{3}$ & $0.013_{4}$\\
+ & (0.013) & (0.013) & (\textbf{0.013}) & (0.013) & (0.013)\\
+diabete & $0.180_{5}$ & $\textbf{0.168}_1$ & $0.171_{3}$ & $0.169_{2}$ & $0.171_{4}$\\
+ & (0.022) & (\textbf{0.014}) & (0.012) & (0.014) & (0.015)\\
+ecoli & $0.361_{5}$ & $0.047_{2}$ & $\textbf{0.047}_1$ & $0.049_{3}$ & $0.132_{4}$\\
+ & (0.096) & (0.019) & (\textbf{0.019}) & (0.020) & (0.047)\\
+flare & $0.454_{5}$ & $0.136_{2}$ & $0.137_{3}$ & $\textbf{0.136}_1$ & $0.186_{4}$\\
+ & (0.031) & (0.009) & (0.008) & (\textbf{0.008}) & (0.005)\\
+german & $0.195_{5}$ & $0.179_{3}$ & $0.187_{4}$ & $0.176_{2}$ & $\textbf{0.174}_1$\\
+ & (0.019) & (0.007) & (0.007) & (0.011) & (\textbf{0.010})\\
+glass & $0.304_{5}$ & $0.205_{2}$ & $\textbf{0.205}_1$ & $0.209_{4}$ & $0.208_{3}$\\
+ & (0.074) & (0.018) & (\textbf{0.014}) & (0.021) & (0.018)\\
+heart-s & $0.132_{5}$ & $0.122_{3}$ & $0.122_{2}$ & $\textbf{0.122}_1$ & $0.123_{4}$\\
+ & (0.040) & (0.028) & (0.027) & (\textbf{0.030}) & (0.032)\\
+hepatit & $0.357_{5}$ & $0.117_{2}$ & $\textbf{0.117}_1$ & $0.118_{3}$ & $0.137_{4}$\\
+ & (0.108) & (0.028) & (\textbf{0.024}) & (0.033) & (0.022)\\
+horse & $0.493_{5}$ & $0.166_{2}$ & $0.172_{3}$ & $\textbf{0.164}_1$ & $0.220_{4}$\\
+ & (0.119) & (0.021) & (0.017) & (\textbf{0.022}) & (0.021)\\
+ionosph & $0.104_{5}$ & $0.088_{3}$ & $0.088_{2}$ & $\textbf{0.086}_1$ & $0.092_{4}$\\
+ & (0.031) & (0.021) & (0.021) & (\textbf{0.022}) & (0.025)\\
+iris & $0.000_{3}$ & $0.000_{4}$ & $0.000_{5}$ & $0.000_{2}$ & $\textbf{0.000}_1$\\
+ & (0.000) & (0.000) & (0.000) & (0.000) & (\textbf{0.000})\\
+landsat & $0.060_{5}$ & $0.050_{2}$ & $0.050_{3}$ & $\textbf{0.050}_1$ & $0.057_{4}$\\
+ & (0.006) & (0.005) & (0.005) & (\textbf{0.005}) & (0.006)\\
+letter & $0.021_{3}$ & $0.021_{4}$ & $0.021_{2}$ & $\textbf{0.020}_1$ & $0.022_{5}$\\
+ & (0.001) & (0.001) & (0.001) & (\textbf{0.001}) & (0.001)\\
+libras- & $0.047_{5}$ & $\textbf{0.030}_1$ & $0.032_{3}$ & $0.031_{2}$ & $0.035_{4}$\\
+ & (0.028) & (\textbf{0.017}) & (0.014) & (0.017) & (0.017)\\
+lung-ca & $\textbf{0.010}_1$ & $0.015_{3}$ & $0.013_{2}$ & $0.021_{5}$ & $0.019_{4}$\\
+ & (\textbf{0.021}) & (0.018) & (0.019) & (0.020) & (0.019)\\
+mfeat-k & $0.013_{4}$ & $\textbf{0.013}_1$ & $0.013_{3}$ & $0.013_{2}$ & $0.014_{5}$\\
+ & (0.005) & (\textbf{0.004}) & (0.004) & (0.005) & (0.005)\\
+mfeat-m & $0.002_{3}$ & $0.001_{2}$ & $0.002_{4}$ & $0.002_{5}$ & $\textbf{0.001}_1$\\
+ & (0.002) & (0.002) & (0.002) & (0.002) & (\textbf{0.002})\\
+mfeat-z & $0.072_{5}$ & $0.024_{2}$ & $0.025_{3}$ & $\textbf{0.022}_1$ & $0.044_{4}$\\
+ & (0.009) & (0.005) & (0.005) & (\textbf{0.006}) & (0.004)\\
+mushroo & $0.076_{4}$ & $0.074_{3}$ & $0.080_{5}$ & $\textbf{0.063}_1$ & $0.070_{2}$\\
+ & (0.006) & (0.005) & (0.004) & (\textbf{0.004}) & (0.005)\\
+optdigi & $0.449_{5}$ & $0.078_{2}$ & $0.078_{3}$ & $\textbf{0.077}_1$ & $0.083_{4}$\\
+ & (0.023) & (0.002) & (0.002) & (\textbf{0.002}) & (0.001)\\
+page-bl & $0.093_{5}$ & $0.063_{2}$ & $0.064_{3}$ & $\textbf{0.057}_1$ & $0.073_{4}$\\
+ & (0.010) & (0.004) & (0.004) & (\textbf{0.003}) & (0.004)\\
+pendigi & $0.027_{5}$ & $0.022_{2}$ & $0.023_{3}$ & $\textbf{0.022}_1$ & $0.023_{4}$\\
+ & (0.002) & (0.002) & (0.002) & (\textbf{0.002}) & (0.002)\\
+scene-c & $0.394_{5}$ & $\textbf{0.148}_1$ & $0.148_{2}$ & $0.151_{3}$ & $0.153_{4}$\\
+ & (0.022) & (\textbf{0.005}) & (0.004) & (0.008) & (0.004)\\
+segment & $0.151_{5}$ & $0.030_{2}$ & $0.031_{3}$ & $\textbf{0.029}_1$ & $0.066_{4}$\\
+ & (0.013) & (0.006) & (0.005) & (\textbf{0.006}) & (0.005)\\
+shuttle & $0.098_{5}$ & $0.083_{3}$ & $0.083_{2}$ & $\textbf{0.072}_1$ & $0.090_{4}$\\
+ & (0.001) & (0.001) & (0.001) & (\textbf{0.002}) & (0.001)\\
+sonar & $0.289_{5}$ & $0.185_{2}$ & $0.189_{3}$ & $\textbf{0.180}_1$ & $0.207_{4}$\\
+ & (0.066) & (0.032) & (0.029) & (\textbf{0.031}) & (0.030)\\
+spambas & $0.182_{5}$ & $0.110_{2}$ & $0.116_{3}$ & $\textbf{0.092}_1$ & $0.131_{4}$\\
+ & (0.012) & (0.009) & (0.008) & (\textbf{0.014}) & (0.006)\\
+tic-tac & $0.201_{5}$ & $0.197_{2}$ & $0.199_{4}$ & $\textbf{0.195}_1$ & $0.198_{3}$\\
+ & (0.007) & (0.010) & (0.010) & (\textbf{0.011}) & (0.010)\\
+vehicle & $0.143_{5}$ & $0.132_{2}$ & $0.136_{4}$ & $\textbf{0.131}_1$ & $0.136_{3}$\\
+ & (0.024) & (0.015) & (0.014) & (\textbf{0.015}) & (0.017)\\
+vowel & $0.035_{4}$ & $0.034_{2}$ & $\textbf{0.034}_1$ & $0.035_{3}$ & $0.035_{5}$\\
+ & (0.008) & (0.008) & (\textbf{0.007}) & (0.008) & (0.009)\\
+wavefor & $0.109_{5}$ & $\textbf{0.094}_1$ & $0.094_{2}$ & $0.094_{3}$ & $0.097_{4}$\\
+ & (0.009) & (\textbf{0.006}) & (0.006) & (0.006) & (0.007)\\
+wdbc & $0.063_{5}$ & $0.045_{3}$ & $\textbf{0.044}_1$ & $0.045_{2}$ & $0.060_{4}$\\
+ & (0.020) & (0.013) & (\textbf{0.013}) & (0.013) & (0.018)\\
+wpbc & $0.281_{5}$ & $0.175_{2}$ & $\textbf{0.174}_1$ & $0.179_{4}$ & $0.176_{3}$\\
+ & (0.058) & (0.018) & (\textbf{0.014}) & (0.027) & (0.012)\\
+yeast & $0.346_{5}$ & $0.199_{3}$ & $0.199_{4}$ & $0.194_{2}$ & $\textbf{0.191}_1$\\
+ & (0.162) & (0.009) & (0.007) & (0.010) & (\textbf{0.011})\\
+zoo & $\textbf{0.017}_1$ & $0.018_{4}$ & $0.018_{2}$ & $0.018_{5}$ & $0.018_{3}$\\
+ & (\textbf{0.030}) & (0.029) & (0.029) & (0.029) & (0.029)\\
+\midrule
+rank & 4.56 & 2.17 & 2.59 & 2.12 & 3.56\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=71.863414634146352, pvalue=9.171854824960445e-15)
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+[None, 'sigmoid', 'isotonic', 'beta_am']
+-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+dataset & uncalibrated & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $61.848_{4}$ & $\textbf{63.383}_1$ & $63.302_{2}$ & $63.003_{3}$\\
+ & (1.417) & (\textbf{0.948}) & (0.993) & (1.374)\\
+autos & $67.483_{4}$ & $\textbf{70.105}_1$ & $70.067_{2}$ & $69.254_{3}$\\
+ & (7.667) & (\textbf{4.586}) & (5.364) & (5.159)\\
+balance & $95.362_{4}$ & $95.842_{2}$ & $95.715_{3}$ & $\textbf{95.857}_1$\\
+ & (1.727) & (2.067) & (2.022) & (\textbf{2.047})\\
+car & $\textbf{78.745}_1$ & $78.496_{3}$ & $78.328_{4}$ & $78.583_{2}$\\
+ & (\textbf{2.210}) & (2.304) & (2.106) & (2.252)\\
+clevela & $\textbf{83.675}_1$ & $83.675_{2}$ & $82.969_{4}$ & $83.539_{3}$\\
+ & (\textbf{4.589}) & (4.434) & (4.506) & (4.477)\\
+credit- & $80.231_{4}$ & $83.020_{2}$ & $\textbf{84.336}_1$ & $81.167_{3}$\\
+ & (3.617) & (2.971) & (\textbf{2.822}) & (3.194)\\
+dermato & $98.715_{2.5}$ & $98.715_{2.5}$ & $98.715_{2.5}$ & $98.715_{2.5}$\\
+ & (1.312) & (1.312) & (1.312) & (1.312)\\
+diabete & $75.363_{2}$ & $74.713_{4}$ & $75.298_{3}$ & $\textbf{75.429}_1$\\
+ & (3.545) & (2.904) & (3.404) & (\textbf{3.279})\\
+ecoli & $61.688_{4}$ & $\textbf{95.187}_1$ & $95.068_{2}$ & $80.656_{3}$\\
+ & (9.419) & (\textbf{2.868}) & (3.037) & (7.908)\\
+flare & $51.401_{4}$ & $\textbf{82.289}_1$ & $82.230_{2}$ & $71.489_{3}$\\
+ & (2.543) & (\textbf{1.133}) & (1.069) & (0.140)\\
+german & $73.330_{3}$ & $71.060_{4}$ & $73.460_{2}$ & $\textbf{74.120}_1$\\
+ & (2.392) & (1.316) & (2.285) & (\textbf{2.163})\\
+glass & $58.705_{4}$ & $\textbf{64.732}_1$ & $63.746_{2}$ & $62.642_{3}$\\
+ & (5.702) & (\textbf{3.961}) & (4.874) & (4.540)\\
+heart-s & $84.222_{4}$ & $\textbf{84.778}_1$ & $84.667_{2}$ & $84.370_{3}$\\
+ & (5.106) & (\textbf{4.525}) & (4.718) & (4.852)\\
+hepatit & $60.127_{4}$ & $84.034_{2}$ & $\textbf{84.222}_1$ & $79.371_{3}$\\
+ & (10.148) & (5.038) & (\textbf{4.831}) & (1.530)\\
+horse & $47.889_{4}$ & $77.997_{2}$ & $\textbf{79.256}_1$ & $64.905_{3}$\\
+ & (11.582) & (4.991) & (\textbf{4.123}) & (5.869)\\
+ionosph & $88.573_{4}$ & $\textbf{89.687}_1$ & $89.517_{2}$ & $88.802_{3}$\\
+ & (3.409) & (\textbf{3.675}) & (3.638) & (3.278)\\
+iris & $100.000_{2.5}$ & $100.000_{2.5}$ & $100.000_{2.5}$ & $100.000_{2.5}$\\
+ & (0.000) & (0.000) & (0.000) & (0.000)\\
+landsat & $93.521_{4}$ & $93.739_{2}$ & $\textbf{93.795}_1$ & $93.591_{3}$\\
+ & (0.671) & (0.640) & (\textbf{0.644}) & (0.690)\\
+letter & $97.263_{2}$ & $97.052_{4}$ & $\textbf{97.286}_1$ & $97.108_{3}$\\
+ & (0.108) & (0.188) & (\textbf{0.119}) & (0.181)\\
+libras- & $94.827_{4}$ & $\textbf{96.087}_1$ & $96.020_{2}$ & $95.180_{3}$\\
+ & (3.119) & (\textbf{1.979}) & (2.601) & (2.881)\\
+lung-ca & $98.953_{1.5}$ & $98.953_{1.5}$ & $97.711_{4}$ & $98.121_{3}$\\
+ & (2.116) & (2.116) & (3.657) & (3.289)\\
+mfeat-k & $\textbf{98.395}_1$ & $98.390_{2}$ & $98.385_{3.5}$ & $98.385_{3.5}$\\
+ & (\textbf{0.606}) & (0.609) & (0.631) & (0.625)\\
+mfeat-m & $99.850_{2.5}$ & $99.850_{2.5}$ & $99.850_{2.5}$ & $99.850_{2.5}$\\
+ & (0.196) & (0.196) & (0.196) & (0.196)\\
+mfeat-z & $92.580_{4}$ & $96.750_{2}$ & $\textbf{97.225}_1$ & $93.015_{3}$\\
+ & (0.900) & (0.802) & (\textbf{0.786}) & (0.868)\\
+mushroo & $91.273_{4}$ & $91.274_{3}$ & $\textbf{92.622}_1$ & $91.750_{2}$\\
+ & (0.726) & (0.725) & (\textbf{0.516}) & (0.589)\\
+optdigi & $54.772_{4}$ & $89.822_{2}$ & $89.822_{2}$ & $89.822_{2}$\\
+ & (2.364) & (0.021) & (0.021) & (0.021)\\
+page-bl & $89.962_{4}$ & $92.105_{2}$ & $\textbf{92.136}_1$ & $91.073_{3}$\\
+ & (1.017) & (0.507) & (\textbf{0.498}) & (0.932)\\
+pendigi & $\textbf{97.231}_1$ & $97.168_{4}$ & $97.216_{3}$ & $97.229_{2}$\\
+ & (\textbf{0.230}) & (0.280) & (0.247) & (0.246)\\
+scene-c & $60.327_{4}$ & $77.856_{1.5}$ & $76.052_{3}$ & $77.856_{1.5}$\\
+ & (2.215) & (0.070) & (4.004) & (0.070)\\
+segment & $83.645_{4}$ & $96.009_{2}$ & $\textbf{96.390}_1$ & $89.810_{3}$\\
+ & (1.504) & (0.878) & (\textbf{0.757}) & (1.546)\\
+shuttle & $89.461_{4}$ & $89.707_{2}$ & $\textbf{89.851}_1$ & $89.516_{3}$\\
+ & (0.185) & (0.170) & (\textbf{0.171}) & (0.202)\\
+sonar & $67.696_{4}$ & $69.667_{2}$ & $\textbf{70.693}_1$ & $68.373_{3}$\\
+ & (6.808) & (7.848) & (\textbf{7.154}) & (7.539)\\
+spambas & $81.669_{4}$ & $83.582_{2}$ & $\textbf{88.807}_1$ & $81.843_{3}$\\
+ & (1.242) & (1.160) & (\textbf{2.212}) & (1.246)\\
+tic-tac & $71.335_{3}$ & $71.377_{2}$ & $\textbf{71.606}_1$ & $71.242_{4}$\\
+ & (1.821) & (2.907) & (\textbf{2.051}) & (2.998)\\
+vehicle & $80.189_{4}$ & $\textbf{81.303}_1$ & $80.829_{3}$ & $81.016_{2}$\\
+ & (3.378) & (\textbf{2.623}) & (2.504) & (3.049)\\
+vowel & $94.980_{4}$ & $95.313_{2}$ & $\textbf{95.404}_1$ & $95.303_{3}$\\
+ & (1.292) & (1.407) & (\textbf{1.304}) & (1.400)\\
+wavefor & $85.580_{4}$ & $\textbf{86.354}_1$ & $86.250_{3}$ & $86.302_{2}$\\
+ & (1.180) & (\textbf{1.104}) & (1.116) & (1.147)\\
+wdbc & $93.269_{3}$ & $\textbf{93.480}_1$ & $93.109_{4}$ & $93.286_{2}$\\
+ & (2.200) & (\textbf{2.062}) & (2.076) & (2.195)\\
+wpbc & $67.047_{4}$ & $75.780_{3}$ & $76.083_{2}$ & $\textbf{76.296}_1$\\
+ & (6.210) & (2.066) & (4.573) & (\textbf{0.710})\\
+yeast & $55.337_{4}$ & $68.503_{3}$ & $68.597_{2}$ & $\textbf{68.605}_1$\\
+ & (11.620) & (0.491) & (1.345) & (\textbf{0.509})\\
+zoo & $98.258_{2.5}$ & $98.258_{2.5}$ & $98.258_{2.5}$ & $98.258_{2.5}$\\
+ & (3.024) & (3.024) & (3.024) & (3.024)\\
+\midrule
+rank & 3.33 & 2.05 & 2.09 & 2.54\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=29.578512396694279, pvalue=1.6925343226515997e-06)
+-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+dataset & uncalibrated & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $1.181_{4}$ & $\textbf{0.622}_1$ & $0.626_{3}$ & $0.623_{2}$\\
+ & (0.076) & (\textbf{0.008}) & (0.024) & (0.008)\\
+autos & $1.149_{4}$ & $\textbf{0.553}_1$ & $0.582_{3}$ & $0.565_{2}$\\
+ & (0.415) & (\textbf{0.040}) & (0.155) & (0.047)\\
+balance & $0.283_{4}$ & $0.115_{2}$ & $0.182_{3}$ & $\textbf{0.114}_1$\\
+ & (0.013) & (0.035) & (0.189) & (\textbf{0.035})\\
+car & $0.396_{3}$ & $0.383_{2}$ & $\textbf{0.381}_1$ & $0.397_{4}$\\
+ & (0.015) & (0.022) & (\textbf{0.058}) & (0.026)\\
+clevela & $0.677_{4}$ & $\textbf{0.414}_1$ & $0.583_{3}$ & $0.425_{2}$\\
+ & (0.240) & (\textbf{0.070}) & (0.375) & (0.076)\\
+credit- & $1.186_{4}$ & $\textbf{0.413}_1$ & $0.475_{3}$ & $0.459_{2}$\\
+ & (0.387) & (\textbf{0.060}) & (0.161) & (0.057)\\
+dermato & $0.464_{4}$ & $\textbf{0.073}_1$ & $0.112_{3}$ & $0.078_{2}$\\
+ & (0.476) & (\textbf{0.059}) & (0.151) & (0.066)\\
+diabete & $0.628_{4}$ & $0.528_{2}$ & $0.559_{3}$ & $\textbf{0.518}_1$\\
+ & (0.122) & (0.042) & (0.142) & (\textbf{0.034})\\
+ecoli & $3.677_{4}$ & $\textbf{0.181}_1$ & $0.408_{3}$ & $0.393_{2}$\\
+ & (1.367) & (\textbf{0.080}) & (0.444) & (0.116)\\
+flare & $2.010_{4}$ & $0.442_{2}$ & $\textbf{0.431}_1$ & $0.549_{3}$\\
+ & (0.824) & (0.031) & (\textbf{0.043}) & (0.018)\\
+german & $0.907_{4}$ & $0.564_{3}$ & $0.536_{2}$ & $\textbf{0.523}_1$\\
+ & (0.239) & (0.025) & (0.044) & (\textbf{0.026})\\
+glass & $1.231_{4}$ & $\textbf{0.595}_1$ & $0.788_{3}$ & $0.598_{2}$\\
+ & (0.805) & (\textbf{0.051}) & (0.472) & (0.047)\\
+heart-s & $0.606_{4}$ & $\textbf{0.397}_1$ & $0.519_{3}$ & $0.409_{2}$\\
+ & (0.227) & (\textbf{0.076}) & (0.504) & (0.083)\\
+hepatit & $3.899_{4}$ & $\textbf{0.388}_1$ & $0.517_{3}$ & $0.436_{2}$\\
+ & (2.154) & (\textbf{0.092}) & (0.438) & (0.099)\\
+horse & $5.096_{4}$ & $\textbf{0.543}_1$ & $0.713_{3}$ & $0.631_{2}$\\
+ & (2.454) & (\textbf{0.053}) & (0.409) & (0.048)\\
+ionosph & $1.166_{4}$ & $\textbf{0.293}_1$ & $0.387_{3}$ & $0.325_{2}$\\
+ & (0.406) & (\textbf{0.059}) & (0.363) & (0.070)\\
+iris & $0.000_{2}$ & $0.000_{4}$ & $\textbf{0.000}_1$ & $0.000_{3}$\\
+ & (0.000) & (0.000) & (\textbf{0.000}) & (0.000)\\
+landsat & $0.650_{4}$ & $\textbf{0.183}_1$ & $0.191_{2}$ & $0.223_{3}$\\
+ & (0.097) & (\textbf{0.016}) & (0.025) & (0.017)\\
+letter & $0.088_{4}$ & $0.083_{2}$ & $\textbf{0.079}_1$ & $0.086_{3}$\\
+ & (0.006) & (0.004) & (\textbf{0.005}) & (0.003)\\
+libras- & $0.542_{4}$ & $\textbf{0.138}_1$ & $0.234_{3}$ & $0.139_{2}$\\
+ & (0.514) & (\textbf{0.065}) & (0.331) & (0.061)\\
+lung-ca & $0.385_{4}$ & $\textbf{0.090}_1$ & $0.114_{3}$ & $0.110_{2}$\\
+ & (0.777) & (\textbf{0.060}) & (0.065) & (0.063)\\
+mfeat-k & $0.133_{4}$ & $\textbf{0.061}_1$ & $0.096_{3}$ & $0.068_{2}$\\
+ & (0.083) & (\textbf{0.021}) & (0.083) & (0.021)\\
+mfeat-m & $0.055_{4}$ & $0.013_{2}$ & $0.016_{3}$ & $\textbf{0.013}_1$\\
+ & (0.072) & (0.017) & (0.039) & (\textbf{0.017})\\
+mfeat-z & $1.269_{4}$ & $\textbf{0.097}_1$ & $0.103_{2}$ & $0.139_{3}$\\
+ & (0.190) & (\textbf{0.021}) & (0.057) & (0.017)\\
+mushroo & $0.626_{4}$ & $0.310_{3}$ & $\textbf{0.227}_1$ & $0.267_{2}$\\
+ & (0.089) & (0.023) & (\textbf{0.014}) & (0.017)\\
+optdigi & $13.906_{4}$ & $0.251_{2}$ & $\textbf{0.243}_1$ & $0.272_{3}$\\
+ & (0.924) & (0.010) & (\textbf{0.013}) & (0.006)\\
+page-bl & $1.062_{4}$ & $0.228_{2}$ & $\textbf{0.189}_1$ & $0.265_{3}$\\
+ & (0.150) & (0.012) & (\textbf{0.016}) & (0.011)\\
+pendigi & $0.335_{4}$ & $\textbf{0.077}_1$ & $0.079_{2}$ & $0.086_{3}$\\
+ & (0.037) & (\textbf{0.006}) & (0.013) & (0.006)\\
+scene-c & $12.423_{4}$ & $\textbf{0.454}_1$ & $0.460_{2}$ & $0.465_{3}$\\
+ & (0.748) & (\textbf{0.015}) & (0.024) & (0.014)\\
+segment & $1.316_{4}$ & $\textbf{0.111}_1$ & $0.132_{2}$ & $0.197_{3}$\\
+ & (0.131) & (\textbf{0.022}) & (0.082) & (0.022)\\
+shuttle & $0.687_{4}$ & $0.286_{2}$ & $\textbf{0.218}_1$ & $0.323_{3}$\\
+ & (0.024) & (0.003) & (\textbf{0.006}) & (0.003)\\
+sonar & $2.504_{4}$ & $\textbf{0.567}_1$ & $0.610_{3}$ & $0.603_{2}$\\
+ & (1.021) & (\textbf{0.072}) & (0.378) & (0.067)\\
+spambas & $5.369_{4}$ & $0.371_{2}$ & $\textbf{0.315}_1$ & $0.407_{3}$\\
+ & (0.508) & (0.021) & (\textbf{0.038}) & (0.016)\\
+tic-tac & $0.589_{3}$ & $0.584_{2}$ & $0.591_{4}$ & $\textbf{0.582}_1$\\
+ & (0.016) & (0.022) & (0.067) & (\textbf{0.023})\\
+vehicle & $0.588_{4}$ & $0.446_{3}$ & $\textbf{0.414}_1$ & $0.429_{2}$\\
+ & (0.191) & (0.051) & (\textbf{0.062}) & (0.045)\\
+vowel & $0.113_{2}$ & $\textbf{0.112}_1$ & $0.166_{4}$ & $0.128_{3}$\\
+ & (0.024) & (\textbf{0.022}) & (0.145) & (0.030)\\
+wavefor & $0.364_{4}$ & $\textbf{0.292}_1$ & $0.308_{3}$ & $0.308_{2}$\\
+ & (0.031) & (\textbf{0.016}) & (0.031) & (0.017)\\
+wdbc & $0.636_{4}$ & $\textbf{0.147}_1$ & $0.220_{2}$ & $0.235_{3}$\\
+ & (0.292) & (\textbf{0.040}) & (0.174) & (0.055)\\
+wpbc & $1.740_{4}$ & $\textbf{0.533}_1$ & $0.682_{3}$ & $0.534_{2}$\\
+ & (0.720) & (\textbf{0.043}) & (0.506) & (0.030)\\
+yeast & $1.900_{4}$ & $0.592_{3}$ & $0.589_{2}$ & $\textbf{0.562}_1$\\
+ & (2.066) & (0.030) & (0.047) & (\textbf{0.030})\\
+zoo & $0.642_{4}$ & $0.134_{2}$ & $0.312_{3}$ & $\textbf{0.134}_1$\\
+ & (1.114) & (0.200) & (0.630) & (\textbf{0.200})\\
+\midrule
+rank & 3.85 & 1.56 & 2.37 & 2.22\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=69.146341463414728, pvalue=6.5018552190642047e-15)
+-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+dataset & uncalibrated & beta_am & isotonic & sigmoid\\
+\midrule
+abalone & $0.303_{4}$ & $0.216_{2}$ & $\textbf{0.216}_1$ & $0.217_{3}$\\
+ & (0.012) & (0.003) & (\textbf{0.004}) & (0.004)\\
+autos & $0.254_{4}$ & $\textbf{0.187}_1$ & $0.189_{2}$ & $0.192_{3}$\\
+ & (0.060) & (\textbf{0.017}) & (0.027) & (0.020)\\
+balance & $0.077_{4}$ & $0.033_{2}$ & $0.034_{3}$ & $\textbf{0.033}_1$\\
+ & (0.005) & (0.012) & (0.013) & (\textbf{0.012})\\
+car & $0.134_{3}$ & $0.132_{2}$ & $\textbf{0.130}_1$ & $0.135_{4}$\\
+ & (0.006) & (0.010) & (\textbf{0.009}) & (0.011)\\
+clevela & $0.140_{4}$ & $\textbf{0.128}_1$ & $0.130_{3}$ & $0.130_{2}$\\
+ & (0.038) & (\textbf{0.026}) & (0.028) & (0.030)\\
+credit- & $0.168_{4}$ & $0.124_{2}$ & $\textbf{0.119}_1$ & $0.144_{3}$\\
+ & (0.031) & (0.017) & (\textbf{0.020}) & (0.022)\\
+dermato & $0.013_{4}$ & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{3}$\\
+ & (0.013) & (\textbf{0.013}) & (0.013) & (0.013)\\
+diabete & $0.180_{4}$ & $0.171_{2}$ & $\textbf{0.169}_1$ & $0.171_{3}$\\
+ & (0.022) & (0.012) & (\textbf{0.014}) & (0.015)\\
+ecoli & $0.361_{4}$ & $\textbf{0.047}_1$ & $0.049_{2}$ & $0.132_{3}$\\
+ & (0.096) & (\textbf{0.019}) & (0.020) & (0.047)\\
+flare & $0.454_{4}$ & $0.137_{2}$ & $\textbf{0.136}_1$ & $0.186_{3}$\\
+ & (0.031) & (0.008) & (\textbf{0.008}) & (0.005)\\
+german & $0.195_{4}$ & $0.187_{3}$ & $0.176_{2}$ & $\textbf{0.174}_1$\\
+ & (0.019) & (0.007) & (0.011) & (\textbf{0.010})\\
+glass & $0.304_{4}$ & $\textbf{0.205}_1$ & $0.209_{3}$ & $0.208_{2}$\\
+ & (0.074) & (\textbf{0.014}) & (0.021) & (0.018)\\
+heart-s & $0.132_{4}$ & $0.122_{2}$ & $\textbf{0.122}_1$ & $0.123_{3}$\\
+ & (0.040) & (0.027) & (\textbf{0.030}) & (0.032)\\
+hepatit & $0.357_{4}$ & $\textbf{0.117}_1$ & $0.118_{2}$ & $0.137_{3}$\\
+ & (0.108) & (\textbf{0.024}) & (0.033) & (0.022)\\
+horse & $0.493_{4}$ & $0.172_{2}$ & $\textbf{0.164}_1$ & $0.220_{3}$\\
+ & (0.119) & (0.017) & (\textbf{0.022}) & (0.021)\\
+ionosph & $0.104_{4}$ & $0.088_{2}$ & $\textbf{0.086}_1$ & $0.092_{3}$\\
+ & (0.031) & (0.021) & (\textbf{0.022}) & (0.025)\\
+iris & $0.000_{3}$ & $0.000_{4}$ & $0.000_{2}$ & $\textbf{0.000}_1$\\
+ & (0.000) & (0.000) & (0.000) & (\textbf{0.000})\\
+landsat & $0.060_{4}$ & $0.050_{2}$ & $\textbf{0.050}_1$ & $0.057_{3}$\\
+ & (0.006) & (0.005) & (\textbf{0.005}) & (0.006)\\
+letter & $0.021_{3}$ & $0.021_{2}$ & $\textbf{0.020}_1$ & $0.022_{4}$\\
+ & (0.001) & (0.001) & (\textbf{0.001}) & (0.001)\\
+libras- & $0.047_{4}$ & $0.032_{2}$ & $\textbf{0.031}_1$ & $0.035_{3}$\\
+ & (0.028) & (0.014) & (\textbf{0.017}) & (0.017)\\
+lung-ca & $\textbf{0.010}_1$ & $0.013_{2}$ & $0.021_{4}$ & $0.019_{3}$\\
+ & (\textbf{0.021}) & (0.019) & (0.020) & (0.019)\\
+mfeat-k & $0.013_{3}$ & $0.013_{2}$ & $\textbf{0.013}_1$ & $0.014_{4}$\\
+ & (0.005) & (0.004) & (\textbf{0.005}) & (0.005)\\
+mfeat-m & $0.002_{2}$ & $0.002_{3}$ & $0.002_{4}$ & $\textbf{0.001}_1$\\
+ & (0.002) & (0.002) & (0.002) & (\textbf{0.002})\\
+mfeat-z & $0.072_{4}$ & $0.025_{2}$ & $\textbf{0.022}_1$ & $0.044_{3}$\\
+ & (0.009) & (0.005) & (\textbf{0.006}) & (0.004)\\
+mushroo & $0.076_{3}$ & $0.080_{4}$ & $\textbf{0.063}_1$ & $0.070_{2}$\\
+ & (0.006) & (0.004) & (\textbf{0.004}) & (0.005)\\
+optdigi & $0.449_{4}$ & $0.078_{2}$ & $\textbf{0.077}_1$ & $0.083_{3}$\\
+ & (0.023) & (0.002) & (\textbf{0.002}) & (0.001)\\
+page-bl & $0.093_{4}$ & $0.064_{2}$ & $\textbf{0.057}_1$ & $0.073_{3}$\\
+ & (0.010) & (0.004) & (\textbf{0.003}) & (0.004)\\
+pendigi & $0.027_{4}$ & $0.023_{2}$ & $\textbf{0.022}_1$ & $0.023_{3}$\\
+ & (0.002) & (0.002) & (\textbf{0.002}) & (0.002)\\
+scene-c & $0.394_{4}$ & $\textbf{0.148}_1$ & $0.151_{2}$ & $0.153_{3}$\\
+ & (0.022) & (\textbf{0.004}) & (0.008) & (0.004)\\
+segment & $0.151_{4}$ & $0.031_{2}$ & $\textbf{0.029}_1$ & $0.066_{3}$\\
+ & (0.013) & (0.005) & (\textbf{0.006}) & (0.005)\\
+shuttle & $0.098_{4}$ & $0.083_{2}$ & $\textbf{0.072}_1$ & $0.090_{3}$\\
+ & (0.001) & (0.001) & (\textbf{0.002}) & (0.001)\\
+sonar & $0.289_{4}$ & $0.189_{2}$ & $\textbf{0.180}_1$ & $0.207_{3}$\\
+ & (0.066) & (0.029) & (\textbf{0.031}) & (0.030)\\
+spambas & $0.182_{4}$ & $0.116_{2}$ & $\textbf{0.092}_1$ & $0.131_{3}$\\
+ & (0.012) & (0.008) & (\textbf{0.014}) & (0.006)\\
+tic-tac & $0.201_{4}$ & $0.199_{3}$ & $\textbf{0.195}_1$ & $0.198_{2}$\\
+ & (0.007) & (0.010) & (\textbf{0.011}) & (0.010)\\
+vehicle & $0.143_{4}$ & $0.136_{3}$ & $\textbf{0.131}_1$ & $0.136_{2}$\\
+ & (0.024) & (0.014) & (\textbf{0.015}) & (0.017)\\
+vowel & $0.035_{3}$ & $\textbf{0.034}_1$ & $0.035_{2}$ & $0.035_{4}$\\
+ & (0.008) & (\textbf{0.007}) & (0.008) & (0.009)\\
+wavefor & $0.109_{4}$ & $\textbf{0.094}_1$ & $0.094_{2}$ & $0.097_{3}$\\
+ & (0.009) & (\textbf{0.006}) & (0.006) & (0.007)\\
+wdbc & $0.063_{4}$ & $\textbf{0.044}_1$ & $0.045_{2}$ & $0.060_{3}$\\
+ & (0.020) & (\textbf{0.013}) & (0.013) & (0.018)\\
+wpbc & $0.281_{4}$ & $\textbf{0.174}_1$ & $0.179_{3}$ & $0.176_{2}$\\
+ & (0.058) & (\textbf{0.014}) & (0.027) & (0.012)\\
+yeast & $0.346_{4}$ & $0.199_{3}$ & $0.194_{2}$ & $\textbf{0.191}_1$\\
+ & (0.162) & (0.007) & (0.010) & (\textbf{0.011})\\
+zoo & $\textbf{0.017}_1$ & $0.018_{2}$ & $0.018_{4}$ & $0.018_{3}$\\
+ & (\textbf{0.030}) & (0.029) & (0.029) & (0.029)\\
+\midrule
+rank & 3.66 & 1.95 & 1.68 & 2.71\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=57.907317073170816, pvalue=1.6451564445770922e-12)
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+[None, 'sigmoid', 'isotonic', 'beta']
+-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+dataset & uncalibrated & beta & isotonic & sigmoid\\
+\midrule
+abalone & $61.848_{4}$ & $\textbf{63.321}_1$ & $63.302_{2}$ & $63.003_{3}$\\
+ & (1.417) & (\textbf{0.937}) & (0.993) & (1.374)\\
+autos & $67.483_{4}$ & $69.359_{2}$ & $\textbf{70.067}_1$ & $69.254_{3}$\\
+ & (7.667) & (5.642) & (\textbf{5.364}) & (5.159)\\
+balance & $95.362_{4}$ & $95.761_{2}$ & $95.715_{3}$ & $\textbf{95.857}_1$\\
+ & (1.727) & (2.078) & (2.022) & (\textbf{2.047})\\
+car & $\textbf{78.745}_1$ & $78.322_{4}$ & $78.328_{3}$ & $78.583_{2}$\\
+ & (\textbf{2.210}) & (2.241) & (2.106) & (2.252)\\
+clevela & $\textbf{83.675}_1$ & $83.475_{3}$ & $82.969_{4}$ & $83.539_{2}$\\
+ & (\textbf{4.589}) & (4.493) & (4.506) & (4.477)\\
+credit- & $80.231_{4}$ & $\textbf{84.396}_1$ & $84.336_{2}$ & $81.167_{3}$\\
+ & (3.617) & (\textbf{2.831}) & (2.822) & (3.194)\\
+dermato & $98.715_{2.5}$ & $98.715_{2.5}$ & $98.715_{2.5}$ & $98.715_{2.5}$\\
+ & (1.312) & (1.312) & (1.312) & (1.312)\\
+diabete & $75.363_{2}$ & $74.713_{4}$ & $75.298_{3}$ & $\textbf{75.429}_1$\\
+ & (3.545) & (3.435) & (3.404) & (\textbf{3.279})\\
+ecoli & $61.688_{4}$ & $\textbf{95.188}_1$ & $95.068_{2}$ & $80.656_{3}$\\
+ & (9.419) & (\textbf{2.866}) & (3.037) & (7.908)\\
+flare & $51.401_{4}$ & $\textbf{82.289}_1$ & $82.230_{2}$ & $71.489_{3}$\\
+ & (2.543) & (\textbf{1.133}) & (1.069) & (0.140)\\
+german & $73.330_{3}$ & $72.110_{4}$ & $73.460_{2}$ & $\textbf{74.120}_1$\\
+ & (2.392) & (1.819) & (2.285) & (\textbf{2.163})\\
+glass & $58.705_{4}$ & $\textbf{64.208}_1$ & $63.746_{2}$ & $62.642_{3}$\\
+ & (5.702) & (\textbf{4.292}) & (4.874) & (4.540)\\
+heart-s & $84.222_{4}$ & $\textbf{84.704}_1$ & $84.667_{2}$ & $84.370_{3}$\\
+ & (5.106) & (\textbf{4.744}) & (4.718) & (4.852)\\
+hepatit & $60.127_{4}$ & $\textbf{84.470}_1$ & $84.222_{2}$ & $79.371_{3}$\\
+ & (10.148) & (\textbf{5.317}) & (4.831) & (1.530)\\
+horse & $47.889_{4}$ & $77.663_{2}$ & $\textbf{79.256}_1$ & $64.905_{3}$\\
+ & (11.582) & (4.906) & (\textbf{4.123}) & (5.869)\\
+ionosph & $88.573_{4}$ & $89.203_{2}$ & $\textbf{89.517}_1$ & $88.802_{3}$\\
+ & (3.409) & (3.515) & (\textbf{3.638}) & (3.278)\\
+iris & $100.000_{2.5}$ & $100.000_{2.5}$ & $100.000_{2.5}$ & $100.000_{2.5}$\\
+ & (0.000) & (0.000) & (0.000) & (0.000)\\
+landsat & $93.521_{4}$ & $\textbf{93.814}_1$ & $93.795_{2}$ & $93.591_{3}$\\
+ & (0.671) & (\textbf{0.659}) & (0.644) & (0.690)\\
+letter & $97.263_{2}$ & $97.201_{3}$ & $\textbf{97.286}_1$ & $97.108_{4}$\\
+ & (0.108) & (0.211) & (\textbf{0.119}) & (0.181)\\
+libras- & $94.827_{4}$ & $\textbf{96.273}_1$ & $96.020_{2}$ & $95.180_{3}$\\
+ & (3.119) & (\textbf{2.474}) & (2.601) & (2.881)\\
+lung-ca & $98.953_{1.5}$ & $98.953_{1.5}$ & $97.711_{4}$ & $98.121_{3}$\\
+ & (2.116) & (2.116) & (3.657) & (3.289)\\
+mfeat-k & $98.395_{1.5}$ & $98.395_{1.5}$ & $98.385_{3.5}$ & $98.385_{3.5}$\\
+ & (0.606) & (0.613) & (0.631) & (0.625)\\
+mfeat-m & $99.850_{2.5}$ & $99.850_{2.5}$ & $99.850_{2.5}$ & $99.850_{2.5}$\\
+ & (0.196) & (0.196) & (0.196) & (0.196)\\
+mfeat-z & $92.580_{4}$ & $96.975_{2}$ & $\textbf{97.225}_1$ & $93.015_{3}$\\
+ & (0.900) & (0.799) & (\textbf{0.786}) & (0.868)\\
+mushroo & $91.273_{3}$ & $90.195_{4}$ & $\textbf{92.622}_1$ & $91.750_{2}$\\
+ & (0.726) & (0.714) & (\textbf{0.516}) & (0.589)\\
+optdigi & $54.772_{4}$ & $89.822_{2}$ & $89.822_{2}$ & $89.822_{2}$\\
+ & (2.364) & (0.021) & (0.021) & (0.021)\\
+page-bl & $89.962_{4}$ & $90.901_{3}$ & $\textbf{92.136}_1$ & $91.073_{2}$\\
+ & (1.017) & (1.021) & (\textbf{0.498}) & (0.932)\\
+pendigi & $\textbf{97.231}_1$ & $97.187_{4}$ & $97.216_{3}$ & $97.229_{2}$\\
+ & (\textbf{0.230}) & (0.249) & (0.247) & (0.246)\\
+scene-c & $60.327_{4}$ & $77.856_{1.5}$ & $76.052_{3}$ & $77.856_{1.5}$\\
+ & (2.215) & (0.070) & (4.004) & (0.070)\\
+segment & $83.645_{4}$ & $95.996_{2}$ & $\textbf{96.390}_1$ & $89.810_{3}$\\
+ & (1.504) & (0.882) & (\textbf{0.757}) & (1.546)\\
+shuttle & $89.461_{4}$ & $89.488_{3}$ & $\textbf{89.851}_1$ & $89.516_{2}$\\
+ & (0.185) & (0.147) & (\textbf{0.171}) & (0.202)\\
+sonar & $67.696_{4}$ & $70.414_{2}$ & $\textbf{70.693}_1$ & $68.373_{3}$\\
+ & (6.808) & (7.295) & (\textbf{7.154}) & (7.539)\\
+spambas & $81.669_{4}$ & $84.451_{2}$ & $\textbf{88.807}_1$ & $81.843_{3}$\\
+ & (1.242) & (1.200) & (\textbf{2.212}) & (1.246)\\
+tic-tac & $71.335_{3}$ & $71.471_{2}$ & $\textbf{71.606}_1$ & $71.242_{4}$\\
+ & (1.821) & (2.746) & (\textbf{2.051}) & (2.998)\\
+vehicle & $80.189_{4}$ & $\textbf{81.123}_1$ & $80.829_{3}$ & $81.016_{2}$\\
+ & (3.378) & (\textbf{2.799}) & (2.504) & (3.049)\\
+vowel & $94.980_{4}$ & $95.323_{2}$ & $\textbf{95.404}_1$ & $95.303_{3}$\\
+ & (1.292) & (1.387) & (\textbf{1.304}) & (1.400)\\
+wavefor & $85.580_{4}$ & $\textbf{86.372}_1$ & $86.250_{3}$ & $86.302_{2}$\\
+ & (1.180) & (\textbf{1.180}) & (1.116) & (1.147)\\
+wdbc & $93.269_{2}$ & $93.180_{3}$ & $93.109_{4}$ & $\textbf{93.286}_1$\\
+ & (2.200) & (1.991) & (2.076) & (\textbf{2.195})\\
+wpbc & $67.047_{4}$ & $75.620_{3}$ & $76.083_{2}$ & $\textbf{76.296}_1$\\
+ & (6.210) & (3.448) & (4.573) & (\textbf{0.710})\\
+yeast & $55.337_{4}$ & $68.538_{3}$ & $68.597_{2}$ & $\textbf{68.605}_1$\\
+ & (11.620) & (0.523) & (1.345) & (\textbf{0.509})\\
+zoo & $98.258_{2.5}$ & $98.258_{2.5}$ & $98.258_{2.5}$ & $98.258_{2.5}$\\
+ & (3.024) & (3.024) & (3.024) & (3.024)\\
+\midrule
+rank & 3.29 & 2.16 & 2.09 & 2.46\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=25.582872928176833, pvalue=1.1661148212200841e-05)
+-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+dataset & uncalibrated & beta & isotonic & sigmoid\\
+\midrule
+abalone & $1.181_{4}$ & $\textbf{0.621}_1$ & $0.626_{3}$ & $0.623_{2}$\\
+ & (0.076) & (\textbf{0.008}) & (0.024) & (0.008)\\
+autos & $1.149_{4}$ & $\textbf{0.547}_1$ & $0.582_{3}$ & $0.565_{2}$\\
+ & (0.415) & (\textbf{0.047}) & (0.155) & (0.047)\\
+balance & $0.283_{4}$ & $\textbf{0.114}_1$ & $0.182_{3}$ & $0.114_{2}$\\
+ & (0.013) & (\textbf{0.035}) & (0.189) & (0.035)\\
+car & $0.396_{3}$ & $0.383_{2}$ & $\textbf{0.381}_1$ & $0.397_{4}$\\
+ & (0.015) & (0.022) & (\textbf{0.058}) & (0.026)\\
+clevela & $0.677_{4}$ & $\textbf{0.414}_1$ & $0.583_{3}$ & $0.425_{2}$\\
+ & (0.240) & (\textbf{0.071}) & (0.375) & (0.076)\\
+credit- & $1.186_{4}$ & $\textbf{0.391}_1$ & $0.475_{3}$ & $0.459_{2}$\\
+ & (0.387) & (\textbf{0.049}) & (0.161) & (0.057)\\
+dermato & $0.464_{4}$ & $\textbf{0.076}_1$ & $0.112_{3}$ & $0.078_{2}$\\
+ & (0.476) & (\textbf{0.064}) & (0.151) & (0.066)\\
+diabete & $0.628_{4}$ & $\textbf{0.503}_1$ & $0.559_{3}$ & $0.518_{2}$\\
+ & (0.122) & (\textbf{0.032}) & (0.142) & (0.034)\\
+ecoli & $3.677_{4}$ & $\textbf{0.182}_1$ & $0.408_{3}$ & $0.393_{2}$\\
+ & (1.367) & (\textbf{0.080}) & (0.444) & (0.116)\\
+flare & $2.010_{4}$ & $\textbf{0.427}_1$ & $0.431_{2}$ & $0.549_{3}$\\
+ & (0.824) & (\textbf{0.028}) & (0.043) & (0.018)\\
+german & $0.907_{4}$ & $0.541_{3}$ & $0.536_{2}$ & $\textbf{0.523}_1$\\
+ & (0.239) & (0.026) & (0.044) & (\textbf{0.026})\\
+glass & $1.231_{4}$ & $\textbf{0.594}_1$ & $0.788_{3}$ & $0.598_{2}$\\
+ & (0.805) & (\textbf{0.055}) & (0.472) & (0.047)\\
+heart-s & $0.606_{4}$ & $\textbf{0.398}_1$ & $0.519_{3}$ & $0.409_{2}$\\
+ & (0.227) & (\textbf{0.078}) & (0.504) & (0.083)\\
+hepatit & $3.899_{4}$ & $\textbf{0.401}_1$ & $0.517_{3}$ & $0.436_{2}$\\
+ & (2.154) & (\textbf{0.162}) & (0.438) & (0.099)\\
+horse & $5.096_{4}$ & $\textbf{0.514}_1$ & $0.713_{3}$ & $0.631_{2}$\\
+ & (2.454) & (\textbf{0.054}) & (0.409) & (0.048)\\
+ionosph & $1.166_{4}$ & $\textbf{0.294}_1$ & $0.387_{3}$ & $0.325_{2}$\\
+ & (0.406) & (\textbf{0.061}) & (0.363) & (0.070)\\
+iris & $0.000_{2}$ & $0.000_{4}$ & $\textbf{0.000}_1$ & $0.000_{3}$\\
+ & (0.000) & (0.000) & (\textbf{0.000}) & (0.000)\\
+landsat & $0.650_{4}$ & $\textbf{0.181}_1$ & $0.191_{2}$ & $0.223_{3}$\\
+ & (0.097) & (\textbf{0.016}) & (0.025) & (0.017)\\
+letter & $0.088_{4}$ & $0.081_{2}$ & $\textbf{0.079}_1$ & $0.086_{3}$\\
+ & (0.006) & (0.003) & (\textbf{0.005}) & (0.003)\\
+libras- & $0.542_{4}$ & $\textbf{0.130}_1$ & $0.234_{3}$ & $0.139_{2}$\\
+ & (0.514) & (\textbf{0.073}) & (0.331) & (0.061)\\
+lung-ca & $0.385_{4}$ & $\textbf{0.100}_1$ & $0.114_{3}$ & $0.110_{2}$\\
+ & (0.777) & (\textbf{0.061}) & (0.065) & (0.063)\\
+mfeat-k & $0.133_{4}$ & $\textbf{0.056}_1$ & $0.096_{3}$ & $0.068_{2}$\\
+ & (0.083) & (\textbf{0.019}) & (0.083) & (0.021)\\
+mfeat-m & $0.055_{4}$ & $0.013_{2}$ & $0.016_{3}$ & $\textbf{0.013}_1$\\
+ & (0.072) & (0.017) & (0.039) & (\textbf{0.017})\\
+mfeat-z & $1.269_{4}$ & $\textbf{0.092}_1$ & $0.103_{2}$ & $0.139_{3}$\\
+ & (0.190) & (\textbf{0.022}) & (0.057) & (0.017)\\
+mushroo & $0.626_{4}$ & $0.259_{2}$ & $\textbf{0.227}_1$ & $0.267_{3}$\\
+ & (0.089) & (0.015) & (\textbf{0.014}) & (0.017)\\
+optdigi & $13.906_{4}$ & $0.246_{2}$ & $\textbf{0.243}_1$ & $0.272_{3}$\\
+ & (0.924) & (0.010) & (\textbf{0.013}) & (0.006)\\
+page-bl & $1.062_{4}$ & $0.212_{2}$ & $\textbf{0.189}_1$ & $0.265_{3}$\\
+ & (0.150) & (0.012) & (\textbf{0.016}) & (0.011)\\
+pendigi & $0.335_{4}$ & $\textbf{0.076}_1$ & $0.079_{2}$ & $0.086_{3}$\\
+ & (0.037) & (\textbf{0.006}) & (0.013) & (0.006)\\
+scene-c & $12.423_{4}$ & $\textbf{0.452}_1$ & $0.460_{2}$ & $0.465_{3}$\\
+ & (0.748) & (\textbf{0.015}) & (0.024) & (0.014)\\
+segment & $1.316_{4}$ & $\textbf{0.109}_1$ & $0.132_{2}$ & $0.197_{3}$\\
+ & (0.131) & (\textbf{0.022}) & (0.082) & (0.022)\\
+shuttle & $0.687_{4}$ & $0.277_{2}$ & $\textbf{0.218}_1$ & $0.323_{3}$\\
+ & (0.024) & (0.003) & (\textbf{0.006}) & (0.003)\\
+sonar & $2.504_{4}$ & $\textbf{0.545}_1$ & $0.610_{3}$ & $0.603_{2}$\\
+ & (1.021) & (\textbf{0.074}) & (0.378) & (0.067)\\
+spambas & $5.369_{4}$ & $0.359_{2}$ & $\textbf{0.315}_1$ & $0.407_{3}$\\
+ & (0.508) & (0.024) & (\textbf{0.038}) & (0.016)\\
+tic-tac & $0.589_{3}$ & $\textbf{0.580}_1$ & $0.591_{4}$ & $0.582_{2}$\\
+ & (0.016) & (\textbf{0.023}) & (0.067) & (0.023)\\
+vehicle & $0.588_{4}$ & $\textbf{0.410}_1$ & $0.414_{2}$ & $0.429_{3}$\\
+ & (0.191) & (\textbf{0.040}) & (0.062) & (0.045)\\
+vowel & $0.113_{2}$ & $\textbf{0.112}_1$ & $0.166_{4}$ & $0.128_{3}$\\
+ & (0.024) & (\textbf{0.023}) & (0.145) & (0.030)\\
+wavefor & $0.364_{4}$ & $\textbf{0.291}_1$ & $0.308_{3}$ & $0.308_{2}$\\
+ & (0.031) & (\textbf{0.016}) & (0.031) & (0.017)\\
+wdbc & $0.636_{4}$ & $\textbf{0.150}_1$ & $0.220_{2}$ & $0.235_{3}$\\
+ & (0.292) & (\textbf{0.041}) & (0.174) & (0.055)\\
+wpbc & $1.740_{4}$ & $\textbf{0.533}_1$ & $0.682_{3}$ & $0.534_{2}$\\
+ & (0.720) & (\textbf{0.048}) & (0.506) & (0.030)\\
+yeast & $1.900_{4}$ & $0.582_{2}$ & $0.589_{3}$ & $\textbf{0.562}_1$\\
+ & (2.066) & (0.028) & (0.047) & (\textbf{0.030})\\
+zoo & $0.642_{4}$ & $0.134_{2}$ & $0.312_{3}$ & $\textbf{0.134}_1$\\
+ & (1.114) & (0.200) & (0.630) & (\textbf{0.200})\\
+\midrule
+rank & 3.85 & 1.37 & 2.44 & 2.34\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=77.429268292682991, pvalue=1.0923070931843462e-16)
+-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+dataset & uncalibrated & beta & isotonic & sigmoid\\
+\midrule
+abalone & $0.303_{4}$ & $0.216_{2}$ & $\textbf{0.216}_1$ & $0.217_{3}$\\
+ & (0.012) & (0.003) & (\textbf{0.004}) & (0.004)\\
+autos & $0.254_{4}$ & $\textbf{0.186}_1$ & $0.189_{2}$ & $0.192_{3}$\\
+ & (0.060) & (\textbf{0.019}) & (0.027) & (0.020)\\
+balance & $0.077_{4}$ & $\textbf{0.033}_1$ & $0.034_{3}$ & $0.033_{2}$\\
+ & (0.005) & (\textbf{0.012}) & (0.013) & (0.012)\\
+car & $0.134_{3}$ & $0.132_{2}$ & $\textbf{0.130}_1$ & $0.135_{4}$\\
+ & (0.006) & (0.009) & (\textbf{0.009}) & (0.011)\\
+clevela & $0.140_{4}$ & $\textbf{0.129}_1$ & $0.130_{3}$ & $0.130_{2}$\\
+ & (0.038) & (\textbf{0.027}) & (0.028) & (0.030)\\
+credit- & $0.168_{4}$ & $\textbf{0.118}_1$ & $0.119_{2}$ & $0.144_{3}$\\
+ & (0.031) & (\textbf{0.017}) & (0.020) & (0.022)\\
+dermato & $0.013_{4}$ & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{3}$\\
+ & (0.013) & (\textbf{0.013}) & (0.013) & (0.013)\\
+diabete & $0.180_{4}$ & $\textbf{0.168}_1$ & $0.169_{2}$ & $0.171_{3}$\\
+ & (0.022) & (\textbf{0.014}) & (0.014) & (0.015)\\
+ecoli & $0.361_{4}$ & $\textbf{0.047}_1$ & $0.049_{2}$ & $0.132_{3}$\\
+ & (0.096) & (\textbf{0.019}) & (0.020) & (0.047)\\
+flare & $0.454_{4}$ & $0.136_{2}$ & $\textbf{0.136}_1$ & $0.186_{3}$\\
+ & (0.031) & (0.009) & (\textbf{0.008}) & (0.005)\\
+german & $0.195_{4}$ & $0.179_{3}$ & $0.176_{2}$ & $\textbf{0.174}_1$\\
+ & (0.019) & (0.007) & (0.011) & (\textbf{0.010})\\
+glass & $0.304_{4}$ & $\textbf{0.205}_1$ & $0.209_{3}$ & $0.208_{2}$\\
+ & (0.074) & (\textbf{0.018}) & (0.021) & (0.018)\\
+heart-s & $0.132_{4}$ & $0.122_{2}$ & $\textbf{0.122}_1$ & $0.123_{3}$\\
+ & (0.040) & (0.028) & (\textbf{0.030}) & (0.032)\\
+hepatit & $0.357_{4}$ & $\textbf{0.117}_1$ & $0.118_{2}$ & $0.137_{3}$\\
+ & (0.108) & (\textbf{0.028}) & (0.033) & (0.022)\\
+horse & $0.493_{4}$ & $0.166_{2}$ & $\textbf{0.164}_1$ & $0.220_{3}$\\
+ & (0.119) & (0.021) & (\textbf{0.022}) & (0.021)\\
+ionosph & $0.104_{4}$ & $0.088_{2}$ & $\textbf{0.086}_1$ & $0.092_{3}$\\
+ & (0.031) & (0.021) & (\textbf{0.022}) & (0.025)\\
+iris & $0.000_{3}$ & $0.000_{4}$ & $0.000_{2}$ & $\textbf{0.000}_1$\\
+ & (0.000) & (0.000) & (0.000) & (\textbf{0.000})\\
+landsat & $0.060_{4}$ & $0.050_{2}$ & $\textbf{0.050}_1$ & $0.057_{3}$\\
+ & (0.006) & (0.005) & (\textbf{0.005}) & (0.006)\\
+letter & $0.021_{2}$ & $0.021_{3}$ & $\textbf{0.020}_1$ & $0.022_{4}$\\
+ & (0.001) & (0.001) & (\textbf{0.001}) & (0.001)\\
+libras- & $0.047_{4}$ & $\textbf{0.030}_1$ & $0.031_{2}$ & $0.035_{3}$\\
+ & (0.028) & (\textbf{0.017}) & (0.017) & (0.017)\\
+lung-ca & $\textbf{0.010}_1$ & $0.015_{2}$ & $0.021_{4}$ & $0.019_{3}$\\
+ & (\textbf{0.021}) & (0.018) & (0.020) & (0.019)\\
+mfeat-k & $0.013_{3}$ & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.014_{4}$\\
+ & (0.005) & (\textbf{0.004}) & (0.005) & (0.005)\\
+mfeat-m & $0.002_{3}$ & $0.001_{2}$ & $0.002_{4}$ & $\textbf{0.001}_1$\\
+ & (0.002) & (0.002) & (0.002) & (\textbf{0.002})\\
+mfeat-z & $0.072_{4}$ & $0.024_{2}$ & $\textbf{0.022}_1$ & $0.044_{3}$\\
+ & (0.009) & (0.005) & (\textbf{0.006}) & (0.004)\\
+mushroo & $0.076_{4}$ & $0.074_{3}$ & $\textbf{0.063}_1$ & $0.070_{2}$\\
+ & (0.006) & (0.005) & (\textbf{0.004}) & (0.005)\\
+optdigi & $0.449_{4}$ & $0.078_{2}$ & $\textbf{0.077}_1$ & $0.083_{3}$\\
+ & (0.023) & (0.002) & (\textbf{0.002}) & (0.001)\\
+page-bl & $0.093_{4}$ & $0.063_{2}$ & $\textbf{0.057}_1$ & $0.073_{3}$\\
+ & (0.010) & (0.004) & (\textbf{0.003}) & (0.004)\\
+pendigi & $0.027_{4}$ & $0.022_{2}$ & $\textbf{0.022}_1$ & $0.023_{3}$\\
+ & (0.002) & (0.002) & (\textbf{0.002}) & (0.002)\\
+scene-c & $0.394_{4}$ & $\textbf{0.148}_1$ & $0.151_{2}$ & $0.153_{3}$\\
+ & (0.022) & (\textbf{0.005}) & (0.008) & (0.004)\\
+segment & $0.151_{4}$ & $0.030_{2}$ & $\textbf{0.029}_1$ & $0.066_{3}$\\
+ & (0.013) & (0.006) & (\textbf{0.006}) & (0.005)\\
+shuttle & $0.098_{4}$ & $0.083_{2}$ & $\textbf{0.072}_1$ & $0.090_{3}$\\
+ & (0.001) & (0.001) & (\textbf{0.002}) & (0.001)\\
+sonar & $0.289_{4}$ & $0.185_{2}$ & $\textbf{0.180}_1$ & $0.207_{3}$\\
+ & (0.066) & (0.032) & (\textbf{0.031}) & (0.030)\\
+spambas & $0.182_{4}$ & $0.110_{2}$ & $\textbf{0.092}_1$ & $0.131_{3}$\\
+ & (0.012) & (0.009) & (\textbf{0.014}) & (0.006)\\
+tic-tac & $0.201_{4}$ & $0.197_{2}$ & $\textbf{0.195}_1$ & $0.198_{3}$\\
+ & (0.007) & (0.010) & (\textbf{0.011}) & (0.010)\\
+vehicle & $0.143_{4}$ & $0.132_{2}$ & $\textbf{0.131}_1$ & $0.136_{3}$\\
+ & (0.024) & (0.015) & (\textbf{0.015}) & (0.017)\\
+vowel & $0.035_{3}$ & $\textbf{0.034}_1$ & $0.035_{2}$ & $0.035_{4}$\\
+ & (0.008) & (\textbf{0.008}) & (0.008) & (0.009)\\
+wavefor & $0.109_{4}$ & $\textbf{0.094}_1$ & $0.094_{2}$ & $0.097_{3}$\\
+ & (0.009) & (\textbf{0.006}) & (0.006) & (0.007)\\
+wdbc & $0.063_{4}$ & $0.045_{2}$ & $\textbf{0.045}_1$ & $0.060_{3}$\\
+ & (0.020) & (0.013) & (\textbf{0.013}) & (0.018)\\
+wpbc & $0.281_{4}$ & $\textbf{0.175}_1$ & $0.179_{3}$ & $0.176_{2}$\\
+ & (0.058) & (\textbf{0.018}) & (0.027) & (0.012)\\
+yeast & $0.346_{4}$ & $0.199_{3}$ & $0.194_{2}$ & $\textbf{0.191}_1$\\
+ & (0.162) & (0.009) & (0.010) & (\textbf{0.011})\\
+zoo & $\textbf{0.017}_1$ & $0.018_{3}$ & $0.018_{4}$ & $0.018_{2}$\\
+ & (\textbf{0.030}) & (0.029) & (0.029) & (0.029)\\
+\midrule
+rank & 3.68 & 1.80 & 1.76 & 2.76\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=61.536585365853739, pvalue=2.7599424792021131e-13)
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+['beta', 'beta_am', 'beta_ab']
+-#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+dataset & beta & beta_ab & beta_am\\
+\midrule
+abalone & $63.321_{2}$ & $61.343_{3}$ & $\textbf{63.383}_1$\\
+ & (0.937) & (1.415) & (\textbf{0.948})\\
+autos & $69.359_{2}$ & $67.443_{3}$ & $\textbf{70.105}_1$\\
+ & (5.642) & (6.955) & (\textbf{4.586})\\
+balance & $95.761_{2}$ & $95.362_{3}$ & $\textbf{95.842}_1$\\
+ & (2.078) & (1.727) & (\textbf{2.067})\\
+car & $78.322_{3}$ & $\textbf{78.745}_1$ & $78.496_{2}$\\
+ & (2.241) & (\textbf{2.210}) & (2.304)\\
+clevela & $83.475_{3}$ & $\textbf{83.675}_1$ & $83.675_{2}$\\
+ & (4.493) & (\textbf{4.589}) & (4.434)\\
+credit- & $\textbf{84.396}_1$ & $80.231_{3}$ & $83.020_{2}$\\
+ & (\textbf{2.831}) & (3.617) & (2.971)\\
+dermato & $98.715_{2}$ & $98.715_{2}$ & $98.715_{2}$\\
+ & (1.312) & (1.312) & (1.312)\\
+diabete & $74.713_{3}$ & $\textbf{75.363}_1$ & $74.713_{2}$\\
+ & (3.435) & (\textbf{3.545}) & (2.904)\\
+ecoli & $\textbf{95.188}_1$ & $61.749_{3}$ & $95.187_{2}$\\
+ & (\textbf{2.866}) & (9.441) & (2.868)\\
+flare & $82.289_{1.5}$ & $51.858_{3}$ & $82.289_{1.5}$\\
+ & (1.133) & (2.735) & (1.133)\\
+german & $72.110_{2}$ & $\textbf{73.340}_1$ & $71.060_{3}$\\
+ & (1.819) & (\textbf{2.425}) & (1.316)\\
+glass & $64.208_{2}$ & $58.636_{3}$ & $\textbf{64.732}_1$\\
+ & (4.292) & (5.743) & (\textbf{3.961})\\
+heart-s & $84.704_{2}$ & $84.222_{3}$ & $\textbf{84.778}_1$\\
+ & (4.744) & (5.106) & (\textbf{4.525})\\
+hepatit & $\textbf{84.470}_1$ & $59.237_{3}$ & $84.034_{2}$\\
+ & (\textbf{5.317}) & (9.522) & (5.038)\\
+horse & $77.663_{2}$ & $48.189_{3}$ & $\textbf{77.997}_1$\\
+ & (4.906) & (11.767) & (\textbf{4.991})\\
+ionosph & $89.203_{2}$ & $88.573_{3}$ & $\textbf{89.687}_1$\\
+ & (3.515) & (3.409) & (\textbf{3.675})\\
+iris & $100.000_{2}$ & $100.000_{2}$ & $100.000_{2}$\\
+ & (0.000) & (0.000) & (0.000)\\
+landsat & $\textbf{93.814}_1$ & $93.521_{3}$ & $93.739_{2}$\\
+ & (\textbf{0.659}) & (0.671) & (0.640)\\
+letter & $97.201_{2}$ & $\textbf{97.263}_1$ & $97.052_{3}$\\
+ & (0.211) & (\textbf{0.108}) & (0.188)\\
+libras- & $\textbf{96.273}_1$ & $94.827_{3}$ & $96.087_{2}$\\
+ & (\textbf{2.474}) & (3.119) & (1.979)\\
+lung-ca & $98.953_{2}$ & $98.953_{2}$ & $98.953_{2}$\\
+ & (2.116) & (2.116) & (2.116)\\
+mfeat-k & $98.395_{1.5}$ & $98.395_{1.5}$ & $98.390_{3}$\\
+ & (0.613) & (0.606) & (0.609)\\
+mfeat-m & $99.850_{2}$ & $99.850_{2}$ & $99.850_{2}$\\
+ & (0.196) & (0.196) & (0.196)\\
+mfeat-z & $\textbf{96.975}_1$ & $92.580_{3}$ & $96.750_{2}$\\
+ & (\textbf{0.799}) & (0.900) & (0.802)\\
+mushroo & $90.195_{3}$ & $91.273_{2}$ & $\textbf{91.274}_1$\\
+ & (0.714) & (0.726) & (\textbf{0.725})\\
+optdigi & $89.822_{1.5}$ & $88.496_{3}$ & $89.822_{1.5}$\\
+ & (0.021) & (0.382) & (0.021)\\
+page-bl & $90.901_{2}$ & $89.962_{3}$ & $\textbf{92.105}_1$\\
+ & (1.021) & (1.017) & (\textbf{0.507})\\
+pendigi & $97.187_{2}$ & $\textbf{97.231}_1$ & $97.168_{3}$\\
+ & (0.249) & (\textbf{0.230}) & (0.280)\\
+scene-c & $77.856_{1.5}$ & $76.955_{3}$ & $77.856_{1.5}$\\
+ & (0.070) & (0.515) & (0.070)\\
+segment & $95.996_{2}$ & $83.645_{3}$ & $\textbf{96.009}_1$\\
+ & (0.882) & (1.504) & (\textbf{0.878})\\
+shuttle & $89.488_{2}$ & $89.461_{3}$ & $\textbf{89.707}_1$\\
+ & (0.147) & (0.185) & (\textbf{0.170})\\
+sonar & $\textbf{70.414}_1$ & $67.696_{3}$ & $69.667_{2}$\\
+ & (\textbf{7.295}) & (6.808) & (7.848)\\
+spambas & $\textbf{84.451}_1$ & $81.669_{3}$ & $83.582_{2}$\\
+ & (\textbf{1.200}) & (1.242) & (1.160)\\
+tic-tac & $\textbf{71.471}_1$ & $71.335_{3}$ & $71.377_{2}$\\
+ & (\textbf{2.746}) & (1.821) & (2.907)\\
+vehicle & $81.123_{2}$ & $80.201_{3}$ & $\textbf{81.303}_1$\\
+ & (2.799) & (3.394) & (\textbf{2.623})\\
+vowel & $\textbf{95.323}_1$ & $94.980_{3}$ & $95.313_{2}$\\
+ & (\textbf{1.387}) & (1.292) & (1.407)\\
+wavefor & $\textbf{86.372}_1$ & $85.580_{3}$ & $86.354_{2}$\\
+ & (\textbf{1.180}) & (1.180) & (1.104)\\
+wdbc & $93.180_{3}$ & $93.269_{2}$ & $\textbf{93.480}_1$\\
+ & (1.991) & (2.200) & (\textbf{2.062})\\
+wpbc & $75.620_{2}$ & $68.196_{3}$ & $\textbf{75.780}_1$\\
+ & (3.448) & (6.253) & (\textbf{2.066})\\
+yeast & $\textbf{68.538}_1$ & $62.506_{3}$ & $68.503_{2}$\\
+ & (\textbf{0.523}) & (4.039) & (0.491)\\
+zoo & $98.258_{2}$ & $98.258_{2}$ & $98.258_{2}$\\
+ & (3.024) & (3.024) & (3.024)\\
+\midrule
+rank & 1.78 & 2.50 & 1.72\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=18.100000000000051, pvalue=0.00011739103691911502)
+-#-#-#-#-#-#-#-#-#-#-#-LOSS-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+dataset & beta & beta_ab & beta_am\\
+\midrule
+abalone & $\textbf{0.621}_1$ & $0.631_{3}$ & $0.622_{2}$\\
+ & (\textbf{0.008}) & (0.008) & (0.008)\\
+autos & $\textbf{0.547}_1$ & $0.554_{3}$ & $0.553_{2}$\\
+ & (\textbf{0.047}) & (0.051) & (0.040)\\
+balance & $\textbf{0.114}_1$ & $0.118_{3}$ & $0.115_{2}$\\
+ & (\textbf{0.035}) & (0.036) & (0.035)\\
+car & $0.383_{2}$ & $0.389_{3}$ & $\textbf{0.383}_1$\\
+ & (0.022) & (0.019) & (\textbf{0.022})\\
+clevela & $0.414_{3}$ & $\textbf{0.412}_1$ & $0.414_{2}$\\
+ & (0.071) & (\textbf{0.070}) & (0.070)\\
+credit- & $\textbf{0.391}_1$ & $0.420_{3}$ & $0.413_{2}$\\
+ & (\textbf{0.049}) & (0.050) & (0.060)\\
+dermato & $0.076_{3}$ & $0.075_{2}$ & $\textbf{0.073}_1$\\
+ & (0.064) & (0.063) & (\textbf{0.059})\\
+diabete & $\textbf{0.503}_1$ & $0.503_{2}$ & $0.528_{3}$\\
+ & (\textbf{0.032}) & (0.031) & (0.042)\\
+ecoli & $0.182_{2}$ & $0.563_{3}$ & $\textbf{0.181}_1$\\
+ & (0.080) & (0.115) & (\textbf{0.080})\\
+flare & $\textbf{0.427}_1$ & $0.585_{3}$ & $0.442_{2}$\\
+ & (\textbf{0.028}) & (0.023) & (0.031)\\
+german & $\textbf{0.541}_1$ & $0.568_{3}$ & $0.564_{2}$\\
+ & (\textbf{0.026}) & (0.049) & (0.025)\\
+glass & $\textbf{0.594}_1$ & $0.622_{3}$ & $0.595_{2}$\\
+ & (\textbf{0.055}) & (0.048) & (0.051)\\
+heart-s & $0.398_{3}$ & $\textbf{0.397}_1$ & $0.397_{2}$\\
+ & (0.078) & (\textbf{0.077}) & (0.076)\\
+hepatit & $0.401_{2}$ & $0.568_{3}$ & $\textbf{0.388}_1$\\
+ & (0.162) & (0.087) & (\textbf{0.092})\\
+horse & $\textbf{0.514}_1$ & $0.682_{3}$ & $0.543_{2}$\\
+ & (\textbf{0.054}) & (0.058) & (0.053)\\
+ionosph & $0.294_{2}$ & $0.295_{3}$ & $\textbf{0.293}_1$\\
+ & (0.061) & (0.059) & (\textbf{0.059})\\
+iris & $\textbf{0.000}_1$ & $0.000_{2}$ & $0.000_{3}$\\
+ & (\textbf{0.000}) & (0.000) & (0.000)\\
+landsat & $\textbf{0.181}_1$ & $0.184_{3}$ & $0.183_{2}$\\
+ & (\textbf{0.016}) & (0.016) & (0.016)\\
+letter & $\textbf{0.081}_1$ & $0.084_{3}$ & $0.083_{2}$\\
+ & (\textbf{0.003}) & (0.004) & (0.004)\\
+libras- & $\textbf{0.130}_1$ & $0.158_{3}$ & $0.138_{2}$\\
+ & (\textbf{0.073}) & (0.073) & (0.065)\\
+lung-ca & $0.100_{2}$ & $0.102_{3}$ & $\textbf{0.090}_1$\\
+ & (0.061) & (0.061) & (\textbf{0.060})\\
+mfeat-k & $\textbf{0.056}_1$ & $0.057_{2}$ & $0.061_{3}$\\
+ & (\textbf{0.019}) & (0.019) & (0.021)\\
+mfeat-m & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{3}$\\
+ & (\textbf{0.017}) & (0.017) & (0.017)\\
+mfeat-z & $\textbf{0.092}_1$ & $0.136_{3}$ & $0.097_{2}$\\
+ & (\textbf{0.022}) & (0.016) & (0.021)\\
+mushroo & $\textbf{0.259}_1$ & $0.316_{3}$ & $0.310_{2}$\\
+ & (\textbf{0.015}) & (0.016) & (0.023)\\
+optdigi & $\textbf{0.246}_1$ & $0.322_{3}$ & $0.251_{2}$\\
+ & (\textbf{0.010}) & (0.006) & (0.010)\\
+page-bl & $\textbf{0.212}_1$ & $0.212_{2}$ & $0.228_{3}$\\
+ & (\textbf{0.012}) & (0.012) & (0.012)\\
+pendigi & $\textbf{0.076}_1$ & $0.077_{3}$ & $0.077_{2}$\\
+ & (\textbf{0.006}) & (0.006) & (0.006)\\
+scene-c & $\textbf{0.452}_1$ & $0.483_{3}$ & $0.454_{2}$\\
+ & (\textbf{0.015}) & (0.015) & (0.015)\\
+segment & $\textbf{0.109}_1$ & $0.241_{3}$ & $0.111_{2}$\\
+ & (\textbf{0.022}) & (0.014) & (0.022)\\
+shuttle & $\textbf{0.277}_1$ & $0.278_{2}$ & $0.286_{3}$\\
+ & (\textbf{0.003}) & (0.003) & (0.003)\\
+sonar & $\textbf{0.545}_1$ & $0.571_{3}$ & $0.567_{2}$\\
+ & (\textbf{0.074}) & (0.071) & (0.072)\\
+spambas & $\textbf{0.359}_1$ & $0.393_{3}$ & $0.371_{2}$\\
+ & (\textbf{0.024}) & (0.018) & (0.021)\\
+tic-tac & $\textbf{0.580}_1$ & $0.587_{3}$ & $0.584_{2}$\\
+ & (\textbf{0.023}) & (0.017) & (0.022)\\
+vehicle & $\textbf{0.410}_1$ & $0.416_{2}$ & $0.446_{3}$\\
+ & (\textbf{0.040}) & (0.043) & (0.051)\\
+vowel & $0.112_{2}$ & $0.114_{3}$ & $\textbf{0.112}_1$\\
+ & (0.023) & (0.023) & (\textbf{0.022})\\
+wavefor & $\textbf{0.291}_1$ & $0.303_{3}$ & $0.292_{2}$\\
+ & (\textbf{0.016}) & (0.016) & (0.016)\\
+wdbc & $0.150_{3}$ & $0.149_{2}$ & $\textbf{0.147}_1$\\
+ & (0.041) & (0.041) & (\textbf{0.040})\\
+wpbc & $0.533_{2}$ & $0.601_{3}$ & $\textbf{0.533}_1$\\
+ & (0.048) & (0.070) & (\textbf{0.043})\\
+yeast & $\textbf{0.582}_1$ & $0.634_{3}$ & $0.592_{2}$\\
+ & (\textbf{0.028}) & (0.019) & (0.030)\\
+zoo & $\textbf{0.134}_1$ & $0.134_{2}$ & $0.134_{3}$\\
+ & (\textbf{0.200}) & (0.200) & (0.200)\\
+\midrule
+rank & 1.37 & 2.66 & 1.98\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=34.292682926829343, pvalue=3.5763376733995535e-08)
+-#-#-#-#-#-#-#-#-#-#-#-BRIER-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+\begin{table}[!t]
+\centering
+\begin{tabular}{lccc}
+\toprule
+dataset & beta & beta_ab & beta_am\\
+\midrule
+abalone & $\textbf{0.216}_1$ & $0.220_{3}$ & $0.216_{2}$\\
+ & (\textbf{0.003}) & (0.003) & (0.003)\\
+autos & $\textbf{0.186}_1$ & $0.188_{3}$ & $0.187_{2}$\\
+ & (\textbf{0.019}) & (0.021) & (0.017)\\
+balance & $\textbf{0.033}_1$ & $0.034_{3}$ & $0.033_{2}$\\
+ & (\textbf{0.012}) & (0.012) & (0.012)\\
+car & $0.132_{2}$ & $0.134_{3}$ & $\textbf{0.132}_1$\\
+ & (0.009) & (0.008) & (\textbf{0.010})\\
+clevela & $0.129_{3}$ & $\textbf{0.128}_1$ & $0.128_{2}$\\
+ & (0.027) & (\textbf{0.027}) & (0.026)\\
+credit- & $\textbf{0.118}_1$ & $0.132_{3}$ & $0.124_{2}$\\
+ & (\textbf{0.017}) & (0.018) & (0.017)\\
+dermato & $0.013_{2}$ & $0.013_{3}$ & $\textbf{0.013}_1$\\
+ & (0.013) & (0.013) & (\textbf{0.013})\\
+diabete & $0.168_{2}$ & $\textbf{0.167}_1$ & $0.171_{3}$\\
+ & (0.014) & (\textbf{0.013}) & (0.012)\\
+ecoli & $0.047_{2}$ & $0.201_{3}$ & $\textbf{0.047}_1$\\
+ & (0.019) & (0.045) & (\textbf{0.019})\\
+flare & $\textbf{0.136}_1$ & $0.205_{3}$ & $0.137_{2}$\\
+ & (\textbf{0.009}) & (0.008) & (0.008)\\
+german & $\textbf{0.179}_1$ & $0.185_{2}$ & $0.187_{3}$\\
+ & (\textbf{0.007}) & (0.011) & (0.007)\\
+glass & $0.205_{2}$ & $0.217_{3}$ & $\textbf{0.205}_1$\\
+ & (0.018) & (0.015) & (\textbf{0.014})\\
+heart-s & $0.122_{3}$ & $\textbf{0.122}_1$ & $0.122_{2}$\\
+ & (0.028) & (\textbf{0.028}) & (0.027)\\
+hepatit & $0.117_{2}$ & $0.194_{3}$ & $\textbf{0.117}_1$\\
+ & (0.028) & (0.028) & (\textbf{0.024})\\
+horse & $\textbf{0.166}_1$ & $0.244_{3}$ & $0.172_{2}$\\
+ & (\textbf{0.021}) & (0.026) & (0.017)\\
+ionosph & $0.088_{2}$ & $0.089_{3}$ & $\textbf{0.088}_1$\\
+ & (0.021) & (0.021) & (\textbf{0.021})\\
+iris & $\textbf{0.000}_1$ & $0.000_{2}$ & $0.000_{3}$\\
+ & (\textbf{0.000}) & (0.000) & (0.000)\\
+landsat & $\textbf{0.050}_1$ & $0.051_{3}$ & $0.050_{2}$\\
+ & (\textbf{0.005}) & (0.005) & (0.005)\\
+letter & $0.021_{2}$ & $0.021_{3}$ & $\textbf{0.021}_1$\\
+ & (0.001) & (0.001) & (\textbf{0.001})\\
+libras- & $\textbf{0.030}_1$ & $0.039_{3}$ & $0.032_{2}$\\
+ & (\textbf{0.017}) & (0.018) & (0.014)\\
+lung-ca & $0.015_{2}$ & $0.016_{3}$ & $\textbf{0.013}_1$\\
+ & (0.018) & (0.019) & (\textbf{0.019})\\
+mfeat-k & $\textbf{0.013}_1$ & $0.013_{2}$ & $0.013_{3}$\\
+ & (\textbf{0.004}) & (0.004) & (0.004)\\
+mfeat-m & $\textbf{0.001}_1$ & $0.001_{2}$ & $0.002_{3}$\\
+ & (\textbf{0.002}) & (0.002) & (0.002)\\
+mfeat-z & $\textbf{0.024}_1$ & $0.042_{3}$ & $0.025_{2}$\\
+ & (\textbf{0.005}) & (0.004) & (0.005)\\
+mushroo & $\textbf{0.074}_1$ & $0.096_{3}$ & $0.080_{2}$\\
+ & (\textbf{0.005}) & (0.005) & (0.004)\\
+optdigi & $\textbf{0.078}_1$ & $0.102_{3}$ & $0.078_{2}$\\
+ & (\textbf{0.002}) & (0.002) & (0.002)\\
+page-bl & $\textbf{0.063}_1$ & $0.064_{2}$ & $0.064_{3}$\\
+ & (\textbf{0.004}) & (0.004) & (0.004)\\
+pendigi & $\textbf{0.022}_1$ & $0.022_{2}$ & $0.023_{3}$\\
+ & (\textbf{0.002}) & (0.002) & (0.002)\\
+scene-c & $\textbf{0.148}_1$ & $0.161_{3}$ & $0.148_{2}$\\
+ & (\textbf{0.005}) & (0.005) & (0.004)\\
+segment & $\textbf{0.030}_1$ & $0.083_{3}$ & $0.031_{2}$\\
+ & (\textbf{0.006}) & (0.005) & (0.005)\\
+shuttle & $0.083_{3}$ & $0.083_{2}$ & $\textbf{0.083}_1$\\
+ & (0.001) & (0.001) & (\textbf{0.001})\\
+sonar & $\textbf{0.185}_1$ & $0.195_{3}$ & $0.189_{2}$\\
+ & (\textbf{0.032}) & (0.030) & (0.029)\\
+spambas & $\textbf{0.110}_1$ & $0.126_{3}$ & $0.116_{2}$\\
+ & (\textbf{0.009}) & (0.007) & (0.008)\\
+tic-tac & $\textbf{0.197}_1$ & $0.200_{3}$ & $0.199_{2}$\\
+ & (\textbf{0.010}) & (0.007) & (0.010)\\
+vehicle & $\textbf{0.132}_1$ & $0.134_{2}$ & $0.136_{3}$\\
+ & (\textbf{0.015}) & (0.016) & (0.014)\\
+vowel & $0.034_{2}$ & $0.035_{3}$ & $\textbf{0.034}_1$\\
+ & (0.008) & (0.008) & (\textbf{0.007})\\
+wavefor & $\textbf{0.094}_1$ & $0.099_{3}$ & $0.094_{2}$\\
+ & (\textbf{0.006}) & (0.006) & (0.006)\\
+wdbc & $0.045_{3}$ & $0.045_{2}$ & $\textbf{0.044}_1$\\
+ & (0.013) & (0.013) & (\textbf{0.013})\\
+wpbc & $0.175_{2}$ & $0.203_{3}$ & $\textbf{0.174}_1$\\
+ & (0.018) & (0.020) & (\textbf{0.014})\\
+yeast & $\textbf{0.199}_1$ & $0.222_{3}$ & $0.199_{2}$\\
+ & (\textbf{0.009}) & (0.008) & (0.007)\\
+zoo & $0.018_{2}$ & $0.018_{3}$ & $\textbf{0.018}_1$\\
+ & (0.029) & (0.029) & (\textbf{0.029})\\
+\midrule
+rank & 1.49 & 2.63 & 1.88\\
+\bottomrule
+\end{tabular}
+\caption{\small{}}
+\label{table:table}
+\end{table}
+FriedmanchisquareResult(statistic=27.853658536585385, pvalue=8.9465356815388811e-07)
+-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
+[2017-05-10 23:53:39,697] launcher  (127.0.0.1:50201) INFO    Root process is done.
+[2017-05-10 23:53:39,697] launcher  (127.0.0.1:50201) INFO    Finished cleaning spawned subprocesses.
+
+Process finished with exit code 0
