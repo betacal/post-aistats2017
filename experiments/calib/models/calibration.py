@@ -14,6 +14,11 @@ from betacal import BetaCalibration
 
 from sk_calibration import _SigmoidCalibration as sk_sigmoid_notrick
 
+from calib.utils.functions import fit_beta_nll
+from calib.utils.functions import fit_beta_moments
+from calib.utils.functions import fit_beta_midpoint
+from calib.utils.functions import beta_test
+
 
 class CalibratedModel(BaseEstimator, ClassifierMixin):
     def __init__(self, base_estimator=None, method=None, score_type=None):
@@ -118,12 +123,58 @@ class CalibratedModel(BaseEstimator, ClassifierMixin):
             self.calibrator = BetaCalibration(parameters="am")
         elif self.method == 'beta_ab':
             self.calibrator = BetaCalibration(parameters="ab")
+        elif self.method == 'beta_test_strict':
+            self.calibrator = BetaCalibration(parameters="abm")
+        elif self.method == 'beta_test_relaxed':
+            self.calibrator = BetaCalibration(parameters="abm")
+        elif self.method == 'beta_test':
+            self.calibrator = _BetaTestedCalibration()
         else:
             raise ValueError('method should be None, "sigmoid", '
                              '"isotonic", "beta", "beta_am" or "beta_ab". '
                              'Got %s.' % self.method)
         self.calibrator.fit(df, y, weights)
+        if self.method == 'beta':
+            df_pos = df[y == 1]
+            df_neg = df[y == 0]
 
+            # alpha_pos_nll, beta_pos_nll = fit_beta_nll(df_pos)
+            # alpha_neg_nll, beta_neg_nll = fit_beta_nll(df_neg)
+            #
+            # a_nll = alpha_pos_nll - alpha_neg_nll
+            # b_nll = beta_neg_nll - beta_pos_nll
+            # m_nll = fit_beta_midpoint(alpha_pos_nll, beta_pos_nll,
+            #                           alpha_neg_nll, beta_neg_nll)
+
+            alpha_pos_mmt, beta_pos_mmt = fit_beta_moments(df_pos)
+            alpha_neg_mmt, beta_neg_mmt = fit_beta_moments(df_neg)
+
+            a_mmt = alpha_pos_mmt - alpha_neg_mmt
+            if a_mmt < 0 or np.isnan(a_mmt):
+                a_mmt = 0
+            b_mmt = beta_neg_mmt - beta_pos_mmt
+            if b_mmt < 0 or np.isnan(b_mmt):
+                b_mmt = 0
+            prior_pos = len(df_pos) / len(df)
+            prior_neg = len(df_neg) / len(df)
+            m_mmt = fit_beta_midpoint(prior_pos, alpha_pos_mmt, beta_pos_mmt,
+                                      prior_neg, alpha_neg_mmt, beta_neg_mmt)
+            map = self.calibrator.calibrator_.map_
+        #     if a_mmt > 4 and map[0] < 2:
+        #         print [a_mmt, map[0]]
+        #         print [b_mmt, map[1]]
+        #         print [m_mmt, map[2]]
+        #         exit()
+        #     if b_mmt > 4 and map[1] < 2:
+        #         print [a_mmt, map[0]]
+        #         print [b_mmt, map[1]]
+        #         print [m_mmt, map[2]]
+        #         exit()
+            self.a = [a_mmt, map[0]]
+            self.b = [b_mmt, map[1]]
+            self.m = [m_mmt, map[2]]
+            self.df_pos = df_pos
+            self.df_neg = df_neg
         return self
 
     def predict_proba(self, X):
@@ -269,3 +320,53 @@ class _DummyCalibration(BaseEstimator, RegressorMixin):
             The predicted data.
         """
         return T
+
+
+class _BetaTestedCalibration(BaseEstimator, RegressorMixin):
+    """Dummy regression model. The purpose of this class is to give
+    the CalibratedClassifierCV class the option to just return the
+    probabilities of the base classifier.
+
+
+    """
+    def fit(self, X, y, sample_weight=None):
+        """Fit beta calibration only if the classifier is considered 
+        uncalibrated.
+
+        Parameters
+        ----------
+        X : array-like, shape (n_samples,)
+            Training data.
+
+        y : array-like, shape (n_samples,)
+            Training target.
+
+        sample_weight : array-like, shape = [n_samples] or None
+            Sample weights. If None, then samples are equally weighted.
+
+        Returns
+        -------
+        self : object
+            Returns an instance of self.
+        """
+        self._calibrator = BetaCalibration(parameters="abm").fit(X, y)
+        test = beta_test(self._calibrator.calibrator_.map_,
+                         test_type="adev", scores=X)
+        if test["p-value"] >= 0.05:
+            self._calibrator = _DummyCalibration().fit(X, y)
+        return self
+
+    def predict(self, T):
+        """Return the probabilities of the base classifier.
+
+        Parameters
+        ----------
+        T : array-like, shape (n_samples,)
+            Data to predict from.
+
+        Returns
+        -------
+        T_ : array, shape (n_samples,)
+            The predicted data.
+        """
+        return self._calibrator.predict(T)

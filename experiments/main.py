@@ -33,9 +33,10 @@ from data_wrappers.datasets import Data
 from data_wrappers.datasets import datasets_li2014
 from data_wrappers.datasets import datasets_hempstalk2008
 from data_wrappers.datasets import datasets_others
+from data_wrappers.datasets import datasets_big
 
-methods = [None, 'sigmoid', 'isotonic', 'beta', 'beta_am', 'beta_ab']
-
+methods = [None, 'beta', 'beta_ab', 'beta_am', 'isotonic', 'sigmoid']
+# methods = ['beta', 'beta_test_strict']
 classifiers = {
                   'nbayes': GaussianNB(),
                   'logistic': LogisticRegression(),
@@ -58,8 +59,8 @@ score_types = {
 seed_num = 42
 mc_iterations = 10
 n_folds = 5
-classifier_name = 'forest'
-results_path = 'results/' + classifier_name
+classifier_name = 'nbayes'
+results_path = 'results_no_platt/' + classifier_name
 classifier = classifiers[classifier_name]
 score_type = score_types[classifier_name]
 
@@ -103,6 +104,7 @@ def compute_all(args):
 if __name__ == '__main__':
     dataset_names = list(set(datasets_li2014 + datasets_hempstalk2008 +
                              datasets_others))
+    # dataset_names = datasets_big
     dataset_names.sort()
     df_all = MyDataFrame(columns=columns)
 
@@ -144,6 +146,7 @@ if __name__ == '__main__':
     remove_list = [[], ['isotonic'], ['beta_am'], ['beta_ab'],
                    ['beta', 'beta_ab'], ['beta_am', 'beta_ab'],
                    [None, 'None', 'isotonic', 'sigmoid']]
+    # remove_list = [[]]
     for rem in remove_list:
         df_rem = df_all[np.logical_not(np.in1d(df_all.method, rem))]
         methods_rem = [method for method in methods if method not in rem]

@@ -43,6 +43,12 @@ datasets_others = [ 'diabetes', 'heart-statlog',
         'vowel', 'abalone', 'balance-scale', 'credit-approval',
         'german', 'hepatitis', 'lung-cancer', 'ecoli', 'glass', 'yeast', 'zoo']
 
+datasets_big = ['abalone', 'car', 'flare', 'german', 'landsat-satellite',
+                'letter', 'mfeat-karhunen', 'mfeat-morphological',
+                'mfeat-zernike', 'mushroom', 'optdigits', 'page-blocks',
+                'pendigits', 'scene-classification', 'segment', 'shuttle',
+                'spambase', 'waveform-5000', 'yeast']
+
 class Dataset(object):
     def __init__(self, name, data, target):
         self.name = name

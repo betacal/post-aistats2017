@@ -1,8 +1,8 @@
 C:\Users\tmfilho\Anaconda2\python.exe -m scoop -n 8 C:/Users/tmfilho/Dropbox/Doutorado/Bristol/2017/betacal_org/post-aistats2017/experiments/main.py
-[2017-05-12 10:31:08,061] launcher  INFO    SCOOP 0.7 1.1 on win32 using Python 2.7.13 |Anaconda custom (64-bit)| (default, Dec 19 2016, 13:29:36) [MSC v.1500 64 bit (AMD64)], API: 1013
-[2017-05-12 10:31:08,061] launcher  INFO    Deploying 8 worker(s) over 1 host(s).
-[2017-05-12 10:31:08,061] launcher  INFO    Worker distribution: 
-[2017-05-12 10:31:08,061] launcher  INFO       127.0.0.1:	7 + origin
+[2017-06-12 02:05:14,184] launcher  INFO    SCOOP 0.7 1.1 on win32 using Python 2.7.13 |Anaconda custom (64-bit)| (default, Dec 19 2016, 13:29:36) [MSC v.1500 64 bit (AMD64)], API: 1013
+[2017-06-12 02:05:14,184] launcher  INFO    Deploying 8 worker(s) over 1 host(s).
+[2017-06-12 02:05:14,184] launcher  INFO    Worker distribution: 
+[2017-06-12 02:05:14,184] launcher  INFO       127.0.0.1:	7 + origin
 C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
   "This module will be removed in 0.20.", DeprecationWarning)
 C:\Users\tmfilho\Anaconda2\lib\site-packages\sklearn\cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
@@ -720,7 +720,7 @@ beta_am   0.818273  0.121667  0.372876  0.057231  0.028495  0.073648
 isotonic  0.819236  0.121579  0.506803  0.059291  0.030847  0.517345
 sigmoid   0.817298  0.121996  0.375863  0.057244  0.029202  0.075655
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-[None, 'sigmoid', 'isotonic', 'beta', 'beta_am', 'beta_ab']
+[None, 'beta', 'beta_ab', 'beta_am', 'isotonic', 'sigmoid']
 -#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 \begin{table}[!t]
 \centering
@@ -1013,7 +1013,7 @@ rank & 5.27 & 2.63 & 3.44 & 3.61 & 3.61 & 2.44\\
 \end{table}
 FriedmanchisquareResult(statistic=58.923344947735245, pvalue=2.0282724399072394e-11)
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-[None, 'sigmoid', 'beta', 'beta_am', 'beta_ab']
+[None, 'beta', 'beta_ab', 'beta_am', 'sigmoid']
 -#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 \begin{table}[!t]
 \centering
@@ -1306,7 +1306,7 @@ rank & 4.37 & 2.32 & 2.98 & 3.17 & 2.17\\
 \end{table}
 FriedmanchisquareResult(statistic=50.009756097560967, pvalue=3.5939684824939553e-10)
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-[None, 'sigmoid', 'isotonic', 'beta', 'beta_ab']
+[None, 'beta', 'beta_ab', 'isotonic', 'sigmoid']
 -#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 \begin{table}[!t]
 \centering
@@ -1599,7 +1599,7 @@ rank & 4.44 & 2.41 & 2.90 & 3.05 & 2.20\\
 \end{table}
 FriedmanchisquareResult(statistic=50.399999999999977, pvalue=2.9790675256879177e-10)
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-[None, 'sigmoid', 'isotonic', 'beta', 'beta_am']
+[None, 'beta', 'beta_am', 'isotonic', 'sigmoid']
 -#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 \begin{table}[!t]
 \centering
@@ -1892,7 +1892,7 @@ rank & 4.41 & 2.22 & 3.15 & 3.07 & 2.15\\
 \end{table}
 FriedmanchisquareResult(statistic=55.200000000000045, pvalue=2.9501108347872869e-11)
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-[None, 'sigmoid', 'isotonic', 'beta_am']
+[None, 'beta_am', 'isotonic', 'sigmoid']
 -#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 \begin{table}[!t]
 \centering
@@ -2185,7 +2185,7 @@ rank & 3.59 & 2.37 & 2.39 & 1.66\\
 \end{table}
 FriedmanchisquareResult(statistic=47.136585365853648, pvalue=3.2506965639684688e-10)
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-[None, 'sigmoid', 'isotonic', 'beta']
+[None, 'beta', 'isotonic', 'sigmoid']
 -#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 \begin{table}[!t]
 \centering
@@ -2478,7 +2478,7 @@ rank & 3.59 & 2.00 & 2.51 & 1.90\\
 \end{table}
 FriedmanchisquareResult(statistic=43.917073170731783, pvalue=1.5716538185316433e-09)
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-['beta', 'beta_am', 'beta_ab']
+['beta', 'beta_ab', 'beta_am']
 -#-#-#-#-#-#-#-#-#-#-#-#-ACC-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
 \begin{table}[!t]
 \centering
@@ -2771,7 +2771,7 @@ rank & 1.63 & 2.12 & 2.24\\
 \end{table}
 FriedmanchisquareResult(statistic=8.5365853658536821, pvalue=0.014005674880002062)
 -#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-
-[2017-05-12 12:28:48,548] launcher  (127.0.0.1:55836) INFO    Root process is done.
-[2017-05-12 12:28:48,549] launcher  (127.0.0.1:55836) INFO    Finished cleaning spawned subprocesses.
+[2017-06-12 04:03:00,266] launcher  (127.0.0.1:61742) INFO    Root process is done.
+[2017-06-12 04:03:00,270] launcher  (127.0.0.1:61742) INFO    Finished cleaning spawned subprocesses.
 
 Process finished with exit code 0
